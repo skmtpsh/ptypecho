@@ -1,0 +1,55 @@
+body {
+  background: #edf2f6;
+  font-size: 13px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  color: #888da8
+}
+
+/* Top Nav */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,.8);
+}
+.osahan-nav-top {
+  background-color: #ffffff;
+}
+.osahan-nav-top .container {
+  padding: 0 16px;
+}
+
+.osahan-nav-top .navbar-search .form-control {
+  background: #ebf2ff;
+}
+
+.osahan-nav-top .navbar-search .btn {
+  background: #ebf2ff !important;
+  color: #74828e;
+}
+/* End Top Nav */
+/* Card Design */
+.box.border {
+  border: 1px solid #ffffff !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 6px 22px 0 rgba(0,0,0,0.08) !important;
+}
+
+/* End Card Design */
+/* Tab Design */
+.osahan-line-tab .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 1rem!important;
+  color: #888da8;
+  position: relative;
+}
+
+.form-control, .btn {
+  font-size: 14px;
+}
+.small, small {
+  font-size: 12px;
+}
