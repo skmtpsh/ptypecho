@@ -276,3 +276,6 @@ div, a {
 ul li {
   list-style: none;
 }
+#body {
+  margin-top: 50px;
+}
