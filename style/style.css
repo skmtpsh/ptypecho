@@ -122,6 +122,139 @@ div, a {
 .box.border {
   border: 1px solid #ffffff !important;
 }
+.symbol {
+  display: inline-block;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+  border-radius: .42rem
+}
+
+.symbol .symbol-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #3f4254;
+  background-color: #f3f6f9;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: .42rem
+}
+
+.symbol .symbol-badge {
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  top: 0;
+  right: 0
+}
+
+.symbol>img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: .42rem
+}
+
+.symbol.symbol-circle {
+  border-radius: 50%
+}
+
+.symbol.symbol-circle>img {
+  border-radius: 50%
+}
+.symbol.symbol-primary .symbol-label {
+  background-color: #3699ff;
+  color: #fff
+}
+
+.symbol.symbol-light-primary .symbol-label {
+  background-color: #e1f0ff;
+  color: #3699ff
+}
+
+.symbol.symbol-secondary .symbol-label {
+  background-color: #e4e6ef;
+  color: #3f4254
+}
+
+.symbol.symbol-light-secondary .symbol-label {
+  background-color: #ebedf3;
+  color: #e4e6ef
+}
+
+.symbol.symbol-success .symbol-label {
+  background-color: #1bc5bd;
+  color: #fff
+}
+
+.symbol.symbol-light-success .symbol-label {
+  background-color: #c9f7f5;
+  color: #1bc5bd
+}
+
+.symbol.symbol-info .symbol-label {
+  background-color: #8950fc;
+  color: #fff
+}
+
+.symbol.symbol-light-info .symbol-label {
+  background-color: #eee5ff;
+  color: #8950fc
+}
+
+.symbol.symbol-warning .symbol-label {
+  background-color: #ffa800;
+  color: #fff
+}
+
+.symbol.symbol-light-warning .symbol-label {
+  background-color: #fff4de;
+  color: #ffa800
+}
+
+.symbol.symbol-danger .symbol-label {
+  background-color: #f64e60;
+  color: #fff
+}
+
+.symbol.symbol-light-danger .symbol-label {
+  background-color: #ffe2e5;
+  color: #f64e60
+}
+
+.symbol.symbol-light .symbol-label {
+  background-color: #f3f6f9;
+  color: #7e8299
+}
+
+.symbol.symbol-light-light .symbol-label {
+  background-color: #f3f6f9;
+  color: #f3f6f9
+}
+
+.symbol.symbol-dark .symbol-label {
+  background-color: #181c32;
+  color: #fff
+}
+
+.symbol.symbol-light-dark .symbol-label {
+  background-color: #d1d3e0;
+  color: #181c32
+}
+
+.symbol.symbol-white .symbol-label {
+  background-color: #fff;
+  color: #3f4254
+}
 
 .shadow-sm {
   box-shadow: 0 6px 22px 0 rgba(0,0,0,0.08) !important;
@@ -157,7 +290,7 @@ div, a {
 }
 
 .sideNav li {
-  display: block;
+  display: flex;
   width: 100%;
   height: auto;
   position: relative
@@ -212,8 +345,8 @@ div, a {
   border-radius: 5px
 }
 .post-title {
-  font-size: 28px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.6;
 }
 .post-state {
   width: 100%;

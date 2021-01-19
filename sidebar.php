@@ -5,22 +5,53 @@
         <div class="sideNav">
             <ul>
                 <li>
+                    <div class="symbol symbol-light-info">
+                        <span class="symbol-label">
+                            <i class="bi bi-toggles"></i>
+                        </span>
+                    </div>
                     <a href="#">
-                        <i class="bi bi-heart-fill" style="font-size: 2rem; color: #05b0ef"></i>
-                        <span>Shop </span>
+                        <span>Shop</span>
                     </a>
                 </li>
                 <li>
+                    <div class="symbol symbol-light-warning">
+                        <span class="symbol-label">
+                            <i class="bi bi-toggles"></i>
+                        </span>
+                    </div>
                     <a href="#">
-                        <i class="bi bi-toggles" style="font-size: 2rem; color: #cornflowerblue"></i>
-
-                        <span>Bulue </span>
+                        <span>Shop</span>
                     </a>
                 </li>
                 <li>
+                    <div class="symbol symbol-light-success">
+                        <span class="symbol-label">
+                            <i class="bi bi-toggles"></i>
+                        </span>
+                    </div>
                     <a href="#">
-                        <i class="bi bi-shop" style="font-size: 2rem; color: #ff5504"></i>
-                        <span>Feed </span>
+                        <span>Shop</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="symbol symbol-light-danger">
+                        <span class="symbol-label">
+                            <i class="bi bi-toggles"></i>
+                        </span>
+                    </div>
+                    <a href="#">
+                        <span>Shop</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="symbol-light-primary">
+                        <span class="symbol-label">
+                            <i class="bi bi-toggles"></i>
+                        </span>
+                    </div>
+                    <a href="#">
+                        <span>Shop</span>
                     </a>
                 </li>
             </ul>
