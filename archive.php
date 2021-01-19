@@ -1,7 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-<main  id="main" role="main" class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
+<main id="main" role="main" class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
         <h3 class="archive-title"><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
@@ -21,6 +21,7 @@
                 <div class="post-content" itemprop="articleBody">
                     <?php $this->excerpt(350, ''); ?>
                     <p><a href="<?php $this->permalink() ?>">...阅读剩余</a></p>
+                    <p> text archive.php</p>
                 </div>
     		</article>
     	<?php endwhile; ?>
