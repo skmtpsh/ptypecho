@@ -365,12 +365,12 @@ div, a {
   border-bottom: 1px solid #f3f3f3
 }
 .post-state .post-state-btns:hover {
-  background-color: #f1f3f4
+  /* background-color: #f1f3f4 */
 }
 .post-state .post-state-btns {
   border-radius: 2px;
-  color: #616770;
   font-size: 13px;
+  color: #8a9aa9;
   border-radius: 5px;
   font-weight: 600;
   line-height: 19px;
@@ -386,8 +386,14 @@ div, a {
   align-items: center;
   justify-content: center
 }
+.post-state .post-state-btns a {
+  color: #8a9aa9;
+}
+.post-state .post-state-btns a:hover {
+  color: #007bff;
+}
 .post-state .post-state-btns i {
-  font-size: 19px;
+  font-size: 20px;
   margin-right: 4px
 }
 .post-state .post-state-btns span {
@@ -396,7 +402,7 @@ div, a {
 .box-body {
   font-size: 16px;
   line-height: 1.8;
-  color: #6d6d6d;
+  color: #17181a;
   text-indent: 2em;
 }
 .nav-item {
