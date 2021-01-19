@@ -2,9 +2,9 @@
 <?php $this->need('header.php'); ?>
 
 <main  id="main" class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="box shadow-sm border rounded bg-white mb-3" itemscope itemtype="http://schema.org/BlogPosting">
         <h1 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
-        <div class="post-content" itemprop="articleBody">
+        <div class="box-body p-3" itemprop="articleBody">
             <?php $this->content(); ?>
             <p> text page.php</p>
         </div>

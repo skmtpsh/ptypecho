@@ -1,16 +1,28 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
 <aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12">
-    <div class="box mb-3 shadow-sm border rounded bg-white">3</div>
+    <div class="box mb-3 shadow-sm border rounded bg-white">
+        <div class="sideNav">
+            <ul>
+                <li><a href="#"><img src="assets//images/icons/home.png" alt=""><span>Feed </span></a></li>
+                <li><a href="#"><img src="assets/images/icons/chat.png" alt=""><span>Chats </span></a></li>
+                <li><a href="#"><img src="assets/images/icons/flag.png" alt=""><span>Pages </span></a></li>
+                <li><a href="#"><img src="assets/images/icons/video.png" alt=""><span>Videos </span></a></li>
+                <li><a href="#"><img src="assets/images/icons/group.png" alt=""><span>Groups </span></a></li>
+                <li><a href="questions.html"><img src="assets/images/icons/info.png" alt=""><span>Questions </span></a></li>
+                <li><a href="jobs.html"><img src="assets/images/icons/bag.png" alt=""><span>jobs </span></a></li>
+            </ul>
+        </div>
+    </div>
     <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
-    <img src="http://v.bootstrapmb.com/2019/12/l63856876/img/job1.png" class="img-fluid" alt="Responsive image">
-    <div class="p-3 border-bottom">
-        <h6 class="font-weight-bold text-dark">Osahan Solutions</h6>
-        <p class="mb-0 text-muted">Looking for talent?</p>
-    </div>
-    <div class="p-3">
-        <button type="button" class="btn btn-outline-primary pl-4 pr-4">POST A JOB</button>
-    </div>
+        <img src="http://v.bootstrapmb.com/2019/12/l63856876/img/job1.png" class="img-fluid" alt="Responsive image">
+        <div class="p-3 border-bottom">
+            <h6 class="font-weight-bold text-dark">Osahan Solutions</h6>
+            <p class="mb-0 text-muted">Looking for talent?</p>
+        </div>
+        <div class="p-3">
+            <button type="button" class="btn btn-outline-primary pl-4 pr-4">POST A JOB</button>
+        </div>
     </div>
 </aside>
 <aside class="col col-xl-3 order-xl-3 col-lg-6 order-lg-3 col-md-6 col-sm-6 col-12" id="secondary" role="complementary">
