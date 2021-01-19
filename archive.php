@@ -1,7 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-    <div class="col-mb-12 col-8" id="main" role="main">
+<main  id="main" role="main" class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
         <h3 class="archive-title"><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
@@ -31,7 +31,7 @@
         <?php endif; ?>
 
         <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
-    </div><!-- end #main -->
+    </main><!-- end #main -->
 
 	<?php $this->need('sidebar.php'); ?>
 	<?php $this->need('footer.php'); ?>
