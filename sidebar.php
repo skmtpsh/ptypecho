@@ -1,16 +1,33 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12">
+<aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12 main_sidebar" >
     <div class="box mb-3 shadow-sm border rounded bg-white">
         <div class="sideNav">
             <ul>
-                <li><a href="#"><img src="assets//images/icons/home.png" alt=""><span>Feed </span></a></li>
-                <li><a href="#"><img src="assets/images/icons/chat.png" alt=""><span>Chats </span></a></li>
-                <li><a href="#"><img src="assets/images/icons/flag.png" alt=""><span>Pages </span></a></li>
-                <li><a href="#"><img src="assets/images/icons/video.png" alt=""><span>Videos </span></a></li>
-                <li><a href="#"><img src="assets/images/icons/group.png" alt=""><span>Groups </span></a></li>
-                <li><a href="questions.html"><img src="assets/images/icons/info.png" alt=""><span>Questions </span></a></li>
-                <li><a href="jobs.html"><img src="assets/images/icons/bag.png" alt=""><span>jobs </span></a></li>
+                <li>
+                    <a href="#">
+                        <svg class="bi" width="32" height="32" fill="currentColor" style="color: #05b0ef;">
+                            <use xlink:href="bootstrap-icons.svg#heart-fill"/>
+                        </svg>
+                        <span>Feed </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="bi" width="32" height="32" fill="currentColor" style="color: cornflowerblue;">
+                            <use xlink:href="bootstrap-icons.svg#toggles"/>
+                        </svg>
+                        <span>Feed </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="bi" width="32" height="32" fill="currentColor" style="color: #ff5504;">
+                            <use xlink:href="bootstrap-icons.svg#shop"/>
+                        </svg>
+                        <span>Feed </span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

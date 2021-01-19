@@ -212,7 +212,6 @@ div, a {
   border-radius: 5px
 }
 .post-title {
-  margin-bottom: 20px;
   font-size: 28px;
   line-height: 1.5;
 }
@@ -268,4 +267,25 @@ div, a {
   border-radius: 5px;
   font-weight: 600;
   font-size: 14px;
+}
+.main_sidebar {
+  display: block;
+  margin-top: 64px;
+  width: 268px;
+  background-color: white;
+  color: inherit;
+  z-index: 99;
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: calc(100% - 65px);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
 }

@@ -16,7 +16,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 	<?php while($this->next()): ?>
 		<div class="box shadow-sm border rounded bg-white mb-3" itemscope itemtype="http://schema.org/BlogPosting">
-			<div class="box-title border-bottom p-3">
+			<div class="box-title p-3">
 				<h1 itemprop="name headline" class="post-title">
 					<a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
 				</h1>
