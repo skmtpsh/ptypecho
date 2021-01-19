@@ -6,7 +6,7 @@
 
 <footer id="footer" role="contentinfo">
     &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
-    <?php _e('柚米专有'); ?>.
+    <?php _e('柚米版权所有'); ?>.
 </footer><!-- end #footer -->
 <?php $this->footer(); ?>
 </body>
