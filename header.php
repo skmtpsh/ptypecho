@@ -56,7 +56,6 @@
         <?php while($pages->next()): ?>
             <li>
                 <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
-                <?php endwhile; ?>
             </li>
         <?php endwhile; ?>
         </ul>
