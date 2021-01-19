@@ -32,7 +32,9 @@ a {
   color: #1e2022;
   text-decoration: none !important;
 }
-
+a:hover {
+  color: #3699ff;
+}
 div, a {
   outline: none !important;
 }
@@ -302,6 +304,7 @@ div, a {
 
 .sideNav li a {
   padding: 0 10px;
+  flex: 1;
   display: flex;
   position: relative;
   align-items: center;
@@ -310,17 +313,15 @@ div, a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 15px;
-  color: #6d6d6d;
-  color: #202124;
+  font-size: 16px;
+  color: #3f4254;
   transition: all .1s;
   border-radius: 8px;
-  letter-spacing: .01785714em
 }
 
 .sideNav li a:hover,.sideNav li a:focus {
-  background-color: #ededed;
-  background-color: #f1f3f4
+  /* background-color: #ededed;
+  background-color: #f1f3f4 */
 }
 
 .sideNav li.active a {

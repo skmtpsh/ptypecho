@@ -44,16 +44,6 @@
                         <span>Shop</span>
                     </a>
                 </li>
-                <li>
-                    <div class="symbol-light-primary">
-                        <span class="symbol-label">
-                            <i class="bi bi-toggles"></i>
-                        </span>
-                    </div>
-                    <a href="#">
-                        <span>Shop</span>
-                    </a>
-                </li>
             </ul>
         </div>
     </div>
