@@ -82,6 +82,4 @@
     <?php endif; ?>
 
 </aside>
-
-
-</div><!-- end #sidebar -->
+<!-- end #sidebar -->
