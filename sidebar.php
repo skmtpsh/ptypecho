@@ -54,7 +54,7 @@
 <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>
     <div class="box shadow-sm border rounded bg-white mb-3">
         <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('最近回复'); ?></h6></div>
-        <div class="box-body p-3">
+        <div class="p-3">
             <ul class="widget-list">
             <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
             <?php while($comments->next()): ?>
@@ -68,7 +68,7 @@
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowCategory', $this->options->sidebarBlock)): ?>
     <div class="box shadow-sm border rounded bg-white mb-3">
         <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('分类'); ?></h6></div>
-        <div class="box-body p-3">
+        <div class="p-3">
             <?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list'); ?>
         </div>
 	</div>
@@ -77,7 +77,7 @@
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowArchive', $this->options->sidebarBlock)): ?>
     <div class="box shadow-sm border rounded bg-white mb-3">
         <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('归档'); ?></h6></div>
-        <div class="box-body p-3">
+        <div class="p-3">
             <ul class="widget-list">
                 <?php $this->widget('Widget_Contents_Post_Date', 'type=month&format=F Y')
                 ->parse('<li><a href="{permalink}">{date}</a></li>'); ?>
@@ -89,7 +89,7 @@
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowOther', $this->options->sidebarBlock)): ?>
     <div class="box shadow-sm border rounded bg-white mb-3">
         <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('其它'); ?></h6></div>
-        <div class="box-body p-3">
+        <div class="p-3">
             <ul class="widget-list">
                 <?php if($this->user->hasLogin()): ?>
                     <li class="last"><a href="<?php $this->options->adminUrl(); ?>"><?php _e('进入后台'); ?> (<?php $this->user->screenName(); ?>)</a></li>
@@ -99,7 +99,7 @@
                 <?php endif; ?>
                 <li><a href="<?php $this->options->feedUrl(); ?>"><?php _e('文章 RSS'); ?></a></li>
                 <li><a href="<?php $this->options->commentsFeedUrl(); ?>"><?php _e('评论 RSS'); ?></a></li>
-                <li><a href="http://www.typecho.org">Typecho</a></li>
+                <!-- <li><a href="http://www.typecho.org">Typecho</a></li> -->
             </ul>
         </div>
 	</div>
