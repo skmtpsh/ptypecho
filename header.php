@@ -16,9 +16,8 @@
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.css">
     <link href="http://cdn.bootstrapmb.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>"> -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style/style.css'); ?>">
-
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('style/feather.css'); ?>">
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
     <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
