@@ -48,6 +48,9 @@ div, a {
   margin-right: -8px;
   margin-left: -8px;
 }
+.text-hover {
+  color: #3699ff !important;
+}
 
 .text-success {
   color: #00c9a7 !important;
