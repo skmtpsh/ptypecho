@@ -1,30 +1,25 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12 main_sidebar" >
+<aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12" >
     <div class="box mb-3 shadow-sm border rounded bg-white">
         <div class="sideNav">
             <ul>
                 <li>
                     <a href="#">
-                        <svg class="bi" width="32" height="32" fill="currentColor" style="color: #05b0ef;">
-                            <use xlink:href="bootstrap-icons.svg#heart-fill"/>
-                        </svg>
-                        <span>Feed </span>
+                        <i class="bi bi-heart-fill" style="font-size: 2rem; color: #05b0ef"></i>
+                        <span>Shop </span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <svg class="bi" width="32" height="32" fill="currentColor" style="color: cornflowerblue;">
-                            <use xlink:href="bootstrap-icons.svg#toggles"/>
-                        </svg>
-                        <span>Feed </span>
+                        <i class="bi bi-toggles" style="font-size: 2rem; color: #cornflowerblue"></i>
+
+                        <span>Bulue </span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <svg class="bi" width="32" height="32" fill="currentColor" style="color: #ff5504;">
-                            <use xlink:href="bootstrap-icons.svg#shop"/>
-                        </svg>
+                        <i class="bi bi-shop" style="font-size: 2rem; color: #ff5504"></i>
                         <span>Feed </span>
                     </a>
                 </li>
