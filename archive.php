@@ -20,7 +20,7 @@
     			</ul>
                 <div class="post-content" itemprop="articleBody">
                     <?php $this->excerpt(350, ''); ?>
-                    <p><a href="<?php $this->permalink() ?>">...阅读剩余部分</a></p>
+                    <p><a href="<?php $this->permalink() ?>">...阅读剩余</a></p>
                 </div>
     		</article>
     	<?php endwhile; ?>
