@@ -29,6 +29,7 @@ p {
 }
 /* End Top Nav */
 a {
+  color: #1e2022;
   text-decoration: none !important;
 }
 
@@ -256,7 +257,15 @@ div, a {
   margin-left: 4px
 }
 .box-body {
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.8;
   color: #6d6d6d;
+  text-indent: 2em;
+}
+.nav-item {
+  color: #1a73e8;
+  padding: 6px 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
 }

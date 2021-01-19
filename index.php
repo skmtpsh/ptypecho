@@ -24,27 +24,27 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 			<div class="post-state">
 				<div class="post-state-btns" itemprop="author" itemscope itemtype="http://schema.org/Person">
 					<!-- <?php _e('作者: '); ?> -->
-					<i class="feather-cpu"></i>
+					<i class="bi bi-person"></i>
 					<span><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
 				</div>
 				<div class="post-state-btns">
 					<!-- <?php _e('时间: '); ?> -->
-					<i class="feather-rewind"></i>
+					<i class="bi bi-alarm"></i>
 					<span><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></span>
 				</div>
 				<div class="post-state-btns">
-					<i class="feather-link"></i>
+					<i class="bi bi-list"></i>
 					<!-- <?php _e('分类: '); ?> -->
 					<span><?php $this->category(','); ?> </span>
 				</div>
 				<div class="post-state-btns" temprop="interactionCount">
-					<a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a>
-					<i class="feather-hard-drive"></i>13 <span>Saved </span>
+					<i class="bi bi-menu-up"></i>
+					<span><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></span>
 				</div>
 			</div>
 			<div class="box-body p-3" itemprop="articleBody">
 				<?php $this->excerpt(350, ''); ?>
-				<p><a href="<?php $this->permalink() ?>">...阅读剩余部分</a></p>
+				<p><a href="<?php $this->permalink() ?>">...阅读全部</a></p>
 			</div>
 
 		</div>
