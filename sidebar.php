@@ -42,7 +42,7 @@
 <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
     <div class="box shadow-sm border rounded bg-white mb-3">
         <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('最新文章'); ?></h6></div>
-        <div class="box-body p-3">
+        <div class="p-3">
             <ul class="widget-list">
                 <?php $this->widget('Widget_Contents_Post_Recent')
                 ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>

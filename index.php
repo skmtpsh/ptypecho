@@ -22,14 +22,14 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				</h1>
 			</div>
 			<div class="post-state">
-				<div class="post-state-btns" itemprop="author" itemscope itemtype="http://schema.org/Person">
+				<!-- <div class="post-state-btns" itemprop="author" itemscope itemtype="http://schema.org/Person">
 					<?php _e('作者: '); ?>
 					<i class="bi bi-person"></i>
 					<span><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
-				</div>
+				</div> -->
 				<div class="post-state-btns">
-					<?php _e('时间: '); ?>
 					<i class="bi bi-alarm"></i>
+					<?php _e('时间: '); ?>
 					<span><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></span>
 				</div>
 				<div class="post-state-btns">
