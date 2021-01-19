@@ -23,15 +23,19 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 			</div>
 			<div class="post-state">
 				<div class="post-state-btns" itemprop="author" itemscope itemtype="http://schema.org/Person">
-					<?php _e('作者: '); ?><span><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
+					<!-- <?php _e('作者: '); ?> -->
+					<i class="feather-cpu"></i>
+					<span><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
 				</div>
 				<div class="post-state-btns">
-					<?php _e('时间: '); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
-					<i class="feather-rewind"></i>18 <span>Coments</span>
+					<!-- <?php _e('时间: '); ?> -->
+					<i class="feather-rewind"></i>
+					<span><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></span>
 				</div>
 				<div class="post-state-btns">
-					<?php _e('分类: '); ?><?php $this->category(','); ?>
-					<i class="feather-link"></i>193 <span>Shared </span>
+					<i class="feather-link"></i>
+					<!-- <?php _e('分类: '); ?> -->
+					<span><?php $this->category(','); ?> </span>
 				</div>
 				<div class="post-state-btns" temprop="interactionCount">
 					<a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a>

@@ -255,3 +255,8 @@ div, a {
 .post-state .post-state-btns span {
   margin-left: 4px
 }
+.box-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6d6d6d;
+}
