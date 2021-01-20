@@ -285,14 +285,38 @@ div, a {
   padding: 0;
   list-style-type: none;
   margin: 0;
-  border-bottom: 1px solid rgba(0,0,0,0.12);
+  /* border-bottom: 1px solid rgba(0,0,0,0.12); */
   margin-bottom: 12px;
   margin-left: 8px;
   margin-right: 10px;
 }
 .sideNav .symbol-label {
-  width: 44px;
-  height: 44px;
+  display: flex;
+  height: 36px;
+  width: 36px;
+  justify-content: center;
+  align-items: center;
+}
+.symbol-label .s_default{
+  background-color: #e1f0ff;
+}
+.symbol-label .s_travel{
+  background-color: #d1d3e0;
+}
+.symbol-label .s_culture{
+  background-color: #fff4de;
+}
+.symbol-label .s_funny{
+  background-color: #c9f7f5;
+}
+.symbol-label .s_rest{
+  background-color: #f3f6f9;
+}
+.symbol-label .s_navel{
+  background-color: #e1f0ff;
+}
+.symbol-label .s_movie{
+  background-color: #ffe2e5;
 }
 .sideNav ul {
   padding: 0
@@ -306,12 +330,12 @@ div, a {
 }
 
 .sideNav li a {
-  padding: 0 10px;
+  /* padding: 0 10px; */
   flex: 1;
   display: flex;
   position: relative;
   align-items: center;
-  line-height: 50px;
+  /* line-height: 50px; */
   font-weight: 600;
   overflow: hidden;
   white-space: nowrap;
@@ -348,8 +372,8 @@ div, a {
 
 .sideNav li a img {
   margin-right: 15px;
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
   border-radius: 5px
 }
 .post-title {
