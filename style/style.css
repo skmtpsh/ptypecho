@@ -305,12 +305,12 @@ div, a {
   justify-content: center
 }
 .post-state .post-state-btns:hover i {
-  color: #007bff;
+  /* color: #007bff; */
 }
 .post-state .post-state-btns a {
   color: #8a9aa9;
 }
-.post-state .post-state-btns a:hover {
+.post-state .post-state-btns a:hover， .post-state .post-state-btns a.active {
   color: #007bff;
 }
 .post-state .post-state-btns i {

@@ -40,7 +40,7 @@
                     </div>
                     <div class="post-state-btns" temprop="interactionCount">
                         <i class="bi bi-chat-right-text"></i>
-                        <span><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></span>
+                        <span><a itemprop="discussionUrl" class="active" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></span>
                     </div>
                 </div>
                 <div class="box-body p-3" itemprop="articleBody">
