@@ -44,7 +44,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 			</div>
 			<div class="box-body p-3" itemprop="articleBody">
 				<?php $this->excerpt(350, '...'); ?>
-				<p class="text-right"><a href="<?php $this->permalink() ?>" class="text-hover">阅读全部</a></p>
+				<p class="text-right"><a href="<?php $this->permalink() ?>" class="text-danger">阅读全部</a></p>
 			</div>
 
 		</div>
