@@ -9,7 +9,9 @@
                 <?php while($categorys->next()): ?>
                     <li>
                         <a href="<?php $categorys->permalink(); ?>">
-                            <span class="symbol-label"><i class="bi bi-toggles"></i></span>
+                            <span class="symbol-label">
+                                <img src="<?php $this->options->themeUrl('img/'. $this->slug .'.svg'); ?>" />
+                            </span>
                             <?php $categorys->name(); ?>
                         </a>
                     </li>
