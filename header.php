@@ -22,7 +22,7 @@
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
     <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <link rel="icon" href="<?php $this->options->themeUrl('img/favicon.ico'); ?>">
+    <link rel="icon" href="<?php $this->options->themeUrl('img/favicons.ico'); ?>">
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>
@@ -30,9 +30,9 @@
 <!--[if lt IE 8]>
     <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.</div>
 <![endif]-->
-<nav id="Header" class="navbar navbar-expand p-0 osahan-nav-top fixed-top">
+<nav id="Header" class="navbar navbar-expand p-1 osahan-nav-top fixed-top ">
     <div class="container">
-      <a href="<?php $this->options->siteUrl(); ?>" class="navbar-brand mr-2"><img src="<?php $this->options->themeUrl('img/logo.png'); ?>" width="40" /></a>
+      <a href="<?php $this->options->siteUrl(); ?>" class="navbar-brand mr-2"><img src="<?php $this->options->themeUrl('img/logo.png'); ?>" /></a>
       <form id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search" class="d-none d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-search">
         <div class="input-group">
           <label for="s" class="sr-only"><?php _e('输入关键字搜索'); ?></label>
