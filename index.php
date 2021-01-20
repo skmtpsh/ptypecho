@@ -28,23 +28,23 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 					<span><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
 				</div> -->
 				<div class="post-state-btns">
-					<i class="bi bi-alarm"></i>
+					<i class="bi bi-calendar2-event"></i>
 					<?php _e('时间: '); ?>
 					<span><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></span>
 				</div>
 				<div class="post-state-btns">
-					<i class="bi bi-list"></i>
+					<i class="bi bi-card-list"></i>
 					<?php _e('分类: '); ?>
 					<span><?php $this->category(','); ?> </span>
 				</div>
 				<div class="post-state-btns" temprop="interactionCount">
-					<i class="bi bi-menu-up"></i>
+					<i class="bi bi-chat-right-text"></i>
 					<span><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></span>
 				</div>
 			</div>
 			<div class="box-body p-3" itemprop="articleBody">
 				<?php $this->excerpt(350, '...'); ?>
-				<p class="text-light"><a href="<?php $this->permalink() ?>" class="text-hover">阅读全部</a></p>
+				<p class="text-right"><a href="<?php $this->permalink() ?>" class="text-hover">阅读全部</a></p>
 			</div>
 
 		</div>

@@ -90,7 +90,13 @@
     <div class="box shadow-sm border rounded bg-white mb-3">
         <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('分类'); ?></h6></div>
         <div class="p-3">
-            <?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list'); ?>
+            <ul class="widget-list">
+                <?php $this->widget('Widget_Metas_Category_List')->to($categorys); ?>
+                <?php while($categorys->next()): ?>
+                    <li><a href="<?php $categorys->permalink(); ?>"> <?php $categorys->name(); ?></li>
+                <?php endwhile; ?>
+            </ul>
+            <!-- <?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list'); ?> -->
         </div>
 	</div>
     <?php endif; ?>
