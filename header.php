@@ -48,13 +48,14 @@
         <li class="nav-item">
             <a<?php if($this->is('index')): ?> class="nav-link" <?php endif; ?> href="<?php $this->options->siteUrl(); ?>">
                 <i class="feather-briefcase mr-2"></i>
-                <span class="d-none d-lg-inline"><?php _e('首页'); ?></span>
+                <span class="d-none d-lg-inline"><?php _e('主页'); ?></span>
             </a>
         </li>
         <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
         <?php while($pages->next()): ?>
             <li>
-                <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
+            <!-- <?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> -->
+                <a class="nav-link" href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
             </li>
         <?php endwhile; ?>
         </ul>
