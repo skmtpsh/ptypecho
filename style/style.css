@@ -297,6 +297,7 @@ div, a {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+  color: #fff;
 }
 .symbol-label.s_default{
   background-color: #e1f0ff;

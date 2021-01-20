@@ -11,7 +11,10 @@
                     <li>
                         <a <?php if($this->is('categorys', $categorys->slug)): ?> class="current"<?php endif; ?> href="<?php $categorys->permalink(); ?>">
                             <span class="symbol-label s_<?php $categorys->slug(); ?>">
-                                <img src="<?php $this->options->themeUrl('img/'); ?><?php $categorys->slug(); ?>.svg" />
+                                <!-- <img src="<?php $this->options->themeUrl('img/'); ?><?php $categorys->slug(); ?>.svg" /> -->
+                                <svg class="bi" width="32" height="32" fill="currentColor">
+                                    <use xlink:href="bootstrap-icons.svg#<?php $categorys->slug(); ?>"/>
+                                </svg>
                             </span>
 
                             <?php $categorys->name(); ?>
