@@ -39,7 +39,7 @@
             <?php $this->content(); ?>
             <p> text post.php</p>
         </div>
-        <p itemprop="keywords" class="tags">
+        <p itemprop="keywords" class="tags p-4">
             <?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?>
         </p>
     </article>

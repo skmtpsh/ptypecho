@@ -149,7 +149,7 @@ div, a {
 /* End Card Design */
 /* Tab Design */
 .osahan-line-tab .nav-link {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   padding: 1rem!important;
   color: #888da8;
@@ -343,4 +343,18 @@ ul li {
 }
 #body {
   margin-top: 60px;
+}
+.tags a {
+  color: #fff;
+  background-color: #007bff;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 4px;
+  margin: 5px;
 }
