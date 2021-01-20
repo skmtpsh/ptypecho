@@ -12,6 +12,8 @@
                             <span class="symbol-label">
                                 <img src="<?php $this->options->themeUrl('img/'. $categorys->slug() .'.svg'); ?>" />
                             </span>
+                            <?php $categorys ?>
+                            <?php $categorys->slug(); ?>
                             <?php $categorys->name(); ?>
                         </a>
                     </li>
