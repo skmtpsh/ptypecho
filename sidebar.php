@@ -14,8 +14,10 @@
                                 <!-- <img src="<?php $this->options->themeUrl('img/'); ?><?php $categorys->slug(); ?>.svg" /> -->
                                 <i class="bi bi-<?php $categorys->slug(); ?>"></i>
                             </span>
-
-                            <?php $categorys->name(); ?>
+                            <div class="symbol-desc">
+                                <span class="tit"><?php $categorys->name(); ?></span>
+                                <span class="desc"><?php $categorys->description(); ?></span>
+                            </div>
                         </a>
                     </li>
                 <?php endwhile; ?>

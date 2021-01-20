@@ -297,7 +297,10 @@ div, a {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
-  color: #fff;
+  /* color: #fff; */
+}
+.sideNav .symbol-desc {
+  flex: 1;
 }
 .symbol-label.s_instagram {
   background-color: #ffe2e5;
@@ -382,8 +385,8 @@ div, a {
 }
 
 .sideNav li a i {
-  margin-right: 22px;
-  font-size: 17px
+  /* margin-right: 22px;
+  font-size: 17px */
 }
 
 .sideNav li a img {
