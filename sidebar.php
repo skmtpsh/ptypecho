@@ -10,10 +10,10 @@
 
                     <li>
                         <a <?php if($this->is('categorys', $categorys->slug)): ?> class="current"<?php endif; ?> href="<?php $categorys->permalink(); ?>">
-                            <span class="symbol-label s_<?php $categorys->slug(); ?>">
+                            <div class="symbol-label s_<?php $categorys->slug(); ?>">
                                 <!-- <img src="<?php $this->options->themeUrl('img/'); ?><?php $categorys->slug(); ?>.svg" /> -->
                                 <i class="bi bi-<?php $categorys->slug(); ?>"></i>
-                            </span>
+                            </div>
                             <div class="symbol-desc">
                                 <span class="tit"><?php $categorys->name(); ?></span>
                                 <span class="desc"><?php $categorys->description(); ?></span>
