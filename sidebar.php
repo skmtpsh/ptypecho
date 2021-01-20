@@ -12,54 +12,11 @@
                             <span class="symbol-label">
                                 <img src="<?php $this->options->themeUrl('img/'); ?><?php $categorys->slug(); ?>.svg" />
                             </span>
-                            <?php $categorys->slug(); ?>
                             <?php $categorys->name(); ?>
                         </a>
                     </li>
                 <?php endwhile; ?>
             </ul>
-            <!-- <ul>
-                <li>
-                    <div class="symbol symbol-light-info">
-                        <span class="symbol-label">
-                            <i class="bi bi-toggles"></i>
-                        </span>
-                    </div>
-                    <a href="#">
-                        <span>Shop</span>
-                    </a>
-                </li>
-                <li>
-                    <div class="symbol symbol-light-warning">
-                        <span class="symbol-label">
-                            <i class="bi bi-toggles"></i>
-                        </span>
-                    </div>
-                    <a href="#">
-                        <span>Shop</span>
-                    </a>
-                </li>
-                <li>
-                    <div class="symbol symbol-light-success">
-                        <span class="symbol-label">
-                            <i class="bi bi-toggles"></i>
-                        </span>
-                    </div>
-                    <a href="#">
-                        <span>Shop</span>
-                    </a>
-                </li>
-                <li>
-                    <div class="symbol symbol-light-danger">
-                        <span class="symbol-label">
-                            <i class="bi bi-toggles"></i>
-                        </span>
-                    </div>
-                    <a href="#">
-                        <span>Shop</span>
-                    </a>
-                </li>
-            </ul> -->
         </div>
     </div>
     <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
@@ -103,14 +60,14 @@
     </div>
     <?php endif; ?>
 
-    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowCategory', $this->options->sidebarBlock)): ?>
+    <!-- <?php if (!empty($this->options->sidebarBlock) && in_array('ShowCategory', $this->options->sidebarBlock)): ?>
     <div class="box shadow-sm border rounded bg-white mb-3">
         <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('分类'); ?></h6></div>
         <div class="p-3">
             <?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list'); ?>
         </div>
 	</div>
-    <?php endif; ?>
+    <?php endif; ?> -->
 
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowArchive', $this->options->sidebarBlock)): ?>
     <div class="box shadow-sm border rounded bg-white mb-3">
