@@ -10,9 +10,8 @@
                     <li>
                         <a href="<?php $categorys->permalink(); ?>">
                             <span class="symbol-label">
-                                <img src="<?php $this->options->themeUrl('img/'. $categorys->slug() .'.svg'); ?>" />
+                                <img src="<?php $this->options->themeUrl('img/'); ?><?php $categorys->slug(); ?>.svg" />
                             </span>
-                            <?php $categorys ?>
                             <?php $categorys->slug(); ?>
                             <?php $categorys->name(); ?>
                         </a>
