@@ -296,6 +296,7 @@ div, a {
   width: 36px;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
 }
 .symbol-label.s_default{
   background-color: #e1f0ff;
@@ -331,6 +332,7 @@ div, a {
 
 .sideNav li a {
   /* padding: 0 10px; */
+  margin: 6px 10px;
   flex: 1;
   display: flex;
   position: relative;
@@ -341,14 +343,15 @@ div, a {
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 16px;
-  color: #3f4254;
+  color: #3e2903;
   transition: all .1s;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 
 .sideNav li a:hover,.sideNav li a:focus {
   /* background-color: #ededed;
   background-color: #f1f3f4 */
+  color: #1a73e8;
 }
 
 .sideNav li.active a {
@@ -371,10 +374,10 @@ div, a {
 }
 
 .sideNav li a img {
-  margin-right: 15px;
+  /* margin-right: 15px; */
   width: 20px;
   height: 20px;
-  border-radius: 5px
+  /* border-radius: 5px */
 }
 .post-title {
   font-size: 20px;
