@@ -31,11 +31,13 @@
                 <span><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></span>
             </div>
         </div>
-        <div class="box-body p-3" itemprop="articleBody">
+        <div class="box-body p-4" itemprop="articleBody">
             <?php $this->content(); ?>
             <p> text post.php</p>
         </div>
-        <p itemprop="keywords" class="tags"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></p>
+        <p itemprop="keywords" class="tags">
+            <?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?>
+        </p>
     </article>
 
     <?php $this->need('comments.php'); ?>

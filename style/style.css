@@ -299,11 +299,23 @@ div, a {
   margin-right: 10px;
   color: #fff;
 }
-.symbol-label.s_default{
-  background-color: #e1f0ff;
+.symbol-label.s_instagram {
+  background-color: #ffe2e5;
 }
-.symbol-label.s_travel{
+.symbol-label.s_instagram i {
+  color: #f64e60 !important;
+}
+.symbol-label.s_music-note-list{
+  background-color: #fff4de;
+}
+.symbol-label.s_music-note-list i {
+  color: #ffa800 !important;
+}
+.symbol-label.s_newspaper {
   background-color: #d1d3e0;
+}
+.symbol-label.s_newspaper i {
+  color: #181c32;
 }
 .symbol-label.s_culture{
   background-color: #fff4de;
