@@ -1,9 +1,21 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
 <aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12" >
+
     <div class="box mb-3 shadow-sm border rounded bg-white">
         <div class="sideNav">
             <ul>
+                <?php $this->widget('Widget_Metas_Category_List')->to($categorys); ?>
+                <?php while($categorys->next()): ?>
+                    <li>
+                        <a href="<?php $categorys->permalink(); ?>">
+                            <span class="symbol-label"><i class="bi bi-toggles"></i></span>
+                            <?php $categorys->name(); ?>
+                        </a>
+                    </li>
+                <?php endwhile; ?>
+            </ul>
+            <!-- <ul>
                 <li>
                     <div class="symbol symbol-light-info">
                         <span class="symbol-label">
@@ -44,7 +56,7 @@
                         <span>Shop</span>
                     </a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </div>
     <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
@@ -72,14 +84,16 @@
     </div>
 <?php endif; ?>
 
-<?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>
     <div class="box shadow-sm border rounded bg-white mb-3">
         <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('最近回复'); ?></h6></div>
         <div class="p-3">
             <ul class="widget-list">
             <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
             <?php while($comments->next()): ?>
-                <li><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(35, '...'); ?></li>
+                <li>
+                    <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(35, '...'); ?>
+                </li>
             <?php endwhile; ?>
             </ul>
         </div>
@@ -90,13 +104,7 @@
     <div class="box shadow-sm border rounded bg-white mb-3">
         <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('分类'); ?></h6></div>
         <div class="p-3">
-            <ul class="widget-list">
-                <?php $this->widget('Widget_Metas_Category_List')->to($categorys); ?>
-                <?php while($categorys->next()): ?>
-                    <li><a href="<?php $categorys->permalink(); ?>"> <?php $categorys->name(); ?></li>
-                <?php endwhile; ?>
-            </ul>
-            <!-- <?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list'); ?> -->
+            <?php $this->widget('Widget_Metas_Category_List')->listCategories('wrapClass=widget-list'); ?>
         </div>
 	</div>
     <?php endif; ?>
