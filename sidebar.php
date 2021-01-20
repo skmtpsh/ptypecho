@@ -7,14 +7,17 @@
             <ul>
                 <?php $this->widget('Widget_Metas_Category_List')->to($categorys); ?>
                 <?php while($categorys->next()): ?>
+                    <?php int i = 0 ?>
                     <li>
-                        <a href="<?php $categorys->permalink(); ?>">
-                            <span class="symbol-label">
+                        <a <?php if($this->is('categorys', $categorys->slug)): ?> class="current"<?php endif; ?> href="<?php $categorys->permalink(); ?>">
+                            <span class="symbol-label sym<?php i ?>">
                                 <img src="<?php $this->options->themeUrl('img/'); ?><?php $categorys->slug(); ?>.svg" />
                             </span>
+
                             <?php $categorys->name(); ?>
                         </a>
                     </li>
+                    <?php i++ ?>
                 <?php endwhile; ?>
             </ul>
         </div>

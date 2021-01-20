@@ -32,7 +32,7 @@
 <![endif]-->
 <nav id="Header" class="navbar navbar-expand p-1 osahan-nav-top fixed-top ">
     <div class="container">
-      <a href="<?php $this->options->siteUrl(); ?>" class="navbar-brand mr-2"><img src="<?php $this->options->themeUrl('img/logo.png'); ?>" /></a>
+      <a href="<?php $this->options->siteUrl(); ?>" class="navbar-brand mr-lg-2"><img src="<?php $this->options->themeUrl('img/logo.png'); ?>" /></a>
       <form id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search" class="d-none d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-search">
         <div class="input-group">
           <label for="s" class="sr-only"><?php _e('输入关键字搜索'); ?></label>
