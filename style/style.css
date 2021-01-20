@@ -310,7 +310,7 @@ div, a {
 .post-state .post-state-btns a {
   color: #8a9aa9;
 }
-.post-state .post-state-btns a:hover， .post-state .post-state-btns.active, .post-state .post-state-btns.active a {
+.post-state .post-state-btns a:hover, .post-state .post-state-btns.active, .post-state .post-state-btns.active a {
   color: #007bff;
 }
 .post-state .post-state-btns i {
