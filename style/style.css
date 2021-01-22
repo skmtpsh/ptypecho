@@ -360,3 +360,7 @@ ul li {
   border-radius: 4px;
   margin: 5px;
 }
+#footer {
+  padding: 20px 0;
+  text-align: center;
+}

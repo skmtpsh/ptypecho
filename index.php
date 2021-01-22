@@ -22,7 +22,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				</h1>
 			</div>
 			<div class="box-body p-3" itemprop="articleBody">
-				<?php $this->excerpt(350, '...'); ?>
+				<?php $this->excerpt(200, '...'); ?>
 				<p class="text-right"><a href="<?php $this->permalink() ?>" class="text-danger">阅读全部</a></p>
 			</div>
 			<div class="post-state">
