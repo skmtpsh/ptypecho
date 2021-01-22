@@ -21,6 +21,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 					<a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
 				</h1>
 			</div>
+			<div class="box-body p-3" itemprop="articleBody">
+				<?php $this->excerpt(350, '...'); ?>
+				<p class="text-right"><a href="<?php $this->permalink() ?>" class="text-danger">阅读全部</a></p>
+			</div>
 			<div class="post-state">
 				<!-- <div class="post-state-btns" itemprop="author" itemscope itemtype="http://schema.org/Person">
 					<?php _e('作者: '); ?>
@@ -42,11 +46,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 					<span><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></span>
 				</div>
 			</div>
-			<div class="box-body p-3" itemprop="articleBody">
-				<?php $this->excerpt(350, '...'); ?>
-				<p class="text-right"><a href="<?php $this->permalink() ?>" class="text-danger">阅读全部</a></p>
-			</div>
-
 		</div>
 	<?php endwhile; ?>
 	<?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
