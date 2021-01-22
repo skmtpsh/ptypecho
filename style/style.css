@@ -375,3 +375,15 @@ ul li {
   padding: 20px 0;
   text-align: center;
 }
+.widget-reply-list {
+}
+.widget-reply-list li {
+  display: flex;
+}
+.widget-reply-list li .avator {
+  width: 0;
+}
+.widget-reply-list li .reply {}
+.widget-reply-list li .reply p {  }
+.widget-reply-list li .reply .author {}
+.widget-reply-list li .reply .desc {}

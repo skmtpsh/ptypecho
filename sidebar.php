@@ -53,11 +53,15 @@
     <div class="box shadow-sm border rounded bg-white mb-3">
         <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('最近回复'); ?></h6></div>
         <div class="p-3">
-            <ul class="widget-list">
+            <ul class="widget-reply-list">
             <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
             <?php while($comments->next()): ?>
                 <li>
-                    <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(35, '...'); ?>
+                    <div class="avator"></div>
+                    <div class="reply">
+                        <p class="author"><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a></p>
+                        <p class="desc"><?php $comments->excerpt(35, '...'); ?></p>
+                    </div>
                 </li>
             <?php endwhile; ?>
             </ul>
