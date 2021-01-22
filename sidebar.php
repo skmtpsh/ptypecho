@@ -59,7 +59,10 @@
                 <li>
                     <div class="avator"></div>
                     <div class="reply">
-                        <p class="author"><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a></p>
+                        <p class="author">
+                            <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>
+                            <br /><?php $comments->date(); ?>
+                        </p>
                         <p class="desc"><?php $comments->excerpt(35, '...'); ?></p>
                     </div>
                 </li>

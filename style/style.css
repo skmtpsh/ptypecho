@@ -379,11 +379,15 @@ ul li {
 }
 .widget-reply-list li {
   display: flex;
+  border-bottom: #f3f3f3;
+}
+.widget-reply-list li:last-of-type {
+  border-bottom: none;
 }
 .widget-reply-list li .avator {
   width: 0;
 }
 .widget-reply-list li .reply {}
-.widget-reply-list li .reply p {  }
+.widget-reply-list li .reply p { margin-bottom: 10px; }
 .widget-reply-list li .reply .author {}
-.widget-reply-list li .reply .desc {}
+.widget-reply-list li .reply .desc { color:#6d6d6d; line-height: 1.5; }
