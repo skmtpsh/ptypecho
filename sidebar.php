@@ -61,7 +61,7 @@
                     <div class="reply">
                         <p class="author">
                             <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>
-                            <br /><?php $comments->date(); ?>
+                            <br /><?php $comments->date('Y-m-d H:i:s'); ?>
                         </p>
                         <p class="desc"><?php $comments->excerpt(35, '...'); ?></p>
                     </div>
