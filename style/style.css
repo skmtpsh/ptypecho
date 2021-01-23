@@ -209,10 +209,10 @@ div, a {
 .symbol-label.s_newspaper i {
   color: #00c9a7;
 }
-.symbol-label.speaker-fill {
+.symbol-label.s_speaker-fill {
   background-color: #ffbe93;
 }
-.symbol-label.speaker-fill i {
+.symbol-label.s_speaker-fill i {
   color: #ff9100;
 }
 .sideNav ul {
@@ -397,3 +397,17 @@ ul li {
 .widget-reply-list li .reply p { margin-bottom: 10px; }
 .widget-reply-list li .reply .author {color: #333;}
 .widget-reply-list li .reply .desc { color:#6d6d6d; line-height: 1.5; }
+
+.link-btn.link-home { background-color: #f05454; }
+.link-btn {
+  border: 1px solid #f05454;
+  border-radius: 2px;
+  transition: opacity .2s;
+  position: relative;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+  white-space: nowrap;
+  padding: 5px 13px;
+  color: #f05454;
+}

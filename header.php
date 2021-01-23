@@ -46,7 +46,7 @@
       </form>
         <ul class="navbar-nav ml-auto d-flex align-items-center">
         <li class="nav-item">
-            <a<?php if($this->is('index')): ?> class="nav-link" <?php endif; ?> href="<?php $this->options->siteUrl(); ?>">
+            <a<?php if($this->is('index')): ?> class="link-btn link-home" <?php endif; ?> href="<?php $this->options->siteUrl(); ?>">
                 <i class="bi bi-house"></i>
                 <span class="d-none d-lg-inline"><?php _e('主页'); ?></span>
             </a>
@@ -55,7 +55,7 @@
         <?php while($pages->next()): ?>
             <li class="nav-item">
             <!-- <?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> -->
-                <a class="nav-link" href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
+                <a class="link-btn" href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
             </li>
         <?php endwhile; ?>
         </ul>
