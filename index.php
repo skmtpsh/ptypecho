@@ -16,6 +16,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 	<?php while($this->next()): ?>
 		<div class="box shadow-sm border rounded bg-white mb-3" itemscope itemtype="http://schema.org/BlogPosting">
+			<div class="post-state-btns" itemprop="author" itemscope itemtype="http://schema.org/Person">
+				<?php _e('作者: '); ?>
+				<span><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
+			</div>
 			<div class="box-title pp-3">
 				<h1 itemprop="name headline" class="post-title">
 					<a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
@@ -26,11 +30,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<p class="text-right"><a href="<?php $this->permalink() ?>" class="text-danger">阅读全部</a></p>
 			</div>
 			<div class="post-state">
-				<!-- <div class="post-state-btns" itemprop="author" itemscope itemtype="http://schema.org/Person">
-					<?php _e('作者: '); ?>
-					<i class="bi bi-person"></i>
-					<span><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
-				</div> -->
 				<div class="post-state-btns">
 					<i class="bi bi-calendar2-event"></i>
 					<?php _e('时间: '); ?>
