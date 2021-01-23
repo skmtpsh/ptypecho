@@ -20,7 +20,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<h1 itemprop="name headline" class="post-title">
 					<a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
 				</h1>
-				<p class="post-state-btns" itemprop="author" itemscope itemtype="http://schema.org/Person">
+				<p class="post-state-btns text-right" itemprop="author" itemscope itemtype="http://schema.org/Person">
 					<?php _e('作者: '); ?>
 					<span><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
 				</p>

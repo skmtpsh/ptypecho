@@ -6,7 +6,7 @@ body {
 
 p {
   color: #888da8;
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px !important;
 }
 .pp-3 {
   padding: 1rem 1rem 0;
