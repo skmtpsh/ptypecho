@@ -16,14 +16,14 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 	<?php while($this->next()): ?>
 		<div class="box shadow-sm border rounded bg-white mb-3" itemscope itemtype="http://schema.org/BlogPosting">
-			<div class="post-state-btns" itemprop="author" itemscope itemtype="http://schema.org/Person">
-				<?php _e('作者: '); ?>
-				<span><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
-			</div>
 			<div class="box-title pp-3">
 				<h1 itemprop="name headline" class="post-title">
 					<a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
 				</h1>
+				<p class="post-state-btns" itemprop="author" itemscope itemtype="http://schema.org/Person">
+					<?php _e('作者: '); ?>
+					<span><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
+				</p>
 			</div>
 			<div class="box-body pp-3" itemprop="articleBody">
 				<?php $this->excerpt(150, '...'); ?>
