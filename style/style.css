@@ -209,6 +209,12 @@ div, a {
 .symbol-label.s_newspaper i {
   color: #00c9a7;
 }
+.symbol-label.speaker-fill {
+  background-color: #ffbe93;
+}
+.symbol-label.speaker-fill i {
+  color: #ff9100;
+}
 .sideNav ul {
   padding: 0
 }
