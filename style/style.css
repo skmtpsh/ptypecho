@@ -33,7 +33,7 @@ a {
   text-decoration: none !important;
 }
 a:hover {
-  color: #3699ff;
+  color: #f77800;
 }
 div, a {
   outline: none !important;
@@ -410,4 +410,7 @@ ul li {
   white-space: nowrap;
   padding: 5px 13px;
   color: #f05454;
+}
+a.link-btn {
+  color: #fff;
 }
