@@ -5,9 +5,15 @@ body {
 }
 
 p {
-  color: #888da8
+  color: #888da8;
+  /* margin-bottom: 10px; */
 }
-
+.p-3 {
+  padding: 1rem 1rem 0;
+}
+.box-title {
+  /* padding: 1rem 1rem 0; */
+}
 /* Top Nav */
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255,255,255,.8);
