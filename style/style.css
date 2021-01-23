@@ -210,7 +210,7 @@ div, a {
   color: #00c9a7;
 }
 .symbol-label.s_speaker-fill {
-  background-color: #ffbe93;
+  background-color: #ffe4d3;
 }
 .symbol-label.s_speaker-fill i {
   color: #ff9100;
@@ -224,7 +224,7 @@ div, a {
   width: 100%;
   height: auto;
   position: relative;
-  padding: 20px 0;
+  padding: 6px 0;
   /* background: #f2f2f2; */
   border-bottom: 1px solid #ffe4e5;
 }
@@ -253,11 +253,11 @@ div, a {
 .sideNav li a:hover,.sideNav li a:focus {
   /* background-color: #ededed;
   background-color: #f1f3f4 */
-  color: #1a73e8;
+  color: #ff9100;
 }
 
 .sideNav li.active a {
-  color: #1a73e8;
+  color: #ff9100;
   background-color: #e8f0fe
 }
 
@@ -345,12 +345,12 @@ div, a {
   text-indent: 2em;
 }
 .nav-item {
-  color: #1a73e8;
+  color: #ff9100;
   padding: 3px 8px;
   /* border-radius: 5px; */
   /* font-weight: 600; */
   font-size: 16px;
-  /* border: 1px solid #3699ff; */
+  /* border: 1px solid #ff9100; */
 }
 
 * {
@@ -365,7 +365,7 @@ ul li {
 }
 .tags a {
   color: #fff;
-  background-color: #007bff;
+  background-color: #ff9100;
   display: inline-block;
   padding: 5px 10px;
   font-size: 14px;
@@ -409,7 +409,7 @@ ul li {
   margin: 0;
   white-space: nowrap;
   padding: 5px 13px;
-  color: #f77800;
+  color: #f05454;
 }
 a.link-home {
   color: #fff;
