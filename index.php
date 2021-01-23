@@ -16,12 +16,12 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 	<?php while($this->next()): ?>
 		<div class="box shadow-sm border rounded bg-white mb-3" itemscope itemtype="http://schema.org/BlogPosting">
-			<div class="box-title">
+			<div class="box-title pp-3">
 				<h1 itemprop="name headline" class="post-title">
 					<a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
 				</h1>
 			</div>
-			<div class="box-body p-3" itemprop="articleBody">
+			<div class="box-body pp-3" itemprop="articleBody">
 				<?php $this->excerpt(150, '...'); ?>
 				<p class="text-right"><a href="<?php $this->permalink() ?>" class="text-danger">阅读全部</a></p>
 			</div>
