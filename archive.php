@@ -22,6 +22,11 @@
     				<li><?php _e('分类: '); ?><?php $this->category(','); ?></li>
                     <li itemprop="interactionCount"><a href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></li>
                 </ul> -->
+                <div class="box-body p-3" itemprop="articleBody">
+                    <?php $this->excerpt(350, '...'); ?>
+                    <p class="text-right"><a href="<?php $this->permalink() ?>" class="text-danger">阅读全部</a></p>
+                    <p> text archive.php</p>
+                </div>
                 <div class="post-state">
                     <!-- <div class="post-state-btns" itemprop="author" itemscope itemtype="http://schema.org/Person">
                         <?php _e('作者: '); ?>
@@ -42,11 +47,6 @@
                         <i class="bi bi-chat-right-text"></i>
                         <span><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></span>
                     </div>
-                </div>
-                <div class="box-body p-3" itemprop="articleBody">
-                    <?php $this->excerpt(350, '...'); ?>
-                    <p class="text-right"><a href="<?php $this->permalink() ?>" class="text-danger">阅读全部</a></p>
-                    <p> text archive.php</p>
                 </div>
     		</article>
     	<?php endwhile; ?>
