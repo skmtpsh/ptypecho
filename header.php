@@ -23,6 +23,20 @@
     <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <link rel="icon" href="<?php $this->options->themeUrl('img/favicons.ico'); ?>">
+    <script>
+      document.oncontextmenu = function(){
+        event.returnValue = false;
+      }
+      document.oncontextmenu = function(){
+        return false;
+      }
+      window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
+        if (event.keyCode = 123) {
+          event.preventDefault();
+          window.event.returnValue = false;
+        }
+      }
+    </script>
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>
