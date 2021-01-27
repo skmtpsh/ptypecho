@@ -23,6 +23,7 @@
     <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <link rel="icon" href="<?php $this->options->themeUrl('img/favicons.ico'); ?>">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
     <script>
       document.oncontextmenu = function(){
         event.returnValue = false;
