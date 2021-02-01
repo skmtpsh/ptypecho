@@ -17,12 +17,13 @@
         </div>
 
     	<h3 id="response"><?php _e('添加新评论'); ?></h3>
-        <?php UserAgent_Plugin::getBrowserName($comments->agent); ?>
-        <?php UserAgent_Plugin::getOSName($comments->agent); ?>
+
     	<form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
             <?php if($this->user->hasLogin()): ?>
     		<p><?php _e('登录身份: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
             <?php else: ?>
+                <?php UserAgent_Plugin::getBrowserName($comments->agent); ?>
+        <?php UserAgent_Plugin::getOSName($comments->agent); ?>
     		<p>
                 <label for="author" class="required"><?php _e('称呼'); ?></label>
     			<input type="text" name="author" id="author" class="text" value="<?php $this->remember('author'); ?>" required />
@@ -36,7 +37,7 @@
     			<input type="url" name="url" id="url" class="text" placeholder="<?php _e('http://'); ?>" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
     		</p>
             <?php endif; ?>
-            <p><?php Captcha_Plugin::output(); ?></p>
+
     		<p>
                 <label for="textarea" class="required"><?php _e('内容'); ?></label>
                 <textarea rows="8" cols="50" name="text" id="textarea" class="textarea" required ><?php $this->remember('text'); ?></textarea>
