@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12" >
+<!-- <aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12" >
 
     <div class="box mb-3 shadow-sm border rounded bg-white">
         <div class="sideNav">
@@ -11,7 +11,6 @@
                     <li>
                         <a <?php if($this->is('categorys', $categorys->slug)): ?> class="current"<?php endif; ?> href="<?php $categorys->permalink(); ?>">
                             <div class="symbol-label s_<?php $categorys->slug(); ?>">
-                                <!-- <img src="<?php $this->options->themeUrl('img/'); ?><?php $categorys->slug(); ?>.svg" /> -->
                                 <i class="bi bi-<?php $categorys->slug(); ?>"></i>
                             </div>
                             <div class="symbol-desc">
@@ -23,9 +22,12 @@
                 <?php endwhile; ?>
             </ul>
         </div>
-    </div>
+    </div> -->
     <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
-        <img src="http://v.bootstrapmb.com/2019/12/l63856876/img/job1.png" class="img-fluid" alt="Responsive image">
+        <div>
+        <?php UserAgent_Plugin::getBrowserName($comments->agent); ?>
+        <?php UserAgent_Plugin::getOSName($comments->agent); ?>
+        </div>
         <div class="p-3 border-bottom">
             <h6 class="font-weight-bold text-dark">Osahan Solutions</h6>
             <p class="mb-0 text-muted">Looking for talent?</p>
@@ -36,6 +38,31 @@
     </div>
 </aside>
 <aside class="col col-xl-3 order-xl-3 col-lg-6 order-lg-3 col-md-6 col-sm-6 col-12" id="secondary" role="complementary">
+    <div class="box shadow-sm border rounded bg-white mb-3">
+        <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('最受欢迎文章'); ?></h6></div>
+        <div class="p-3">
+            <ul class="widget-list">
+                <?php Views_Plugin::theMostViewed(); ?>
+            </ul>
+        </div>
+    </div>
+    <div class="box shadow-sm border rounded bg-white mb-3">
+        <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('热门文章'); ?></h6></div>
+        <div class="p-3">
+            <ul class="widget-list">
+                <?php TePostViews_Plugin::outputHotPosts() ?>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box shadow-sm border rounded bg-white mb-3">
+        <div class="box-title border-bottom p-3"><h6 class="m-0"><?php _e('热门文章'); ?></h6></div>
+        <div class="p-3">
+            <ul class="widget-list">
+                <?php getHotComments('10');?>
+            </ul>
+        </div>
+    </div>
 
 <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
     <div class="box shadow-sm border rounded bg-white mb-3">

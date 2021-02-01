@@ -12,7 +12,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php');
  ?>
 
-<main  id="main" class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
+<main  id="main" class="col col-xl-6 order-xl-2 col-lg-18 col-md-12 col-sm-12 col-12">
 
 	<?php while($this->next()): ?>
 		<div class="box shadow-sm border rounded bg-white mb-3" itemscope itemtype="http://schema.org/BlogPosting">
@@ -23,6 +23,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<p class="post-state-btns text-right" itemprop="author" itemscope itemtype="http://schema.org/Person">
 					<?php _e('作者: '); ?>
 					<span><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
+					<?php _e('阅读:'); ?>(<?php $this->viewsNum(); ?>)
+					<?php _e('浏览2: '); ?>
+					<?php $this->views();?>
+					<?php _e('浏览3: '); ?>
+					<?php Views_Plugin::theViews(); ?>
 				</p>
 			</div>
 			<div class="box-body pp-3" itemprop="articleBody">

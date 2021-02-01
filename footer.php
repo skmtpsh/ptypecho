@@ -8,6 +8,16 @@
     &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
     <!-- <?php _e('柚米版权所有 '); ?>.  -->
     <a href="https://beian.miit.gov.cn/">鲁ICP备2021002545号</a>
+    <strong>
+<script language="JavaScript" type="text/javascript">
+var urodz= new Date("1/1/2021");
+var now = new Date();
+var ile = now.getTime() - urodz.getTime();
+var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+document.write(+dni)
+</script>
+</strong>天
+
 <script>
 var _hmt = _hmt || [];
 (function() {
