@@ -17,6 +17,8 @@
         </div>
 
     	<h3 id="response"><?php _e('添加新评论'); ?></h3>
+        <?php UserAgent_Plugin::getBrowserName($comments->agent); ?>
+        <?php UserAgent_Plugin::getOSName($comments->agent); ?>
     	<form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
             <?php if($this->user->hasLogin()): ?>
     		<p><?php _e('登录身份: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>

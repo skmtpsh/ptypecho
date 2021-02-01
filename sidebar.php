@@ -24,10 +24,7 @@
         </div>
     </div> -->
     <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
-        <div>
-        <?php UserAgent_Plugin::getBrowserName($comments->agent); ?>
-        <?php UserAgent_Plugin::getOSName($comments->agent); ?>
-        </div>
+
         <div class="p-3 border-bottom">
             <h6 class="font-weight-bold text-dark">Osahan Solutions</h6>
             <p class="mb-0 text-muted">Looking for talent?</p>
