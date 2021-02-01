@@ -31,12 +31,12 @@
       document.oncontextmenu = function(){
         return false;
       }
-      window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
-        if (event.keyCode = 123) {
-          event.preventDefault();
-          window.event.returnValue = false;
-        }
-      }
+      // window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
+      //   if (event.keyCode = 123) {
+      //     event.preventDefault();
+      //     window.event.returnValue = false;
+      //   }
+      // }
     </script>
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
