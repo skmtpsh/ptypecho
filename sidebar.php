@@ -8,7 +8,7 @@
             <?php $this->widget('Widget_Contents_Post_Recent')->to($postRecent); ?>
             <?php $i = 1; ?>
             <?php while($postRecent->next()): ?>
-                <li><span class="orderNum"><?php echo $i; ?></span><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(35, '...'); ?></li>
+                <li><span class="orderNum"><?php echo $i; ?></span><a href="<?php $postRecent->permalink(); ?>"><?php $postRecent->title(); ?></a></li>
                 <?php $i++; ?>
             <?php endwhile; ?>
         </ul>
