@@ -1,11 +1,11 @@
 <?php
 /**
- * 这是 Typecho 0.9 系统的一套默认皮肤
- * 
- * @package Typecho Replica Theme 
- * @author Typecho Team
- * @version 1.2
- * @link http://typecho.org
+ * 这是 Ptypecho 系统的皮肤
+ *
+ * @package Typecho Theme
+ * @author muedu
+ * @version 1.0
+ * @link http://www.pangshuhai.com
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
