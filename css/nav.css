@@ -1,0 +1,82 @@
+/*
+** Name: dgy.nav.css
+** Date: 2020/01/30.
+** Anthor: tonney@duoguyu.com.
+** Version: 2.0.0.
+** Last: 2020/03/16/ tonney.
+*/
+
+/* fixedWidget */
+.fixedWidget{ width:42px; height:auto; position:fixed; right:20px; bottom:60px; z-index:999; padding: 20px 10px 30px; border-radius:21px; border: 1px solid #eee; background:#fff;}
+.fixedWidget a{ height:35px; display:block; position:relative; margin:0 auto; margin-bottom:10px; width:20px; cursor:pointer; padding:10px 0; background:url(../img/icon_rb_sprite.png?v=20200316) no-repeat; }
+.fixedWidget a.mail{background-position:center 5px;}
+.fixedWidget a.top{background-position:center -158px; margin-bottom: -30px; border-bottom: 0;}
+.fixedWidget a.mini{background-position:center -36px;}
+.fixedWidget a:hover{background:url(../img/icon_rb_sprite_color.png?v=20200316) no-repeat;}
+.fixedWidget a.mail:hover{background-position:center 5px;}
+.fixedWidget a.top:hover{background-position:center -158px; margin-bottom: -30px; border-bottom: 0;}
+.fixedWidget a.mini:hover{background-position:center -36px;}
+.fixedWidget .layoutMenu{ display:none; height:40px; text-align:center; line-height:40px; position:relative; margin-bottom:30px; }
+.fixedWidget .layoutMenu .logo{display: block; width: 20px; height:auto; }
+.fixedWidget .layoutMenu .icondgy{ font-size:24px; color:#2254f4; }
+
+/* navGrid */
+.navGrid{ height: 70px; position: relative; z-index: 1024; transition: all .2s ease; }
+.navGrid.fixed{ position: fixed; left: 0; top: 0; right: 0; z-index: 1024; background: #fff; box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1); }
+.navGrid .navGroup{        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 40px; }
+.navGrid .navUl{ display: flex; align-items: center; justify-content: center; }
+.navGrid .navUl .item{ margin: 0 20px; font-size: 14px; color: #333; line-height: 67px; position: relative; text-align: center; border-bottom: 3px solid #fff; }
+.navGrid .navUl .item.on, .navGrid .navUl .item:hover{ color: #2254f4; border-bottom: 3px solid #2254f4; font-weight: 700; }
+.navGrid .logo{ display: block; width: auto; height: 60px; margin-right: 40px; }
+.navGrid .logoImg{     display: block;
+    width: 150px;
+    height: 50px;
+    background: url(../img/logo.png) no-repeat center;
+    background-size: 120px; }
+.navGrid .logoImg.white{ background: url('../img/dgy-logo-white.png') no-repeat center; background-size: 50px; }
+
+.navGrid .avatarImg{ display:block; width:40px; height:40px; border-radius:50%; overflow:hidden;}
+.navGrid .itemLogin{ margin-left:20px; text-align:right; position:relative; }
+.navGrid .itemLogin .more{ position:absolute; right:5px; top:0; text-align:center; font-size:16px; cursor:pointer; color:#999;}
+.navGrid .loginGroup{ width:120px; position:absolute; right:5px; top:30px; height: 0; padding-top:0; z-index: -1; text-align:center; font-size:14px; color:#999; overflow:hidden; transition: all .2s ease;}
+.navGrid .loginGroup .box{ padding:15px; background:#fff; border:1px solid #eee; border-radius:4px; }
+.navGrid .loginGroup .itemLi{display:block; color:#999; line-height:24px;}
+.navGrid .loginGroup .userName{display:block; color:#999; height:30px; margin-top:10px; line-height:30px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.navGrid .loginGroup .userName.edit{ color:#fff; border-radius:15px; background:#2254f4; background: linear-gradient(270deg,#2254f4,#406dff); box-shadow: 0 12px 30px 0 rgba(34,84,244,.2); }
+.navGrid .loginGroup .avatar{display:block; width:50px; height:50px; border-radius:50%; margin:10px auto; overflow:hidden;}
+.navGrid .loginGroup .itemLi.exit{ border-top:1px solid #eee; color:#f30; padding-top:10px; margin-top:15px;}
+.navGrid .loginGroup .itemLi.exit a:hover{color:#f30;}
+.navGrid .itemLogin:hover .loginGroup{ z-index: 100; padding-top:15px; height: auto; transition: all .2s ease; }
+
+.navGrid .leftWrap{ height: 60px; display: flex; align-items: center; justify-content: center; }
+.navGrid .leftWrap .logo{ display: block; width: auto; height: 30px; margin-right: 40px; }
+.navGrid.white .navUl .item{ color: #fff; border-bottom: none; }
+/*.navGrid.white .navUl .item.on, .navGrid.white .navUl .item:hover{ color: #2254f4; border-bottom: none; }*/
+.navGrid.white .logoImg{ background: url('../img/dgy-logo-white.png') no-repeat center; background-size: 50px; }
+
+/* 自定义 */
+.navGrid.white .navUl .item, .whiteNav .navGrid .navUl .item{ color: #fff; border-bottom: none; }
+.whiteNav .navGrid.fixed{ position: relative; background:none; box-shadow:none; }
+.whiteNav.fixed .navGrid.fixed{position: fixed; background: #fff; box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);}
+.whiteNav.fixed .navGrid .navUl .item{ color: #333; border-bottom: 3px solid #fff; }
+.whiteNav.fixed .navGrid .navUl .item:hover{ color: #2254f4; border-bottom: 3px solid #2254f4; }
+
+/*** johanna footer ***/
+.footerGrid{ border-top:1px solid #ebebeb; background: #fff; overflow: hidden; }
+
+.footerGrid .topWrapper{ padding:20px 0; border-bottom:1px solid #ebebeb; color:#999; font-size:12px; line-height:20px; overflow:hidden; }
+.footerGrid .menuWrap{ display: flex; justify-content: space-between; width: 1200px; margin:0 auto; }
+.footerGrid .menuBox{ line-height:20px; }
+.footerGrid .menuBox a{ margin-right:30px; color:#333; }
+.footerGrid .menuBox a:hover{ color:#2254f4; }
+.footerGrid .menuWrap .copyright{ text-align:right; color:#777; }
+.footerGrid .menuWrap .copyright .alink{ padding-left:5px; color:#2254f4; }
+
+.footerGrid .midWrapper{ width: 1200px; margin: 0 auto; overflow: hidden; }
+.footerGrid .midWrapper .article{ padding: 20px 0; color:#666; font-size: 12px; overflow: hidden; line-height: 20px; }
+.footerGrid .midWrapper p{ color:#666; font-size: 12px; line-height: 20px; margin-bottom: 10px; }
+.footerGrid .midWrapper span{ padding-right: 20px; }
