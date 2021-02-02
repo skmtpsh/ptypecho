@@ -36,12 +36,12 @@
         xformat 单条记录标签格式，默认为< li>< a href="{url}">[{cnt}]{author}({mail})< /a>< /li>
         xformat 格式可用标签有：访客名称：{author}、访客链接：{url}、访客邮箱：{mail}、访客评论数：{cnt}。
     -->
-    <section class="widget">
+    <!-- <section class="widget">
 		<h3 class="widget-title"><?php _e('评论最多的访客'); ?></h3>
         <div class="widget-box">
             <?php TeKit_Plugin::tekit_most_active_commentors('days=10&number=5&ignore=false'); ?>
         </div>
-    </section>
+    </section> -->
     <!--
         days 多少天内，无限制为-1，默认为-1
         number 显示数量，默认为10
@@ -56,12 +56,12 @@
             <?php TeKit_Plugin::tekit_most_sofa_commentors('number=5'); ?>
         </div>
     </section> -->
-    <section class="widget">
+    <!-- <section class="widget">
 		<h3 class="widget-title"><?php _e('访客最近评论数'); ?></h3>
         <div class="widget-box">
             <?php TeKit_Plugin::tekit_most_sofa_commentors($this->remember('mail',true)); ?>
         </div>
-    </section>
+    </section> -->
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
     <section class="widget">
 		<h3 class="widget-title"><?php _e('最新文章'); ?></h3>
