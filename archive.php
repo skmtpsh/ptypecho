@@ -1,7 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-    <main id="main" role="main" class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
+    <div class="col-mb-12 col-8" id="main" role="main">
         <h3 class="archive-title"><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
@@ -10,43 +10,16 @@
         ), '', ''); ?></h3>
         <?php if ($this->have()): ?>
     	<?php while($this->next()): ?>
-            <article class="box shadow-sm border rounded bg-white mb-3" itemscope itemtype="http://schema.org/BlogPosting">
-                <div class="box-title border-bottom p-3">
-                    <h1 itemprop="name headline" class="post-title">
-                        <a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
-                    </h1>
-                </div>
-    			<!-- <ul class="post-meta">
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    			<h2 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
+    			<ul class="post-meta">
     				<li itemprop="author" itemscope itemtype="http://schema.org/Person"><?php _e('作者: '); ?><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></li>
     				<li><?php _e('时间: '); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
     				<li><?php _e('分类: '); ?><?php $this->category(','); ?></li>
                     <li itemprop="interactionCount"><a href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></li>
-                </ul> -->
-                <div class="box-body p-3" itemprop="articleBody">
-                    <?php $this->excerpt(350, '...'); ?>
-                    <p class="text-right"><a href="<?php $this->permalink() ?>" class="text-danger">阅读全部</a></p>
-                    <p> text archive.php</p>
-                </div>
-                <div class="post-state">
-                    <!-- <div class="post-state-btns" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                        <?php _e('作者: '); ?>
-                        <i class="bi bi-person"></i>
-                        <span><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
-                    </div> -->
-                    <div class="post-state-btns">
-                        <i class="bi bi-calendar2-event"></i>
-                        <?php _e('时间: '); ?>
-                        <span><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></span>
-                    </div>
-                    <div class="post-state-btns">
-                        <i class="bi bi-card-list"></i>
-                        <?php _e('分类: '); ?>
-                        <span><?php $this->category(','); ?> </span>
-                    </div>
-                    <div class="post-state-btns active" temprop="interactionCount">
-                        <i class="bi bi-chat-right-text"></i>
-                        <span><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></span>
-                    </div>
+    			</ul>
+                <div class="post-content" itemprop="articleBody">
+        			<?php $this->content('- 阅读剩余部分 -'); ?>
                 </div>
     		</article>
     	<?php endwhile; ?>
@@ -57,7 +30,7 @@
         <?php endif; ?>
 
         <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
-    </main><!-- end #main -->
+    </div><!-- end #main -->
 
 	<?php $this->need('sidebar.php'); ?>
 	<?php $this->need('footer.php'); ?>

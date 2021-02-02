@@ -6,28 +6,9 @@
 
 <footer id="footer" role="contentinfo">
     &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
-    <!-- <?php _e('柚米版权所有 '); ?>.  -->
-    <a href="https://beian.miit.gov.cn/">鲁ICP备2021002545号</a>
-    <strong>
-<script language="JavaScript" type="text/javascript">
-var urodz= new Date("1/1/2021");
-var now = new Date();
-var ile = now.getTime() - urodz.getTime();
-var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-document.write(+dni)
-</script>
-</strong>天
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?7d100c0973614817f55306a81da71486";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+    <?php _e('由 <a href="http://www.typecho.org">Typecho</a> 强力驱动'); ?>.
 </footer><!-- end #footer -->
+
 <?php $this->footer(); ?>
 </body>
 </html>
