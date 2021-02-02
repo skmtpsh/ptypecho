@@ -7,12 +7,12 @@
         xformat 单条记录标签格式，默认为<li>< a href="{permalink}">{title}< /a></li>
         xformat 格式可用标签有：日志标题：{title}、日志链接：{permalink}
     -->
-    <section class="widget">
+    <!-- <section class="widget">
 		<h3 class="widget-title"><?php _e('随机日志'); ?></h3>
         <div class="widget-box">
             <?php TeKit_Plugin::tekit_random_posts('number=5'); ?>
         </div>
-    </section>
+    </section> -->
     <!--
         days 多少天内，默认为30
         number 显示数量，默认为10
