@@ -3,7 +3,7 @@
     <section class="widget">
         <h3 class="widget-title"><?php _e('热门文章'); ?></h3>
         <ul class="widget-list">
-            <? MueduPostViews_Plugin::outputHotPosts() ?>
+            <?php MueduPostViews_Plugin::outputHotPosts() ?>
         </ul>
     </section>
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
