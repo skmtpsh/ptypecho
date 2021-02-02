@@ -32,11 +32,14 @@
     		<p>
                 <label for="url"<?php if ($this->options->commentsRequireURL): ?> class="required"<?php endif; ?>><?php _e('网站'); ?></label>
     			<input type="url" name="url" id="url" class="text" placeholder="<?php _e('http://'); ?>" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
-    		</p>
+            </p>
+            <p>
+                <?php spam_protection_math();?>
+            </p>
             <?php endif; ?>
     		<p>
                 <label for="textarea" class="required"><?php _e('内容'); ?></label>
-                <textarea rows="8" cols="50" name="text" id="textarea" class="textarea" required ><?php $this->remember('text'); ?></textarea>
+                <textarea rows="8" cols="50" name="text" id="textarea" class="textarea" maxlength="200" placeholder="请输入5-200以内的文字" required ><?php $this->remember('text'); ?></textarea>
             </p>
     		<p>
                 <button type="submit" class="submit"><?php _e('提交评论'); ?></button>
