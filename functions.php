@@ -7,8 +7,8 @@ function themeInit($comment){
 function spam_protection_math(){
     $numFirst=rand(1,20);
     $numSecond=rand(1,20);
-    echo "<label for=\"math\">请输入<code>$numFirst</code>+<code>$numSecond</code>的计算结果：</label>\n";
-    echo "<input type=\"text\" name=\"sum\" class=\"text\" value=\"\" size=\"25\" tabindex=\"4\" placeholder=\"请输入计算结果：\">\n";
+    echo "<label for=\"math\" class=\"required\">请输入<code>$numFirst</code>+<code>$numSecond</code>的计算结果：</label>\n";
+    echo "<input type=\"text\" name=\"sum\" class=\"text\" value=\"\" size=\"25\" tabindex=\"4\" placeholder=\"请输入计算结果：\" required>\n";
     echo "<input type=\"hidden\" name=\"numFirst\" value=\"$numFirst\">\n";
     echo "<input type=\"hidden\" name=\"numSecond\" value=\"$numSecond\">";
 }
