@@ -4,8 +4,13 @@
     <section class="widget">
 		<h3 class="widget-title"><?php _e('最新文章'); ?></h3>
         <ul class="widget-list">
-            <?php $this->widget('Widget_Contents_Post_Recent')
-            ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
+            <!-- <?php $this->widget('Widget_Contents_Post_Recent')->parse('<li><a href="{permalink}">{title}</a></li>'); ?> -->
+            <?php $this->widget('Widget_Contents_Post_Recent')->to($postRecent); ?>
+            <?php $i = 1; ?>
+            <?php while($postRecent->next()): ?>
+                <li><span class="orderNum"><?php echo $i; ?></span><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(35, '...'); ?></li>
+                <?php $i++; ?>
+            <?php endwhile; ?>
         </ul>
     </section>
     <?php endif; ?>
