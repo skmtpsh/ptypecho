@@ -59,7 +59,16 @@
             <?php endwhile; ?>
         </ul>
     </section>
-
+    <section>
+		<h3 class="widget-title"><?php _e('网站统计'); ?></h3>
+        <ul>
+            <?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?>
+            <li>文章总数：<?php $stat->publishedPostsNum() ?>篇</li>
+            <li>分类总数：<?php $stat->categoriesNum() ?>个</li>
+            <li>评论总数：<?php $stat->publishedCommentsNum() ?>条</li>
+            <li>页面总数：<?php $stat->publishedPagesNum() ?>页</li>
+        </ul>
+    </section>
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowOther', $this->options->sidebarBlock)): ?>
 	<section class="widget">
 		<h3 class="widget-title"><?php _e('其它'); ?></h3>
