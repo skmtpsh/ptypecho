@@ -20,7 +20,15 @@
                     <li itemprop="interactionCount"><a href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></li>
     			</ul>
                 <div class="post-content" itemprop="articleBody">
-        			<?php $this->content('- 阅读剩余部分 -'); ?>
+                <?php
+                    if (preg_match('/<!--more-->/',$this->content)||mb_strlen($this->content, 'utf-8') < 270) {
+                        $this->content('阅读全文...');
+                    } else {
+                        $c=mb_substr($this->content, 0, 270, 'utf-8');
+                        echo $c.'...';
+                        echo '</br><p class="more"><a href="',$this->permalink(),'" title="',$this->title(),'">阅读剩余部分...</a></p>';
+                    }
+                ?>
                 </div>
     		</article>
     	<?php endwhile; ?>
