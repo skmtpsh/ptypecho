@@ -142,7 +142,7 @@ textarea {
 }
 
 #logo img {
-  max-height: 64px;
+  /* max-height: 64px; */
 }
 
 .description {
