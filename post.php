@@ -17,8 +17,8 @@
         <p itemprop="keywords" class="tags"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></p>
     </article>
     <article class="post-pre-next">
-        <p><?php $this->thePrev(); ?></p>
-        <p><?php $this->theNext(); ?></p>
+        <p>上一篇：<?php $this->thePrev(); ?></p>
+        <p>下一篇：<?php $this->theNext(); ?></p>
     </article>
     <article class="related">
         <h4 class="related-title">相关文章</h4>

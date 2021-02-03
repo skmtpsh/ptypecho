@@ -290,13 +290,14 @@ textarea {
 
 .post-pre-next {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
 }
 
 .archive-title {
-  margin: 1em 0 -1em;
-  padding-top: 20px;
+  /* margin: 1em 0 -1em; */
+  /* padding-top: 20px; */
   color: #999;
   font-size: 1em;
 }
