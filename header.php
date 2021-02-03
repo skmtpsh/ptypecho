@@ -12,7 +12,8 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('font/iconfont.css'); ?>" />
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
@@ -37,7 +38,7 @@
             <div class="site-name col-mb-12 col-9">
             <?php if ($this->options->logoUrl): ?>
                 <a id="logo" href="<?php $this->options->siteUrl(); ?>">
-                    <img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" />
+                    <img src="<?php $this->options->logoUrl('img/logo.png') ?>" alt="<?php $this->options->title() ?>" />
                 </a>
             <?php else: ?>
                 <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
