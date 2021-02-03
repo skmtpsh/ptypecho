@@ -24,7 +24,8 @@ echo $commentClass;
 ?>">
     <div id="<?php $comments->theId(); ?>">
         <div class="comment-author">
-            <?php $comments->gravatar('32', ''); ?>
+            <!-- <?php $comments->gravatar('32', ''); ?> -->
+            <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style="border-radius: 50%;" >'; ?>
             <cite class="fn"><?php $comments->author(); ?></cite>
         </div>
         <div class="comment-meta">

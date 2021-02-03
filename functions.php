@@ -41,6 +41,23 @@ function themeConfig($form) {
     $form->addInput($sidebarBlock->multiMode());
 }
 
+function getGravatar($email, $s = 96, $d = 'mp', $r = 'g', $img = false, $atts = array()) {
+    preg_match_all('/((\d)*)@qq.com/', $email, $vai);
+    if (empty($vai['1']['0'])) {
+        $url = 'https://www.gravatar.com/avatar/';
+        $url .= md5(strtolower(trim($email)));
+        $url .= "?s=$s&d=$d&r=$r";
+        if ($img) {
+            $url = '<img src="' . $url . '"';
+            foreach ($atts as $key => $val)
+                $url .= ' ' . $key . '="' . $val . '"';
+            $url .= ' />';
+        }
+    }else{
+        $url = 'https://q2.qlogo.cn/headimg_dl?dst_uin='.$vai['1']['0'].'&spec=100';
+    }
+    return  $url;
+}
 
 /*
 function themeFields($layout) {
