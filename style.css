@@ -190,8 +190,10 @@ textarea {
 }
 
 .post {
-  padding: 15px 0 20px;
+  padding: 20px;
   border-bottom: 1px solid #EEE;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 .post-title {
@@ -199,6 +201,24 @@ textarea {
   font-size: 1.4em;
 }
 
+.post-head {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.post-head .post-head-img {
+  width: 32px;
+  height: 32px;
+}
+.post-head .post-head-tit {
+  font-size: 24px;
+}
+.post-head .post-head-tit .time {
+  font-size: 14px;
+  color: #c4c4c6;
+}
 .post-meta {
   margin-top: -0.5em;
   padding: 0;
@@ -369,7 +389,7 @@ textarea {
 }
 
 .widget {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
