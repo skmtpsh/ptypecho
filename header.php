@@ -61,7 +61,7 @@
                     <button type="submit" class="submit"><?php _e('搜索'); ?></button>
                 </form>
             </div>
-            <div class="site-search col-2 kit-hidden-tb">
+            <div class="site-other tr col-2 kit-hidden-tb">
                 <a href="#">登录</a>
             </div>
         </div><!-- end .row -->

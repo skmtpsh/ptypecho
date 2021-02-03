@@ -155,7 +155,7 @@ textarea {
 }
 
 #nav-menu {
-  margin: 25px 0 0;
+  /* margin: 25px 0 0; */
   padding: 0;
 }
 
@@ -163,7 +163,7 @@ textarea {
   display: block;
   margin-right: -1px;
   padding: 0 20px;
-  border: 1px solid #EEE;
+  /* border: 1px solid #EEE; */
   border-bottom: none;
   height: 32px;
   line-height: 32px;
@@ -173,12 +173,12 @@ textarea {
 
 #nav-menu a:hover,
 #nav-menu .current {
-  background: #F6F6F6;
+  /* background: #F6F6F6; */
 }
 
 #search {
   position: relative;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 
 #search input {
@@ -443,6 +443,14 @@ h3.widget-title {
 
 .widget-list li ul {
   margin-left: 15px;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tl {
+  text-align: left;
 }
 
 #footer {
