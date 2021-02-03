@@ -219,7 +219,7 @@ textarea {
 }
 .post-head .post-head-tit p {
   font-size: 16px;
-  margin: 0 0 10px;
+  margin: 0 0 4px;
 }
 .post-head .post-head-tit .time {
   font-size: 14px;
@@ -228,9 +228,10 @@ textarea {
 .post-meta {
   margin: 0 -20px 0;
   /* margin-top: -0.5em; */
-  padding: 0 20px;
+  padding: 10px 20px;
   color: #999;
   font-size: .92857em;
+  margin-top: 1px solid #f7f7f7;
 }
 
 .post-meta li {
