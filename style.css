@@ -384,6 +384,11 @@ textarea {
 .comment-item .avator {
   margin-right: 10px;
 }
+.comment-item .cont {
+  flex: 1;
+  flex-direction: row;
+  justify-content:space-between;
+}
 .comment-list li {
   padding: 14px;
   margin-top: 10px;
@@ -391,7 +396,11 @@ textarea {
 }
 
 .comment-list li.comment-level-odd {
-  background: #F6F6F3;
+  /* background: #F6F6F3; */
+  margin: 1rem 0;
+  padding: 0 0 0 1rem;
+  background-color: #fafbfc;
+  border-radius: 3px;
 }
 
 .comment-list li.comment-level-even {
