@@ -87,8 +87,8 @@ textarea {
   color: #606266;
   display: inline-block;
   font-size: inherit;
-  height: 32px;
-  line-height: 32px;
+  height: 36px;
+  line-height: 36px;
   outline: none;
   padding: 0 15px;
   transition: border-color .2s cubic-bezier(.645,.045,.355,1);
