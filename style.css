@@ -2,7 +2,7 @@ body {
   background-color: #f7f7f7;
   color: #282828;
   font-family: Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", serif;
-  font-size: 87.5%;
+  /* font-size: 87.5%; */
 }
 
 a {
@@ -112,6 +112,19 @@ textarea {
   color: #8A1F11;
   text-decoration: underline;
   font-weight: bold;
+}
+
+.tags {
+  background-color: #5c9efc;
+  display: inline-block;
+  height: 32px;
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  white-space: nowrap;
 }
 
 #header {

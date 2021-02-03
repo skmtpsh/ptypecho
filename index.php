@@ -22,7 +22,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 								<time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
 							</div>
 						</div>
-						<h2 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->sticky(); $this->title() ?></a></h2>
+						<h2 class="post-title" itemprop="name headline">
+							<span class="tags"><?php $this->category(','); ?></span><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->sticky(); $this->title() ?></a>
+						</h2>
             <div class="post-content" itemprop="articleBody">
 							<!-- <?php $this->content('- 阅读剩余部分 -'); ?> -->
 							<?php
@@ -36,7 +38,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							?>
 						</div>
 						<ul class="post-meta">
-							<li><?php _e('分类: '); ?><?php $this->category(','); ?></li>
 							<li><?php _e('阅读:'); ?>(<?php $this->viewsCount(); ?>)</li>
 							<li itemprop="interactionCount"><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></li>
 						</ul>
