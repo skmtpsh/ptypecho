@@ -34,8 +34,8 @@
 
 <header id="header" class="clearfix">
     <div class="container">
-        <div class="row">
-            <div class="site-name col-mb-12 col-3 flex">
+        <div class="row flex">
+            <div class="site-name col-mb-12 col-3">
             <?php if ($this->options->logoUrl): ?>
                 <a id="logo" href="<?php $this->options->siteUrl(); ?>">
                     <img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" />
