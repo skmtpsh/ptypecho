@@ -1,5 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<div class="col-mb-12 col-offset-1 col-3 kit-hidden-tb" id="secondary" role="complementary">
+<div class="col-mb-12 col-4 kit-hidden-tb" id="secondary" role="complementary">
     <section class="widget">
         <h3 class="widget-title"><?php _e('热门文章'); ?></h3>
         <ul class="widget-list">
