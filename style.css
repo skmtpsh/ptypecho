@@ -381,6 +381,9 @@ textarea {
 .comment-item {
   display: flex;
 }
+.comment-item .avator {
+  margin-right: 10px;
+}
 .comment-list li {
   padding: 14px;
   margin-top: 10px;
