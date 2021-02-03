@@ -116,7 +116,7 @@ textarea {
 
 #header {
   padding-top: 35px;
-  border-bottom: 1px solid #EEE;
+  /* border-bottom: 1px solid #EEE; */
 }
 
 #logo {
@@ -191,7 +191,7 @@ textarea {
 
 .post {
   padding: 20px;
-  border-bottom: 1px solid #EEE;
+  /* border-bottom: 1px solid #EEE; */
   background-color: #fff;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -223,7 +223,7 @@ textarea {
 .post-meta {
   margin: 0 -20px 0;
   /* margin-top: -0.5em; */
-  padding: 0;
+  padding: 0 20px;
   color: #999;
   font-size: .92857em;
 }
@@ -386,7 +386,7 @@ textarea {
 }
 
 #secondary {
-  padding-top: 15px;
+  /* padding-top: 15px; */
   word-wrap: break-word;
 }
 
@@ -396,7 +396,9 @@ textarea {
   padding: 20px;
   border-radius: 5px;
 }
-
+h3.widget-title {
+  margin-top: 0;
+}
 .widget-list {
   list-style: none;
   padding: 0;

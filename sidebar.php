@@ -59,7 +59,7 @@
             <?php endwhile; ?>
         </ul>
     </section>
-    <section>
+    <section class="widget">
 		<h3 class="widget-title"><?php _e('网站统计'); ?></h3>
         <ul>
             <?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?>
