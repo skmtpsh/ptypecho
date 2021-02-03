@@ -447,6 +447,12 @@ h3.widget-title {
   margin-left: 15px;
 }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .tr {
   text-align: right;
 }
