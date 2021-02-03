@@ -114,7 +114,10 @@ textarea {
   text-decoration: underline;
   font-weight: bold;
 }
-
+.tagsbox {
+  display: flex;
+  align-items: center;
+}
 .tagsbox a {
   background-color: #feb64d;
   display: inline-block;
@@ -125,7 +128,8 @@ textarea {
   box-sizing: border-box;
   white-space: nowrap;
   vertical-align: top;
-  margin-right: 10px;
+  margin: 5px 10px;
+  color: #fff;
 }
 
 .tags {
