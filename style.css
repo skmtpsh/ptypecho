@@ -3,6 +3,7 @@ body {
   color: #282828;
   font-family: Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", serif;
   /* font-size: 87.5%; */
+  padding-top: 100px;
 }
 
 a {
@@ -134,6 +135,8 @@ textarea {
 #header {
   /* padding-top: 35px; */
   /* border-bottom: 1px solid #EEE; */
+  background-color: #fff;
+  position: fixed;
 }
 
 #logo {
