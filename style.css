@@ -260,6 +260,12 @@ textarea {
   margin: 10px 0;
 }
 
+.post-pre-next {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .archive-title {
   margin: 1em 0 -1em;
   padding-top: 20px;
