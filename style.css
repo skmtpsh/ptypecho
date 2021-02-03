@@ -378,10 +378,13 @@ textarea {
   padding: 0;
 }
 
+.comment-item {
+  display: flex;
+}
 .comment-list li {
   padding: 14px;
   margin-top: 10px;
-  border: 1px solid #EEE;
+  /* border: 1px solid #EEE; */
 }
 
 .comment-list li.comment-level-odd {

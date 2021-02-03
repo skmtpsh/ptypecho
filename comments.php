@@ -23,22 +23,28 @@ $comments->alt(' comment-odd', ' comment-even');
 echo $commentClass;
 ?>">
     <div id="<?php $comments->theId(); ?>">
-        <div class="comment-author">
-            <!-- <?php $comments->gravatar('32', ''); ?> -->
-            <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style="border-radius: 50%;" >'; ?>
-            <cite class="fn"><?php $comments->author(); ?></cite>
+        <div class="comment-item">
+            <span>
+                <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style="border-radius: 50%;" >'; ?>
+            </span>
+            <div>
+                <div class="comment-author">
+                    <!-- <?php $comments->gravatar('32', ''); ?> -->
+                    <cite class="fn"><?php $comments->author(); ?></cite>
+                </div>
+                <div class="comment-meta">
+                    <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
+                    <span class="comment-reply"><?php $comments->reply(); ?></span>
+                </div>
+                <?php $comments->content(); ?>
+            </div>
         </div>
-        <div class="comment-meta">
-            <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
-            <span class="comment-reply"><?php $comments->reply(); ?></span>
+    </div>
+    <?php if ($comments->children) { ?>
+        <div class="comment-children">
+            <?php $comments->threadedComments($options); ?>
         </div>
-        <?php $comments->content(); ?>
-    </div>
-<?php if ($comments->children) { ?>
-    <div class="comment-children">
-        <?php $comments->threadedComments($options); ?>
-    </div>
-<?php } ?>
+    <?php } ?>
 </li>
 <?php } ?>
 <div id="comments" class="pd-20">
