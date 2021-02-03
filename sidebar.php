@@ -50,6 +50,16 @@
 	</section>
     <?php endif; ?>
 
+	<section class="widget">
+		<h3 class="widget-title"><?php _e('其它'); ?></h3>
+        <?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=30')->to($tags); ?>
+        <ul class="tags-list">
+            <?php while($tags->next()): ?>
+                <li><a style="color: rgb(<?php echo(rand(0, 255)); ?>, <?php echo(rand(0,255)); ?>, <?php echo(rand(0, 255)); ?>)" href="<?php $tags->permalink(); ?>" title='<?php $tags->name(); ?>'><?php $tags->name(); ?></a></li>
+            <?php endwhile; ?>
+        </ul>
+    </section>
+
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowOther', $this->options->sidebarBlock)): ?>
 	<section class="widget">
 		<h3 class="widget-title"><?php _e('其它'); ?></h3>
