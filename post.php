@@ -16,7 +16,15 @@
         </div>
         <p itemprop="keywords" class="tags"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></p>
     </article>
-
+    <article class="related">
+        <h4 class="related-title">相关文章</h4>
+        <?php $this->related(5)->to($relatedPosts); ?>
+        <ul class="related-list">
+            <?php while ($relatedPosts->next()): ?>
+            <li><a href="<?php $relatedPosts->permalink(); ?>" title="<?php $relatedPosts->title(); ?>"><?php $relatedPosts->title(); ?></a></li>
+            <?php endwhile; ?>
+        </ul>
+    </article>
     <?php $this->need('comments.php'); ?>
 
     <ul class="post-near">

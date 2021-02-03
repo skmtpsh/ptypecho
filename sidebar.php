@@ -51,7 +51,7 @@
     <?php endif; ?>
 
 	<section class="widget">
-		<h3 class="widget-title"><?php _e('其它'); ?></h3>
+		<h3 class="widget-title"><?php _e('标签云'); ?></h3>
         <?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=30')->to($tags); ?>
         <ul class="tags-list">
             <?php while($tags->next()): ?>
