@@ -206,15 +206,20 @@ textarea {
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
 }
 .post-head .post-head-img {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 .post-head .post-head-tit {
-  font-size: 24px;
+  /* font-size: 24px; */
+}
+.post-head .post-head-tit p {
+  font-size: 16px;
+  margin: 0 0 10px;
 }
 .post-head .post-head-tit .time {
   font-size: 14px;
