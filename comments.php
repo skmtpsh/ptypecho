@@ -22,7 +22,7 @@ if ($comments->levels > 0) {
 $comments->alt(' comment-odd', ' comment-even');
 echo $commentClass;
 ?>">
-    <div id="<?php $comments->theId(); ?>" class="pd-20">
+    <div id="<?php $comments->theId(); ?>">
         <div class="comment-author">
             <!-- <?php $comments->gravatar('32', ''); ?> -->
             <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style="border-radius: 50%;" >'; ?>
@@ -41,7 +41,7 @@ echo $commentClass;
 <?php } ?>
 </li>
 <?php } ?>
-<div id="comments">
+<div id="comments" class="pd-20">
     <?php $this->comments()->to($comments); ?>
     <?php if ($comments->have()): ?>
 	<h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
