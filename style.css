@@ -137,6 +137,8 @@ textarea {
   /* border-bottom: 1px solid #EEE; */
   background-color: #fff;
   position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 #logo {
