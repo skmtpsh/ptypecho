@@ -528,6 +528,13 @@ h3.widget-title {
 .comment-content {
   line-height: 1.5;
   word-wrap: break-word;
+  font-size: 15px;
+  color: #666c72;
+  line-height: 1.6em;
+  /* overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;   */
 }
 
 .post-content h2,
