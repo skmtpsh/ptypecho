@@ -470,6 +470,23 @@ textarea {
 .comment-list .respond {
   margin-top: 15px;
   border-top: 1px solid #EEE;
+  background: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.comment-list .respond::before {
+  content: ' ';
+  position: absolute;
+  top: -30px;
+  right: 0;
+  display:inline-block;
+	width:0;
+	height:0;
+	border-left:30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom:50px solid #f2f2f2;
 }
 
 .respond .cancel-comment-reply {
