@@ -14,7 +14,11 @@
             <?php $this->widget('Widget_Contents_Post_Recent')->to($postRecent); ?>
             <?php $i = 1; ?>
             <?php while($postRecent->next()): ?>
-                <li><span class="orderNum"><?php echo $i; ?></span><a href="<?php $postRecent->permalink(); ?>"><?php $postRecent->title(); ?></a></li>
+                <li>
+                    <span class="orderNum"><?php echo $i; ?></span>
+                    <a href="<?php $postRecent->permalink(); ?>"><?php $postRecent->title(); ?></a>
+                    <p><?php $postRecent->date(); ?></p>
+                </li>
                 <?php $i++; ?>
             <?php endwhile; ?>
         </ul>
@@ -54,13 +58,17 @@
     </section>
     <section class="widget">
 		<h3 class="widget-title"><?php _e('网站统计'); ?></h3>
-        <ul>
+        <div class="statBox">
             <?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?>
-            <li>文章总数：<?php $stat->publishedPostsNum() ?>篇</li>
-            <li>分类总数：<?php $stat->categoriesNum() ?>个</li>
-            <li>评论总数：<?php $stat->publishedCommentsNum() ?>条</li>
-            <li>页面总数：<?php $stat->publishedPagesNum() ?>页</li>
-        </ul>
+            <div class="statItem">
+                <p>文章总数：<span><?php $stat->publishedPostsNum() ?></span>篇</p>
+                <p>分类总数：<span><?php $stat->categoriesNum() ?></span>个</p>
+            </div>
+            <div class="statItem">
+                <p>评论总数：<span><?php $stat->publishedCommentsNum() ?></span>条</p>
+                <p>页面总数：<span><?php $stat->publishedPagesNum() ?></span>页</p>
+            </div>
+        </div>
     </section>
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowOther', $this->options->sidebarBlock)): ?>
 	<section class="widget">
