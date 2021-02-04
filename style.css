@@ -757,6 +757,12 @@ custom
 }
 .time {
 }
+.tags-list {
+  padding: 10px 0;
+}
+.tags-list a {
+  margin: 2px 5px;
+}
 .comment-head { display: flex; justify-content: space-between; margin: 0 0 10px; align-items: center; }
 .comment-head .comment-tx {
   margin: 0;
