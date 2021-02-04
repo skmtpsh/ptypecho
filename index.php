@@ -53,12 +53,13 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							?>
 						</div>
 						<ul class="post-meta">
-							<li><span class="iconfont icon-quanminlangdu"></span> <?php $this->viewsCount(); ?> 阅读</li>
+							<li><span class="iconfont icon-quanminlangdu"></span> <?php $this->viewsCount(); ?> 次阅读</li>
 							<li itemprop="interactionCount">
 								<span class="iconfont icon-pinglun"></span>
 								<a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments">
-									<?php $this->commentsNum('', '1 评论', '%d 评论'); ?>
+									<?php $this->commentsNum('', '1', '%d'); ?>
 								</a>
+								条评论
 							</li>
 						</ul>
 				</article>
