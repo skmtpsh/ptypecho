@@ -14,6 +14,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 <div class="col-mb-12 col-8" id="main" role="main">
 	<div class="tabs">
+			<a href="<?php $this->options->siteUrl(); ?>" class="current">主页</a>
 			<?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
 				<?php while ($category->next()): ?>
 					<a
