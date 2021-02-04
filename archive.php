@@ -8,6 +8,22 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ''); ?></h3>
+        <div class="tabs">
+            <a href="<?php $this->options->siteUrl(); ?>">主页</a>
+            <?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
+                <?php while ($category->next()): ?>
+                    <a
+                        <?php if ($this->is('post')): ?>
+                                <?php if ($this->category == $category->slug): ?> class="current"<?php endif; ?>
+                        <?php else: ?>
+                            <?php if ($this->is('category', $category->slug)): ?> class="current"<?php endif; ?>
+                        <?php endif; ?>
+                        href="<?php $category->permalink(); ?>" title="<?php $category->name(); ?>"
+                    >
+                        <?php $category->name(); ?>
+                    </a>
+            <?php endwhile; ?>
+        </div>
         <?php if ($this->have()): ?>
     	<?php while($this->next()): ?>
             <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
@@ -34,7 +50,9 @@
     	<?php endwhile; ?>
         <?php else: ?>
             <article class="post">
-                <h2 class="post-title"><?php _e('没有找到内容'); ?></h2>
+                <div class="noData">
+                    <img src="<?php $this->options->themeUrl('img/no.png'); ?>" />
+                </div>
             </article>
         <?php endif; ?>
 
