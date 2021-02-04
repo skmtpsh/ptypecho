@@ -17,7 +17,7 @@
                 <li>
                     <span class="orderNum"><?php echo $i; ?></span>
                     <a href="<?php $postRecent->permalink(); ?>"><?php $postRecent->title(); ?></a>
-                    <p><?php $postRecent->date(); ?></p>
+                    <p class="recent-date"><?php $postRecent->date(); ?></p>
                 </li>
                 <?php $i++; ?>
             <?php endwhile; ?>
