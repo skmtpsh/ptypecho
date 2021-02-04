@@ -53,8 +53,12 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							?>
 						</div>
 						<ul class="post-meta">
-							<li><?php _e('阅读:'); ?>(<?php $this->viewsCount(); ?>)</li>
-							<li itemprop="interactionCount"><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></li>
+							<li><span class="iconfont icon-quanminlangdu"></span> <?php $this->viewsCount(); ?></li>
+							<li itemprop="interactionCount">
+								<a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments">
+									<span class="iconfont icon-pinglun"></span> <?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?>
+								</a>
+							</li>
 						</ul>
 				</article>
 				<?php if ($this->sequence == 1): ?>
