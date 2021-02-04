@@ -409,7 +409,7 @@ textarea {
 }
 
 .comment-list li li {
-  margin-left: 30px;
+  margin-left: 30px !important;
 }
 
 .comment-list li.comment-level-odd {
@@ -444,12 +444,12 @@ textarea {
 .comment-cont {
   line-height: 1.6;
   font-size: 14px;
-  color: #abadaf;
+  color: #666;
 }
 .comment-c {
   line-height: 1.6;
   font-size: 14px;
-  color: #abadaf;
+  color: #666;
 }
 .comment-author {
   display: block;
