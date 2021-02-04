@@ -739,6 +739,9 @@ custom
 }
 .time {
 }
+.comment-head { display: flex; justify-content: space-between; margin: 0 0 10px; }
+.comment-head time { font-size: 12px; color: #c4c4c6; }
+.comment-cont { font-size: 14px;  margin: 0 0 0px; }
 
 .widget-list li .top {
   font-weight: bold;
