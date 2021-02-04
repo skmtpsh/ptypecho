@@ -4,7 +4,9 @@
 
     <?php if($this->allow('comment')): ?>
     <div id="<?php $this->respondId(); ?>" class="respond">
-
+        <div class="cancel-comment-reply">
+            <?php $comments->cancelReply(); ?>
+        </div>
     	<h3 id="response"><?php _e('添加新评论'); ?></h3>
     	<form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
             <?php if($this->user->hasLogin()): ?>
@@ -90,10 +92,6 @@
 
 <div class="pd-20">
     <?php $this->comments()->to($comments); ?>
-
-    <div class="cancel-comment-reply">
-        <?php $comments->cancelReply(); ?>
-    </div>
 
     <?php if ($comments->have()): ?>
 	<h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
