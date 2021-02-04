@@ -274,6 +274,9 @@ textarea {
   height: 40px;
   margin-right: 10px;
 }
+.post-head .post-head-img img {
+  border-radius: 50%;
+}
 .post-head .post-head-tit {
   /* font-size: 24px; */
 }
@@ -699,6 +702,14 @@ custom
   border-bottom: 1px solid #f7f7f7;
   padding: 10px 0;
 }
+.author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .author img {
   border-radius: 50%;
+}
+.time {
 }

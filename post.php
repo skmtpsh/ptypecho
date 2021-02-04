@@ -7,10 +7,10 @@
         <div class="post-shead" itemprop="author" itemscope itemtype="http://schema.org/Person">
             <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author">
                 <?php $this->author->gravatar(); ?>
-                <?php $this->author(); ?>
+                <span><?php $this->author(); ?></span>
             </a>
             <span class="time">
-                <span class="iconfont icon-shizhong"></span> <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
+                <span class="iconfont icon-shizhong-"></span> <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
             </span>
         </div>
         <div class="post-content" itemprop="articleBody">
