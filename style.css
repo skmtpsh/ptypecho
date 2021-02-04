@@ -423,6 +423,7 @@ textarea {
 
 .comment-list li.comment-level-even {
   background: #FFF;
+  padding: 20px;
 }
 
 .comment-list li.comment-by-author {
