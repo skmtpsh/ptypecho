@@ -739,17 +739,17 @@ custom
 .widget-list li .top {
   font-weight: bold;
   margin-right: 4px;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 1;
   vertical-align: text-bottom;
 }
-.widget-list li .top:nth-of-type(0) {
+.widget-list li:nth-of-type(0) .top{
   color: #8A1F11;
 }
-.widget-list li .top:nth-of-type(1) {
+.widget-list li:nth-of-type(1) .top {
   color: #8A1F11;
 }
-.widget-list li .top:nth-of-type(2) {
+.widget-list li:nth-of-type(2) .top {
   color: #8A1F11;
 }
 
