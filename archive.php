@@ -2,12 +2,6 @@
 <?php $this->need('header.php'); ?>
 
     <div class="col-mb-12 col-8" id="main" role="main">
-        <h3 class="archive-title"><?php $this->archiveTitle(array(
-            'category'  =>  _t('分类 %s 下的文章'),
-            'search'    =>  _t('包含关键字 %s 的文章'),
-            'tag'       =>  _t('标签 %s 下的文章'),
-            'author'    =>  _t('%s 发布的文章')
-        ), '', ''); ?></h3>
         <div class="tabs">
             <a href="<?php $this->options->siteUrl(); ?>">主页</a>
             <?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
@@ -24,6 +18,13 @@
                     </a>
             <?php endwhile; ?>
         </div>
+        <h3 class="archive-title"><?php $this->archiveTitle(array(
+            'category'  =>  _t('分类 %s 下的文章'),
+            'search'    =>  _t('包含关键字 %s 的文章'),
+            'tag'       =>  _t('标签 %s 下的文章'),
+            'author'    =>  _t('%s 发布的文章')
+        ), '', ''); ?></h3>
+
         <?php if ($this->have()): ?>
     	<?php while($this->next()): ?>
             <article class="post" itemscope itemtype="http://schema.org/BlogPosting">

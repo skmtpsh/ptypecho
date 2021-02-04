@@ -325,6 +325,9 @@ textarea {
   /* padding-top: 20px; */
   color: #999;
   font-size: 1em;
+  padding: 10px;
+  background-color: #fff;
+  font-weight: normal;
 }
 
 .more {
@@ -650,6 +653,7 @@ custom
   border-bottom: 2px solid #edf0f5;
   margin-bottom: 6px;
   padding: 10px 10px 0;
+  background-color: #fff;
 }
 .tabs a {
   display: inline-block;
