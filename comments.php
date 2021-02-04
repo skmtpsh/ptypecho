@@ -36,55 +36,54 @@
     <?php endif; ?>
 </div>
 
+<?php function threadedComments($comments, $singleCommentOptions) {
+	$commentClass = '';
+	if ($comments->authorId) {
+		if ($comments->authorId == $comments->ownerId) {
+			$commentClass .= ' comment-by-author';
+		} else {
+			$commentClass .= ' comment-by-user';
+		}
+	}
+	$commentLevelClass = $comments->_levels > 0 ? ' comment-child' : ' comment-parent';
+	?>
+	<li id="<?php $comments->theId(); ?>" class="comment-body<?php
+		if ($comments->_levels > 0) {
+			echo ' comment-child';
+			$comments->levelsAlt(' comment-level-odd', ' comment-level-even');
+		} else {
+			echo ' comment-parent';
+	}
+		$comments->alt(' comment-odd', ' comment-even');
+		echo $commentClass;
+	//以上部份 不用理会，是判断一些奇偶数评论和作者类的，下面的才是需要修改的，根据需要修改吧， php部份不需要 修改，只需要修改 HTML 部分，下面是我现在用的
+	?>">
+	<div class="comment-author">
+		<?php $comments->gravatar($singleCommentOptions->avatarSize, $singleCommentOptions->defaultAvatar);    //头像 只输出 img 没有其它标签 ?>
+		<div class="comment-info">
+			<cite class="fn"><?php $singleCommentOptions->beforeAuthor();
+				$comments->author();$singleCommentOptions->afterAuthor(); //输出评论者 ?>
+			</cite>
+			<em class="comment-meta">
+				<a href="<?php $comments->permalink(); ?>"><?php $singleCommentOptions->beforeDate();
+				$comments->date($singleCommentOptions->dateFormat);
+				$singleCommentOptions->afterDate();  //输出评论日期 ?>
+				</a>
+			</em>
+		</div>
+		<div class="comment-reply">
+			<?php $comments->reply($singleCommentOptions->replyWord); //输出 回复 链接?>
+		</div>
+	</div>
 
-<?php function threadedComments($comments, $options) {
-    $commentClass = '';
-    if ($comments->authorId) {
-        if ($comments->authorId == $comments->ownerId) {
-            $commentClass .= ' comment-by-author';
-        } else {
-            $commentClass .= ' comment-by-user';
-        }
-    }
-
-    $commentLevelClass = $comments->levels > 0 ? ' comment-child' : ' comment-parent';
-?>
-
-<li id="li-<?php $comments->theId(); ?>" class="comment-body<?php
-if ($comments->levels > 0) {
-    echo ' comment-child';
-    $comments->levelsAlt(' comment-level-odd', ' comment-level-even');
-} else {
-    echo ' comment-parent';
-}
-$comments->alt(' comment-odd', ' comment-even');
-echo $commentClass;
-?>">
-    <div id="<?php $comments->theId(); ?>">
-        <div class="comment-item">
-            <span class="avator">
-                <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style="border-radius: 50%;" >'; ?>
-            </span>
-            <div class="cont">
-                <div class="comment-author">
-                    <!-- <?php $comments->gravatar('32', ''); ?> -->
-                    <cite class="fn"><?php $comments->author(); ?></cite>
-                </div>
-                <div class="comment-meta">
-                    <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
-                    <span class="comment-reply"><?php $comments->reply(); ?></span>
-                </div>
-                <div class="comment-c"><?php $comments->content(); ?></div>
-            </div>
-        </div>
-    </div>
-    <?php if ($comments->children) { ?>
-        <div class="comment-children">
-            <?php $comments->threadedComments($options); ?>
-        </div>
-    <?php } ?>
+	<?php $comments->content(); //输出评论内容，包含 <p></p> 标签 ?>
+	<?php if ($comments->children) { ?>
+		<div class="comment-children">
+			<?php $comments->threadedComments($singleCommentOptions); //评论嵌套?>
+		</div>
+	<?php } ?>
 </li>
-<?php } ?>
+<?php}?>
 
 <div class="pd-20">
     <?php $this->comments()->to($comments); ?>
