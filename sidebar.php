@@ -61,12 +61,12 @@
         <div class="statBox">
             <?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?>
             <div class="statItem">
-                <p>文章总数：<span><?php $stat->publishedPostsNum() ?></span>篇</p>
-                <p>分类总数：<span><?php $stat->categoriesNum() ?></span>个</p>
+                <p>文章总数：<span class="statNum"><?php $stat->publishedPostsNum() ?></span>篇</p>
+                <p>分类总数：<span class="statNum"><?php $stat->categoriesNum() ?></span>个</p>
             </div>
             <div class="statItem">
-                <p>评论总数：<span><?php $stat->publishedCommentsNum() ?></span>条</p>
-                <p>页面总数：<span><?php $stat->publishedPagesNum() ?></span>页</p>
+                <p>评论总数：<span class="statNum"><?php $stat->publishedCommentsNum() ?></span>条</p>
+                <p>页面总数：<span class="statNum"><?php $stat->publishedPagesNum() ?></span>页</p>
             </div>
         </div>
     </section>
