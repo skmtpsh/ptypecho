@@ -408,7 +408,7 @@ textarea {
   /* border: 1px solid #EEE; */
 }
 
-.comment-list li > li {
+.comment-list li li {
   margin-left: 30px;
 }
 
@@ -418,7 +418,7 @@ textarea {
   padding: 0 0 0 1rem;
   background-color: #fafbfc;
   border-radius: 3px;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .comment-list li.comment-level-even {
