@@ -34,7 +34,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 						<div class="post-head" itemprop="author" itemscope itemtype="http://schema.org/Person">
 							<div class="post-head-img"><?php $this->author->gravatar(); ?></div>
 							<div class="post-head-tit">
-								<p><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></p>
+								<p><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author"><?php $this->author(); ?></a></p>
 								<time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
 							</div>
 						</div>

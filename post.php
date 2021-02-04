@@ -5,13 +5,13 @@
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <h1 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->sticky(); $this->title() ?></a></h1>
         <div class="post-shead" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span>
-                <?php _e('时间: '); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
-            </span>
             <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author">
                 <?php $this->author->gravatar(); ?>
                 <?php $this->author(); ?>
             </a>
+            <span class="time">
+                <span class="iconfont icon-shizhong"></span> <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
+            </span>
         </div>
         <div class="post-content" itemprop="articleBody">
             <?php $this->content(); ?>
