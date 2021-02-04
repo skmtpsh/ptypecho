@@ -62,7 +62,7 @@
                 </form>
             </div>
             <div class="site-other tr col-2 kit-hidden-tb">
-                <a href="#">登录</a>
+                <a href="#" class="loginBtn">登录</a>
             </div>
         </div><!-- end .row -->
     </div>
