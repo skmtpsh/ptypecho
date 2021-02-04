@@ -650,6 +650,11 @@ img.alignright {
 /**
 custom
 */
+.f12 {
+  font-size: 12px;
+  color: #abadaf;
+  margin: 6px 0 0;
+}
 .widget-list li .orderNum {
   display: inline-block;
   border-radius: 4px;
@@ -704,7 +709,7 @@ custom
 }
 .author {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }

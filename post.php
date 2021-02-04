@@ -7,7 +7,7 @@
         <div class="post-shead" itemprop="author" itemscope itemtype="http://schema.org/Person">
             <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author">
                 <?php $this->author->gravatar(); ?>
-                <span><?php $this->author(); ?></span>
+                <div><?php $this->author(); ?> <p class="f12">非著名文艺青年</p></div>
             </a>
             <span class="time">
                 <span class="iconfont icon-shizhong-"></span> <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
