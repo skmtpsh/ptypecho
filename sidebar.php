@@ -31,7 +31,17 @@
         <ul class="widget-list">
         <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
         <?php while($comments->next()): ?>
-            <li><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(35, '...'); ?></li>
+            <li>
+                <div class="post-head" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <div class="post-head-img"><?php $comments->gravatar(); ?></div>
+                    <div class="post-head-tit">
+                        <p><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $comments->author(); ?></a></p>
+                        <time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $comments->date(); ?></time>
+                    </div>
+                </div>
+                <!-- <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a> -->
+                <p><?php $comments->excerpt(35, '...'); ?></p>
+            </li>
         <?php endwhile; ?>
         </ul>
     </section>
