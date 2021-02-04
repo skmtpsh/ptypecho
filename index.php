@@ -13,6 +13,21 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  ?>
 
 <div class="col-mb-12 col-8" id="main" role="main">
+	<div class="tabs">
+			<?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
+				<?php while ($category->next()): ?>
+					<a
+						<?php if ($this->is('post')): ?>
+								<?php if ($this->category == $category->slug): ?> class="current"<?php endif; ?>
+						<?php else: ?>
+							<?php if ($this->is('category', $category->slug)): ?> class="current"<?php endif; ?>
+						<?php endif; ?>
+						href="<?php $category->permalink(); ?>" title="<?php $category->name(); ?>"
+					>
+						<?php $category->name(); ?>
+					</a>
+			<?php endwhile; ?>
+	</div>
 	<?php while($this->next()): ?>
 				<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 						<div class="post-head" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -26,7 +41,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							<span class="tags"><?php $this->category(','); ?></span><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->sticky(); $this->title() ?></a>
 						</h2>
             <div class="post-content" itemprop="articleBody">
-							<!-- <?php $this->content('- 阅读剩余部分 -'); ?> -->
 							<?php
 								if (preg_match('/<!--more-->/',$this->content)||mb_strlen($this->content, 'utf-8') < 270) {
 									$this->content('阅读全文...');
@@ -41,7 +55,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							<li><?php _e('阅读:'); ?>(<?php $this->viewsCount(); ?>)</li>
 							<li itemprop="interactionCount"><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></li>
 						</ul>
-        </article>
+				</article>
+				<?php if ($this->sequence == 1): ?>
+					<p>此处为广告</p>
+				<?php endif; ?>
 	<?php endwhile; ?>
 
     <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>

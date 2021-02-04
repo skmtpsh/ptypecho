@@ -644,3 +644,19 @@ custom
   line-height: 1;
   margin-right: 10px;
 }
+.tabs_menu {
+  font-size: 16px;
+  border-bottom: 1px solid #edf0f5;
+}
+.tabs_menu a {
+  display: inline-block;
+  padding: 8px;
+  color: #666c72;
+  cursor: pointer;
+  margin-right: 4px;
+}
+.tabs_menu a.current {
+  position: relative;
+  color: #06c;
+  font-weight: 700;
+}

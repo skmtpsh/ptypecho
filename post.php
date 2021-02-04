@@ -20,10 +20,6 @@
         <p>上一篇：<?php $this->thePrev('%s','没有了'); ?></p>
         <p>下一篇：<?php $this->theNext('%s','没有了'); ?></p>
     </article>
-    <!-- <ul class="post-near">
-        <li>上一篇: <?php $this->thePrev('%s','没有了'); ?></li>
-        <li>下一篇: <?php $this->theNext('%s','没有了'); ?></li>
-    </ul> -->
     <article class="related pd-20">
         <h4 class="related-title">相关文章</h4>
         <?php $this->related(5)->to($relatedPosts); ?>
