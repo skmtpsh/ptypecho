@@ -32,13 +32,13 @@
         <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
         <?php while($comments->next()): ?>
             <li>
-                <p class="comment-head">
-                    <div>
+                <div class="comment-head">
+                    <p>
                         <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style="border-radius: 50%;" >'; ?>
                         <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>
-                    </div>
+                    </p>
                     <time><?php $comments->date(); ?></time>
-                </p>
+                </div>
                 <p class="comment-cont"><?php $comments->excerpt(35, '...'); ?></p>
             </li>
         <?php endwhile; ?>

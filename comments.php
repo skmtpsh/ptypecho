@@ -36,7 +36,7 @@ echo $commentClass;
                     <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
                     <span class="comment-reply"><?php $comments->reply(); ?></span>
                 </div>
-                <?php $comments->content(); ?>
+                <div class="comment-cont"><?php $comments->content(); ?></div>
             </div>
         </div>
     </div>

@@ -428,10 +428,18 @@ textarea {
   text-align: right;
   font-size: .92857em;
 }
-
+.comment-meta {
+  display: flex;
+  justify-content: space-between;
+}
 .comment-meta a {
-  color: #999;
+  color: rgb(0, 255, 157);
   font-size: .92857em;
+}
+.comment-cont {
+  line-height: 1.6;
+  font-size: 14px;
+  color: #abadaf;
 }
 
 .comment-author {
