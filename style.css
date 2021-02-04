@@ -112,7 +112,7 @@ textarea {
 .post-content a,
 .widget a,
 .comment-content a {
-  border-bottom: 1px solid #EEE;
+  /* border-bottom: 1px solid #EEE; */
 }
 
 .post-meta a:hover,
@@ -718,4 +718,24 @@ custom
   margin: 0 6px;
 }
 .time {
+}
+pre code::-webkit-scrollbar {
+	height: 6px;
+}
+
+::-webkit-scrollbar {
+	width: 8px
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(51, 51, 51, .1);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(68, 25, 1);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: #851b00
 }
