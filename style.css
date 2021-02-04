@@ -743,13 +743,13 @@ custom
   line-height: 1;
   vertical-align: text-bottom;
 }
-.widget-list li:nth-of-type(0) .top{
-  color: #8A1F11;
-}
-.widget-list li:nth-of-type(1) .top {
-  color: #8A1F11;
+.widget-list li:nth-of-type(1) .top{
+  color: #ee0909;
 }
 .widget-list li:nth-of-type(2) .top {
+  color: #d40707;
+}
+.widget-list li:nth-of-type(3) .top {
   color: #8A1F11;
 }
 
