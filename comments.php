@@ -33,10 +33,10 @@ echo $commentClass;
                     <cite class="fn"><?php $comments->author(); ?></cite>
                 </div>
                 <div class="comment-meta">
-                    <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
+                    <?php $comments->date('Y-m-d H:i'); ?>
                     <span class="comment-reply"><?php $comments->reply(); ?></span>
                 </div>
-                <div class="comment-cont"><?php $comments->content(); ?></div>
+                <div class="comment-c"><?php $comments->content(); ?></div>
             </div>
         </div>
     </div>
