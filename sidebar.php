@@ -33,7 +33,10 @@
         <?php while($comments->next()): ?>
             <li>
                 <p class="comment-head">
-                    <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>
+                    <div>
+                        <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style="border-radius: 50%;" >'; ?>
+                        <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>
+                    </div>
                     <time><?php $comments->date(); ?></time>
                 </p>
                 <p class="comment-cont"><?php $comments->excerpt(35, '...'); ?></p>

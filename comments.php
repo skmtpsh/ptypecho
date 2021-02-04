@@ -70,10 +70,10 @@ echo $commentClass;
     		<p><?php _e('登录身份: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
             <?php else: ?>
     		<p>
-    			<input type="text" name="author" id="author" class="text" placeholder="称呼" value="<?php $this->remember('author'); ?>" required />
+    			<input type="text" name="author" id="author" class="text" placeholder="请输入称呼" value="<?php $this->remember('author'); ?>" required />
     		</p>
     		<p>
-    			<input type="email" name="mail" id="mail" class="text" placeholder="如显示头像请输入QQ邮箱" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
+    			<input type="email" name="mail" id="mail" class="text" placeholder="请输入QQ邮箱" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
     		</p>
     		<p>
     			<input type="url" name="url" id="url" class="text" placeholder="请输入网址 <?php _e('http://'); ?>" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
