@@ -328,6 +328,7 @@ textarea {
   padding: 10px;
   background-color: #fff;
   font-weight: normal;
+  margin-top: 0;
 }
 
 .more {

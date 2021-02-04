@@ -30,14 +30,16 @@
         <?php if ($this->have()): ?>
     	<?php while($this->next()): ?>
             <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    			<h2 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->sticky(); $this->title() ?></a></h2>
-    			<ul class="post-meta">
-    				<li itemprop="author" itemscope itemtype="http://schema.org/Person"><?php _e('作者: '); ?><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></li>
-    				<li><?php _e('时间: '); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
-                    <li><?php _e('分类: '); ?><?php $this->category(','); ?></li>
-				    <li><?php _e('阅读:'); ?>(<?php $this->viewsCount(); ?>)</li>
-                    <li itemprop="interactionCount"><a href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></li>
-    			</ul>
+                <div class="post-head" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <div class="post-head-img"><?php $this->author->gravatar(); ?></div>
+                    <div class="post-head-tit">
+                        <p><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></p>
+                        <time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
+                    </div>
+                </div>
+                <h2 class="post-title" itemprop="name headline">
+                    <span class="tags"><?php $this->category(','); ?></span><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
+                </h2>
                 <div class="post-content" itemprop="articleBody">
                 <?php
                     if (preg_match('/<!--more-->/',$this->content)||mb_strlen($this->content, 'utf-8') < 270) {
@@ -49,6 +51,10 @@
                     }
                 ?>
                 </div>
+                <ul class="post-meta">
+                    <li><?php _e('阅读:'); ?>(<?php $this->viewsCount(); ?>)</li>
+                    <li itemprop="interactionCount"><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?></a></li>
+                </ul>
     		</article>
     	<?php endwhile; ?>
         <?php else: ?>
