@@ -33,8 +33,8 @@
         <?php while($comments->next()): ?>
             <li>
                 <div class="comment-head">
-                    <p>
-                        <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style="border-radius: 50%;" >'; ?>
+                    <p class="comment-tx">
+                        <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style=" marin-right: 5px; border-radius: 50%;" >'; ?>
                         <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>
                     </p>
                     <time><?php $comments->date(); ?></time>

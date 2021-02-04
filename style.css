@@ -757,7 +757,10 @@ custom
 }
 .time {
 }
-.comment-head { display: flex; justify-content: space-between; margin: 0 0 10px; }
+.comment-head { display: flex; justify-content: space-between; margin: 0 0 10px; align-items: center; }
+.comment-head .comment-tx {
+  margin: 0;
+}
 .comment-head time { font-size: 12px; color: #c4c4c6; }
 .comment-cont {
   font-size: 13px;
