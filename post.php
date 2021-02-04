@@ -16,7 +16,7 @@
         <div class="post-content" itemprop="articleBody">
             <?php $this->content(); ?>
         </div>
-        <p itemprop="keywords" class="tagsbox"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></p>
+        <p itemprop="keywords" class="tagsbox"><?php $this->tags(' ', true, 'none'); ?></p>
         <ul class="post-meta">
             <li><?php _e('分类: '); ?><?php $this->category(','); ?></li>
 			<li><?php _e('阅读:'); ?>(<?php $this->viewsCount(); ?>)</li>
