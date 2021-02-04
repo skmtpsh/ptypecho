@@ -1,4 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+
+<div id="comments" class="pd-20">
+
 <?php function threadedComments($comments, $options) {
     $commentClass = '';
     if ($comments->authorId) {
@@ -33,7 +36,7 @@ echo $commentClass;
                     <cite class="fn"><?php $comments->author(); ?></cite>
                 </div>
                 <div class="comment-meta">
-                    <?php $comments->date('Y-m-d H:i'); ?>
+                    <a href="<?php $comments->permalink(); ?>"><?php $comments->date('Y-m-d H:i'); ?></a>
                     <span class="comment-reply"><?php $comments->reply(); ?></span>
                 </div>
                 <div class="comment-c"><?php $comments->content(); ?></div>
@@ -47,16 +50,9 @@ echo $commentClass;
     <?php } ?>
 </li>
 <?php } ?>
-<div id="comments" class="pd-20">
+
     <?php $this->comments()->to($comments); ?>
-    <?php if ($comments->have()): ?>
-	<h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
 
-    <?php $comments->listComments(); ?>
-
-    <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
-
-    <?php endif; ?>
 
     <?php if($this->allow('comment')): ?>
     <div id="<?php $this->respondId(); ?>" class="respond">
@@ -93,4 +89,14 @@ echo $commentClass;
     <?php else: ?>
     <h3><?php _e('评论已关闭'); ?></h3>
     <?php endif; ?>
+
+    <?php if ($comments->have()): ?>
+	<h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
+
+    <?php $comments->listComments(); ?>
+
+    <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
+
+    <?php endif; ?>
+
 </div>
