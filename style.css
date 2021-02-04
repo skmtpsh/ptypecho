@@ -741,7 +741,16 @@ custom
 }
 .comment-head { display: flex; justify-content: space-between; margin: 0 0 10px; }
 .comment-head time { font-size: 12px; color: #c4c4c6; }
-.comment-cont { font-size: 14px;  margin: 0 0 0px; }
+.comment-cont {
+  font-size: 13px;
+  margin: 0 0 10px;
+  background: #f4f6fb;
+  padding: 8px 6px;
+  border-radius: 4px;
+  line-height: 1.6;
+  color: #4a4a4a;
+  padding: 10px;
+}
 
 .widget-list li .top {
   font-weight: bold;
