@@ -715,6 +715,7 @@ custom
 }
 .author img {
   border-radius: 50%;
+  margin: 0 6px;
 }
 .time {
 }
