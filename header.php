@@ -12,7 +12,7 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?php $this->options->siteUrl(); ?>/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="<?php $this->options->themeUrl('font/iconfont.css'); ?>" />
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css">
