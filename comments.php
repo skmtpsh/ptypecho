@@ -86,7 +86,7 @@ echo $commentClass;
                 <textarea rows="8" name="text" id="textarea" class="textarea" maxlength="200" placeholder="请输入5-200以内的文字" required style="min-height: 100px;"><?php $this->remember('text'); ?></textarea>
             </p>
     		<p>
-                <button type="submit" class="submit"><?php _e('提交评论'); ?></button>
+                <button type="submit" class="submit primary-btn"><?php _e('提交评论'); ?></button>
             </p>
     	</form>
     </div>
