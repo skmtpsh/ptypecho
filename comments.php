@@ -53,6 +53,16 @@
 <?php $this->comments()->to($comments); ?>
 <div id="comments" class="pd-20">
 
+
+    <?php if ($comments->have()): ?>
+	<h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
+
+    <?php $comments->listComments(); ?>
+
+    <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
+
+    <?php endif; ?>
+
     <?php if($this->allow('comment')): ?>
     <div id="<?php $this->respondId(); ?>" class="respond">
         <div class="cancel-comment-reply">
@@ -88,14 +98,5 @@
     <h3><?php _e('评论已关闭'); ?></h3>
     <?php endif; ?>
 
-
-    <?php if ($comments->have()): ?>
-	<h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
-
-    <?php $comments->listComments(); ?>
-
-    <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
-
-    <?php endif; ?>
 </div>
 
