@@ -15,7 +15,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 <div class="col-mb-12 col-8" id="main" role="main">
 	<el-carousel :interval="4000" type="card" height="200px">
     <el-carousel-item v-for="item in images" :key="item">
-      <h3 class="medium">{{ item }}</h3>
+			<img :src="item" style="max-width: 100%" />
     </el-carousel-item>
   </el-carousel>
 	<div class="tabs">
