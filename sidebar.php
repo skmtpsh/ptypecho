@@ -14,10 +14,6 @@
         </div>
     </section>
     <section class="widget">
-        <el-button @click="visible = true">Button</el-button>
-        <el-dialog :visible.sync="visible" title="Hello world">
-        <p>Try Element</p>
-        </el-dialog>
         <el-tabs v-model="activeName" @tab-click="handleClick">
             <el-tab-pane label="热门" name="hot">
                 <ul class="widget-list">
