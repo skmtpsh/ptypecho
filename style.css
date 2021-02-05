@@ -3,7 +3,7 @@ body {
   color: #282828;
   font-family: Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", serif;
   /* font-size: 87.5%; */
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 a {
@@ -171,18 +171,18 @@ textarea {
 }
 
 #header {
-  /* padding-top: 35px; */
-  /* border-bottom: 1px solid #EEE; */
-  background-color: #fff;
+  background-color: #1369bf;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 99;
+  padding: 6px 0;
 }
 
 #logo {
-  color: #333;
-  font-size: 2.5em;
+  display: block;
+  /* color: #333;
+  font-size: 2.5em; */
 }
 
 #logo img {
@@ -208,7 +208,7 @@ textarea {
   border-bottom: none;
   height: 32px;
   line-height: 32px;
-  color: #444;
+  color: #fff;
   float: left;
 }
 
@@ -224,6 +224,7 @@ textarea {
 
 #search input {
   padding-right: 30px;
+  border-radius: 18px;
 }
 
 #search button {
@@ -736,14 +737,14 @@ custom
 }
 .tabs a.current {
   position: relative;
-  color: #ff6c00;
+  color: #1369bf
   font-weight: 700;
 }
 .tabs a.current::after {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #ff6c00;
+  background-color: #1369bf;
   bottom: -1px;
   left: 0;
   z-index: 1;
