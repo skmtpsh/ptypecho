@@ -14,33 +14,31 @@
         </div>
     </section>
     <section class="widget">
-        text_Vue :{{ message }}
+        <el-tabs v-model="activeName" @tab-click="handleClick">
+            <el-tab-pane label="热门" name="hot">
+                <ul class="widget-list">
+                    <?php MueduPostViews_Plugin::outputHotPosts() ?>
+                </ul>
+            </el-tab-pane>
+            <el-tab-pane label="最新" name="news">
+                <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
+                    <ul class="widget-list">
+                        <!-- <?php $this->widget('Widget_Contents_Post_Recent')->parse('<li><a href="{permalink}">{title}</a></li>'); ?> -->
+                        <?php $this->widget('Widget_Contents_Post_Recent')->to($postRecent); ?>
+                        <?php $i = 1; ?>
+                        <?php while($postRecent->next()): ?>
+                            <li>
+                                <span class="orderNum"><?php echo $i; ?></span>
+                                <a href="<?php $postRecent->permalink(); ?>"><?php $postRecent->title(); ?></a>
+                                <p class="recent-date"><?php $postRecent->date(); ?></p>
+                            </li>
+                            <?php $i++; ?>
+                        <?php endwhile; ?>
+                    </ul>
+                <?php endif; ?>
+            </el-tab-pane>
+        </el-tabs>
     </section>
-    <section class="widget">
-        <h3 class="widget-title"><?php _e('热门文章'); ?></h3>
-        <ul class="widget-list">
-            <?php MueduPostViews_Plugin::outputHotPosts() ?>
-        </ul>
-    </section>
-    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
-    <section class="widget">
-		<h3 class="widget-title"><?php _e('最新文章'); ?></h3>
-        <ul class="widget-list">
-            <!-- <?php $this->widget('Widget_Contents_Post_Recent')->parse('<li><a href="{permalink}">{title}</a></li>'); ?> -->
-            <?php $this->widget('Widget_Contents_Post_Recent')->to($postRecent); ?>
-            <?php $i = 1; ?>
-            <?php while($postRecent->next()): ?>
-                <li>
-                    <span class="orderNum"><?php echo $i; ?></span>
-                    <a href="<?php $postRecent->permalink(); ?>"><?php $postRecent->title(); ?></a>
-                    <p class="recent-date"><?php $postRecent->date(); ?></p>
-                </li>
-                <?php $i++; ?>
-            <?php endwhile; ?>
-        </ul>
-    </section>
-    <?php endif; ?>
-
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>
     <section class="widget">
 		<h3 class="widget-title"><?php _e('最近回复'); ?></h3>

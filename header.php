@@ -15,10 +15,11 @@
     <link rel="shortcut icon" href="<?php $this->options->siteUrl(); ?>/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="<?php $this->options->themeUrl('font/iconfont.css'); ?>" />
     <!-- 使用url函数转换相关路径 -->
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.0/lib/theme-chalk/index.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
     <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>

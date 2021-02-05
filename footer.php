@@ -11,12 +11,19 @@
 
 <?php $this->footer(); ?>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdn.jsdelivr.net/npm/element-ui@2.15.0/lib/element-ui.common.min.js"></script>
 <script>
 var app = new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue!'
-  }
+    el: '#app',
+    data: {
+        activeName: 'hot'
+    },
+    methods: {
+        handleClick(tab, event) {
+            console.log(tab, event)
+        }
+    }
 })
 </script>
 </body>
