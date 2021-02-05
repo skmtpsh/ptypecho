@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('font/iconfont.css'); ?>" />
     <!-- 使用url函数转换相关路径 -->
     <!-- <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://element.eleme.cn/element-ui.3668a6a.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.0/lib/theme-chalk/index.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
 
@@ -28,12 +27,12 @@
 
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://element.eleme.cn/element-ui.dd969f2.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.0/index.min.js"></script>
   <!-- import Vue before Element -->
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
   <!-- import JavaScript -->
-  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
 </head>
 <body>
 <!--[if lt IE 8]>
