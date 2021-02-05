@@ -1,16 +1,16 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-<div class="col-mb-12 col-8" id="main" role="main">
+<div class="col-mb-12 col-8 col-offset-2" id="main" role="main">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
         <div class="post-shead" itemprop="author" itemscope itemtype="http://schema.org/Person">
             <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author">
                 <?php $this->author->gravatar(); ?>
-                <div><?php $this->author(); ?> <p class="f12">非著名文艺青年 <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p></div>
+                <div><?php $this->author(); ?> <p class="f12">非著名文艺青年 发布于<time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p></div>
             </a>
             <span class="time">
-                <i class="el-icon-date"></i> <?php $this->category(','); ?>
+                <el-tag type="danger" effect="dark" size="small"><?php $this->category(','); ?></el-tag>
             </span>
         </div>
         <h1 class="post-title" itemprop="name headline"><?php $this->title(); ?></h1>
