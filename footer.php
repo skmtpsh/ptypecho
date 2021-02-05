@@ -16,7 +16,7 @@
 var app = new Vue({
     el: '#app',
     data: function() {
-        return { activeName: 'hot' }
+        return { activeName: 'hot', visible: false }
     },
     methods: {
         handleClick: function(tab, event) {
