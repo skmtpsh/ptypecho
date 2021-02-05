@@ -267,15 +267,18 @@ textarea {
 }
 
 .post {
+  position: relative;
+  padding: 15px 0;
+  border-bottom: 1px solid #edf0f5;
+  /* margin-bottom: 10px;
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
-  margin-bottom: 10px;
 	border: 1px solid rgba(133, 153, 171, 0.2);
 	-webkit-box-shadow: 0 2px 26px 0 rgba(133, 153, 171, 0.1);
 	box-shadow: 0 2px 26px 0 rgba(133, 153, 171, 0.1);
 	-webkit-border-radius: 4px;
-	border-radius: 4px;
+	border-radius: 4px; */
 }
 
 .post-title {
@@ -733,15 +736,15 @@ custom
 }
 .tabs {
   font-size: 16px;
-  border-bottom: 2px solid #edf0f5;
+  border-bottom: 1px solid #edf0f5;
   margin-bottom: 6px;
   padding: 10px 10px 0;
-  background-color: #fff;
+  /* background-color: #fff;
 	border: 1px solid rgba(133, 153, 171, 0.2);
 	-webkit-box-shadow: 0 2px 26px 0 rgba(133, 153, 171, 0.1);
 	box-shadow: 0 2px 26px 0 rgba(133, 153, 171, 0.1);
 	-webkit-border-radius: 4px;
-	border-radius: 4px;
+	border-radius: 4px; */
 }
 .tabs a {
   display: inline-block;
