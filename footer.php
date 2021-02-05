@@ -10,6 +10,7 @@
 </footer><!-- end #footer -->
 
 <?php $this->footer(); ?>
+</div>
 <script>
 var app = new Vue({
   el: '#app',
