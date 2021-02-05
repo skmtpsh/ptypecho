@@ -1,6 +1,22 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div class="col-mb-12 col-4 kit-hidden-tb" id="secondary" role="complementary">
     <section class="widget">
+        <div class="statBox">
+            <?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?>
+            <div class="statItem">
+                <p>文章总数：<span class="statNum"><?php $stat->publishedPostsNum() ?></span>篇</p>
+                <p>分类总数：<span class="statNum"><?php $stat->categoriesNum() ?></span>个</p>
+            </div>
+            <div class="statItem">
+                <p>评论总数：<span class="statNum"><?php $stat->publishedCommentsNum() ?></span>条</p>
+                <p>页面总数：<span class="statNum"><?php $stat->publishedPagesNum() ?></span>页</p>
+            </div>
+        </div>
+    </section>
+    <section class="widget">
+        text_Vue :{{ message }}
+    </section>
+    <section class="widget">
         <h3 class="widget-title"><?php _e('热门文章'); ?></h3>
         <ul class="widget-list">
             <?php MueduPostViews_Plugin::outputHotPosts() ?>
@@ -65,20 +81,6 @@
             <?php while($tags->next()): ?>
                 <a style="color: rgb(<?php echo(rand(0, 255)); ?>, <?php echo(rand(0,255)); ?>, <?php echo(rand(0, 255)); ?>)" href="<?php $tags->permalink(); ?>" title='<?php $tags->name(); ?>'><?php $tags->name(); ?></a>
             <?php endwhile; ?>
-        </div>
-    </section>
-    <section class="widget">
-		<h3 class="widget-title"><?php _e('网站统计'); ?></h3>
-        <div class="statBox">
-            <?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?>
-            <div class="statItem">
-                <p>文章总数：<span class="statNum"><?php $stat->publishedPostsNum() ?></span>篇</p>
-                <p>分类总数：<span class="statNum"><?php $stat->categoriesNum() ?></span>个</p>
-            </div>
-            <div class="statItem">
-                <p>评论总数：<span class="statNum"><?php $stat->publishedCommentsNum() ?></span>条</p>
-                <p>页面总数：<span class="statNum"><?php $stat->publishedPagesNum() ?></span>页</p>
-            </div>
         </div>
     </section>
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowOther', $this->options->sidebarBlock)): ?>
