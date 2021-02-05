@@ -3,7 +3,7 @@
 
 <div class="col-mb-12 col-8" id="main" role="main">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-        <h1 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->sticky(); $this->title() ?></a></h1>
+        <h1 class="post-title" itemprop="name headline"><?php $this->title(); ?></h1>
         <div class="post-shead" itemprop="author" itemscope itemtype="http://schema.org/Person">
             <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author">
                 <?php $this->author->gravatar(); ?>

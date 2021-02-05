@@ -13,6 +13,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  ?>
 
 <div class="col-mb-12 col-8" id="main" role="main">
+	<el-carousel :interval="4000" type="card" height="200px">
+    <el-carousel-item v-for="item in 6" :key="item">
+      <h3 class="medium">{{ item }}</h3>
+    </el-carousel-item>
+  </el-carousel>
 	<div class="tabs">
 			<a href="<?php $this->options->siteUrl(); ?>" class="current">主页</a>
 			<?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
@@ -40,7 +45,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 						</div>
 						<h2 class="post-title" itemprop="name headline">
 							<!-- <span class="tags"></span> -->
-							<el-tag type="danger" effect="dark">精华</el-tag>
+							<el-tag type="danger" effect="dark" size="small">精华</el-tag>
 							<a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->sticky(); $this->title() ?></a>
 						</h2>
             <div class="post-content" itemprop="articleBody">
