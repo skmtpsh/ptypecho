@@ -1,25 +1,25 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-<div class="col-mb-12 col-12" id="main" role="main">
+<div class="col-mb-12 col-8" id="main" role="main">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-        <h1 class="post-title" itemprop="name headline"><?php $this->title(); ?></h1>
+
         <div class="post-shead" itemprop="author" itemscope itemtype="http://schema.org/Person">
             <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author">
                 <?php $this->author->gravatar(); ?>
-                <div><?php $this->author(); ?> <p class="f12">非著名文艺青年</p></div>
+                <div><?php $this->author(); ?> <p class="f12">非著名文艺青年 <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p></div>
             </a>
             <span class="time">
-                <i class="el-icon-date"></i> <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
+                <i class="el-icon-date"></i> <?php $this->category(','); ?>
             </span>
         </div>
+        <h1 class="post-title" itemprop="name headline"><?php $this->title(); ?></h1>
         <div class="post-content" itemprop="articleBody">
             <?php $this->content(); ?>
         </div>
         <p itemprop="keywords" class="tagsbox"><?php $this->tags(' ', true, 'none'); ?></p>
         <ul class="post-meta">
-            <li><?php _e('分类: '); ?><?php $this->category(','); ?></li>
-			<li><?php _e('阅读:'); ?>(<?php $this->viewsCount(); ?>)</li>
+			<li><i class="el-icon-document-copy"></i> <?php _e('阅读:'); ?>(<?php $this->viewsCount(); ?>)</li>
         </ul>
     </article>
     <article class="post-near pd-20">
