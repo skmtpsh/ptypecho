@@ -286,6 +286,10 @@ textarea {
   font-size: 1.2em;
 }
 
+.post-title a {
+  color: #33353c;
+}
+
 .post-head {
   margin-bottom: 20px;
   display: flex;
@@ -336,6 +340,14 @@ textarea {
 
 .post-content {
   line-height: 1.5;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.6em;
+  max-height: 4.8em;
+  font-size: 15px;
+  color: #666c72;
 }
 
 .post .tags {
