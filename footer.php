@@ -11,8 +11,7 @@
 
 <?php $this->footer(); ?>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script src="https://element.eleme.cn/element-ui.dd969f2.js"></script>
+
 <script>
 var app = new Vue({
     el: '#app',

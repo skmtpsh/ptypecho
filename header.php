@@ -27,6 +27,8 @@
 
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://element.eleme.cn/element-ui.dd969f2.js"></script>
 </head>
 <body>
 <!--[if lt IE 8]>
