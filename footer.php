@@ -12,7 +12,7 @@
 <?php $this->footer(); ?>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script src="https://cdn.jsdelivr.net/npm/element-ui@2.15.0/lib/element-ui.common.min.js"></script>
+<script src="https://element.eleme.cn/element-ui.dd969f2.js"></script>
 <script>
 var app = new Vue({
     el: '#app',
