@@ -20,7 +20,7 @@ var app = new Vue({
             activeName: 'hot',
             visible: false,
             images: [
-                'https://goss1.cfp.cn/creative/vcg/800/version23/VCG41496596805.jpg,
+                'https://goss1.cfp.cn/creative/vcg/800/version23/VCG41496596805.jpg',
                 'https://goss1.cfp.cn/creative/vcg/800/new/VCG211124471955.jpg'
             ]
         }
