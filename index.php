@@ -39,7 +39,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							</div>
 						</div>
 						<h2 class="post-title" itemprop="name headline">
-							<span class="tags"><?php $this->category(','); ?></span><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->sticky(); $this->title() ?></a>
+							<!-- <span class="tags"></span> -->
+							<el-tag type="danger" effect="dark">精华</el-tag>
+							<a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->sticky(); $this->title() ?></a>
 						</h2>
             <div class="post-content" itemprop="articleBody">
 							<?php
@@ -53,13 +55,13 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							?>
 						</div>
 						<ul class="post-meta">
-							<li><span class="iconfont icon-quanminlangdu"></span> <?php $this->viewsCount(); ?> 次阅读</li>
+							<li><i class="el-icon-document-copy"></i> <?php $this->category(','); ?></li>
+							<li><i class="el-icon-reading"></i> <?php $this->viewsCount(); ?> </li>
 							<li itemprop="interactionCount">
-								<span class="iconfont icon-pinglun"></span>
+								<i class="el-icon-chat-line-square"></i>
 								<a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments">
 									<?php $this->commentsNum('', '1', '%d'); ?>
 								</a>
-								条评论
 							</li>
 						</ul>
 				</article>
