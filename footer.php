@@ -15,11 +15,11 @@
 <script>
 var app = new Vue({
     el: '#app',
-    data: {
-        activeName: 'hot'
+    data: function() {
+        return { activeName: 'hot' }
     },
     methods: {
-        handleClick(tab, event) {
+        handleClick: function(tab, event) {
             console.log(tab, event)
         }
     }
