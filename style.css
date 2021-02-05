@@ -588,10 +588,11 @@ h3.widget-title {
 }
 
 #footer {
-  padding: 3em 0;
+  padding: 15px 0;
   line-height: 1.5;
   text-align: center;
-  color: #999;
+  font-size: 13px;
+  background-color: #f8fbfd;
 }
 
 .error-page {
