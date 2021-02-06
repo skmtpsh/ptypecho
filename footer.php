@@ -17,12 +17,7 @@ var app = new Vue({
     el: '#app',
     data: function() {
         return {
-            activeName: 'hot',
-            visible: false,
-            images: [
-                'https://goss1.cfp.cn/creative/vcg/800/version23/VCG41496596805.jpg',
-                'https://goss1.cfp.cn/creative/vcg/800/new/VCG211124471955.jpg'
-            ]
+            activeName: 'hot'
         }
     },
     methods: {
