@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="<?php $this->options->siteUrl(); ?>/favicon.ico" type="image/x-icon" />
     <!-- 使用url函数转换相关路径 -->
     <!-- <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.0/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('index.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
 
