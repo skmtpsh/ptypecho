@@ -819,7 +819,12 @@ custom
   margin: 0;
   display: flex;
 }
-.comment-head time { font-size: 12px; color: #c4c4c6; }
+.comment-head .comment-tx-t {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.comment-head time { font-size: 12px; color: #c4c4c6; margin-top: 6px; }
 .comment-cont {
   font-size: 13px;
   margin: 0 0 10px;
