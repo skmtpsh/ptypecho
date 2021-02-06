@@ -46,18 +46,20 @@
         <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
         <?php while($comments->next()): ?>
             <li>
-                <div class="comment-head">
-                    <div class="comment-tx">
-                        <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style=" marin-right: 5px; border-radius: 50%;" >'; ?>
-                        <div class="comment-tx-t">
-                            <strong>
-                                <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>
-                            </strong>
-                            <time><?php $comments->dateWord(); ?></time>
+                <div class="comment-ping">
+                    <div class="comment-head">
+                        <div class="comment-tx">
+                            <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="40px" height="40px" style=" marin-right: 5px; border-radius: 50%;" >'; ?>
+                            <div class="comment-tx-t">
+                                <strong>
+                                    <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>
+                                </strong>
+                                <time><?php $comments->dateWord(); ?></time>
+                            </div>
                         </div>
                     </div>
+                    <p class="comment-cont"><?php $comments->excerpt(35, '...'); ?></p>
                 </div>
-                <p class="comment-cont"><?php $comments->excerpt(35, '...'); ?></p>
             </li>
         <?php endwhile; ?>
         </ul>

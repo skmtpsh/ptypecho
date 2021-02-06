@@ -814,6 +814,10 @@ custom
 .tags-list a {
   margin: 2px 5px;
 }
+.comment-ping {
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 10px;
+}
 .comment-head { display: flex; justify-content: space-between; margin: 0 0 10px; align-items: center; }
 .comment-head .comment-tx {
   margin: 0;
@@ -824,7 +828,7 @@ custom
   display: flex;
   flex-direction: column;
 }
-.comment-head time { font-size: 12px; color: #c4c4c6; margin-top: 6px; }
+.comment-head time { font-size: 12px; color: #c4c4c6; margin-top: 3px; }
 .comment-cont {
   font-size: 13px;
   margin: 0 0 10px;

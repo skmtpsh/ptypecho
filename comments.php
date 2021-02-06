@@ -27,7 +27,7 @@
     <div id="<?php $comments->theId(); ?>">
         <div class="comment-item">
             <span class="avator">
-                <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style="border-radius: 50%;" >'; ?>
+                <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="40px" height="40px" style="border-radius: 50%;" >'; ?>
             </span>
             <div class="cont">
                 <div class="comment-author">
