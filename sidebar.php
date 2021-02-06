@@ -49,11 +49,13 @@
                 <div class="comment-head">
                     <div class="comment-tx">
                         <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style=" marin-right: 5px; border-radius: 50%;" >'; ?>
-                        <span>
-                            <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>
-                        </span>
+                        <div class="comment-tx-t">
+                            <strong>
+                                <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>
+                            </strong>
+                            <time><?php $comments->dateWord(); ?></time>
+                        </div>
                     </div>
-                    <time><?php $comments->date(); ?></time>
                 </div>
                 <p class="comment-cont"><?php $comments->excerpt(35, '...'); ?></p>
             </li>

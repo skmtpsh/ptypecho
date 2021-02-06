@@ -464,9 +464,17 @@ textarea {
   font-size: .92857em;
 }
 .comment-cont {
-  line-height: 1.6;
-  font-size: 14px;
-  color: #666;
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 24px;
+  color: #8599ab;
+  padding: 5px 10px;
+  background: #eef6fd;
+  border-radius: 6px;
+  position: relative;
 }
 .comment-c {
   line-height: 1.6;
