@@ -15,9 +15,9 @@
         <div class="post-content" itemprop="articleBody">
             <?php $this->content(); ?>
         </div>
-        <p itemprop="keywords" class="tagsbox"><i classel-icon-price-tag></i>: <?php $this->tags(' ', true, 'none'); ?></p>
+        <p itemprop="keywords" class="tagsbox"><i class="el-icon-price-tag"></i>: <?php $this->tags(' ', true, 'none'); ?></p>
         <ul class="post-meta">
-			<li><i class="el-icon-document-copy"></i> <?php _e('阅读:'); ?>(<?php $this->viewsCount(); ?>)</li>
+			<li><i class="el-icon-document-copy"></i> (<?php $this->viewsCount(); ?>)</li>
         </ul>
     </article>
     <article class="post-near pd-20">
