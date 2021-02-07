@@ -1095,6 +1095,6 @@ button {
   color: #fff;
   font-size: 20px;
 }
-@media(max-width: 991pxx){
+@media(max-width: 991px){
   .header__btn  { display: block; }
 }
