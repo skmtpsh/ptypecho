@@ -51,7 +51,7 @@
                 <div class="comment-ping">
                     <div class="comment-head">
                         <div class="comment-tx">
-                            <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="40px" height="40px" style=" marin-right: 5px; border-radius: 50%;" >'; ?>
+                            <?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style=" marin-right: 5px; border-radius: 50%;" >'; ?>
                             <div class="comment-tx-t">
                                 <strong>
                                     <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>

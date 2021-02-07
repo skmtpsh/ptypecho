@@ -872,11 +872,15 @@ custom
 .comment-head .comment-tx {
   margin: 0;
   display: flex;
+  width: 100%;
 }
 .comment-head .comment-tx-t {
   margin-left: 10px;
   display: flex;
-  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
 }
 .comment-head time { font-size: 12px; color: #c4c4c6; margin-top: 3px; }
 .comment-cont {
