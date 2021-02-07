@@ -391,6 +391,12 @@ textarea {
   margin-top: 0;
 }
 
+.home-add {
+  margin-bottom: 24px;
+  padding-top: 3px;
+  height: 120px;
+}
+
 .more {
   text-align: center;
 }
