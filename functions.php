@@ -35,7 +35,7 @@ function arcGrade($archive){
     // }
     $exist = $db->fetchRow($db->select('viewsCount')->from('table.contents')->where('cid = ?', $cid))['views'];
     if($exist<100){
-       echo '<i class="badge arc_v1">初出</i>';
+       echo '<i class="badge arc_v1">初探</i>';
     }elseif ($exist<300 && $exist>=100) {
         echo '<i class="badge arc_v2">新秀</i>';
     }elseif ($exist<600 && $exist>=300) {
