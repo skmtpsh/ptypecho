@@ -87,14 +87,18 @@
     			    <input type="url" name="url" id="url" class="text" placeholder="请输入网址 <?php _e('http://'); ?>" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
                 </div>
                 <div class="col-mb-12 col-12">
-                    <?php spam_protection_math();?>
+                    <p>
+                        <?php spam_protection_math();?>
+                    </p>
                 </div>
                 <?php endif; ?>
                 <div class="col-mb-12 col-12">
                     <textarea rows="8" name="text" id="textarea" class="textarea" maxlength="200" placeholder="请输入5-200以内的文字" required style="min-height: 100px;"><?php $this->remember('text'); ?></textarea>
                 </div>
                 <div class="col-mb-12 col-12">
-                    <button type="submit" class="submit primary-btn"><?php _e('提交评论'); ?></button>
+                    <p>
+                        <button type="submit" class="submit primary-btn"><?php _e('提交评论'); ?></button>
+                    </p>
                 </div>
             </div>
     	</form>
