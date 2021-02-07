@@ -1048,12 +1048,12 @@ button {
 }
 
 .arc_v1 {
-  background-image: linear-gradient(0deg, #b0dcfd 0%, #87d6fa 100%);
+  background-image: linear-gradient(110deg, #17caca 0%, #09b1ff 100%);
 	color: #fff !important;
 }
 
 .arc_v2 {
-	background: #448EF6;
+	background: linear-gradient(110deg, #448EF6 0%, #09b1ff 100%);
 	color: #fff !important;
 }
 
