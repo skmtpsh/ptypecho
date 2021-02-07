@@ -998,9 +998,7 @@ button {
 .widget-column {
   position: relative;
   border-top: 1px solid #edf0f5;
-  border-bottom: 1px solid #edf0f5;
-  padding: 15px;
-  margin-top: 40px
+  padding: 5px 0;
 }
 
 
@@ -1096,4 +1094,13 @@ button {
 }
 @media(max-width: 991px){
   .header__btn  { display: block; }
+}
+.Copyrightnew {
+  background: #e8eef3;
+  padding: 8px 20px;
+  border-radius: 0 5px 5px 0;
+  font-size: 14px;
+  color: #999;
+  width: 100%;
+  margin: 20px 0;
 }
