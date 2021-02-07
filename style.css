@@ -338,10 +338,9 @@ textarea {
 
 .post-meta li {
   flex: 1;
-  /* display: inline-block; */
-  margin: 0 30px 0 0;
+  margin: 0 0px 0 0;
   padding-left: 12px;
-  /* border-left: 1px solid #EEE; */
+  display: flex;
 }
 
 .post-meta li:first-child {
@@ -825,6 +824,7 @@ custom
   margin: 0 6px;
 }
 .time {
+  font-size: 13px;
 }
 .tags-list {
   padding: 10px 0;
