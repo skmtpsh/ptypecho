@@ -9,15 +9,13 @@
                 <?php $this->author->gravatar(); ?>
                 <div><?php $this->author(); ?> <p class="f12">非著名文艺青年 发布于<time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p></div>
             </a>
-            <span class="time">
-                <el-tag type="danger" effect="dark" size="small"><?php $this->category(','); ?></el-tag>
-            </span>
+            <el-tag type="danger" effect="dark" size="small" class="cate"><i class="el-icon-menu"></i> <?php $this->category(','); ?></el-tag>
         </div>
         <h1 class="post-title" itemprop="name headline"><?php $this->title(); ?></h1>
         <div class="post-content" itemprop="articleBody">
             <?php $this->content(); ?>
         </div>
-        <p itemprop="keywords" class="tagsbox"><?php $this->tags(' ', true, 'none'); ?></p>
+        <p itemprop="keywords" class="tagsbox"><i classel-icon-price-tag></i>: <?php $this->tags(' ', true, 'none'); ?></p>
         <ul class="post-meta">
 			<li><i class="el-icon-document-copy"></i> <?php _e('阅读:'); ?>(<?php $this->viewsCount(); ?>)</li>
         </ul>

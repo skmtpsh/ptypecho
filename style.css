@@ -798,7 +798,13 @@ custom
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  /* padding: 10px 0; */
+}
+.post-shead .cate {
+  color: #fff;
+}
+.post-shead .cate a {
+  color: #fff;
 }
 .author {
   display: flex;
