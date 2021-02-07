@@ -270,7 +270,7 @@ textarea {
 .post {
   position: relative;
   padding: 15px 0;
-  border-bottom: 1px solid #edf0f5;
+  /* border-bottom: 1px solid #edf0f5; */
   /* margin-bottom: 10px;
   padding: 20px;
   background-color: #fff;

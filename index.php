@@ -54,7 +54,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 									<time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
 							</li>
 							<li><i class="el-icon-document-copy"></i> <?php $this->category(','); ?></li>
-							<li><i class="el-icon-reading"></i> <?php $this->viewsCount(); ?> </li>
+							<li><i class="el-icon-view"></i> <?php $this->viewsCount(); ?> </li>
 							<li itemprop="interactionCount">
 								<i class="el-icon-chat-line-square"></i>
 								<a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments">

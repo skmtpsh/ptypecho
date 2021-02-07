@@ -17,7 +17,7 @@
         </div>
         <p itemprop="keywords" class="tagsbox"><?php $this->tags(' ', true, 'none'); ?></p>
         <ul class="post-meta">
-			<li><i class="el-icon-document-copy"></i> (<?php $this->viewsCount(); ?>)</li>
+			<li><i class="el-icon-view"></i> <?php $this->viewsCount(); ?></li>
         </ul>
     </article>
     <div class="Copyrightnew">文章由官网发布，如若转载，请注明出处：<?php $this->permalink() ?></div>
