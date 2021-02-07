@@ -563,13 +563,13 @@ textarea {
   border-bottom: 50px solid #f9f9f9;
 }
 #response {
-  font-size: 14px;
+  font-size: 13px;
   margin: 10px 0;
 }
 .respond .cancel-comment-reply {
   float: right;
-  margin-top: 15px;
-  font-size: .92857em;
+  margin-top: 10px;
+  font-size: 13px;
 }
 
 #comment-form label {
