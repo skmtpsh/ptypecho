@@ -291,6 +291,12 @@ textarea {
   font-size: 28px;
   word-break: break-all;
   white-space: normal;
+  display: flex;
+  align-items: center;
+}
+
+.post-title.index {
+  font-size: 20px;
 }
 
 .post-title a {

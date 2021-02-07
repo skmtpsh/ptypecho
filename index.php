@@ -31,7 +31,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	</div>
 	<?php while($this->next()): ?>
 				<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-						<h2 class="post-title" itemprop="name headline">
+						<h2 class="post-title index" itemprop="name headline">
 							<!-- <span class="tags"></span> -->
 							<el-tag type="danger" effect="dark" size="small">精华</el-tag>
 							<a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->sticky(); $this->title() ?></a>
