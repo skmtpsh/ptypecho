@@ -15,7 +15,7 @@
         <div class="post-content" itemprop="articleBody">
             <?php $this->content(); ?>
         </div>
-        <p itemprop="keywords" class="tagsbox"><i class="el-icon-price-tag"></i>: <?php $this->tags(' ', true, 'none'); ?></p>
+        <p itemprop="keywords" class="tagsbox"><i class="el-icon-price-tag"></i> 关键词: <?php $this->tags('#', true, 'none'); ?></p>
         <ul class="post-meta">
 			<li><i class="el-icon-document-copy"></i> (<?php $this->viewsCount(); ?>)</li>
         </ul>

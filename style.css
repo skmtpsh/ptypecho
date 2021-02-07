@@ -151,7 +151,7 @@ textarea {
   align-items: center;
 }
 .tagsbox a {
-  background-color: #4c4b4b;
+  background-color: #1369bf;
   display: inline-block;
   /* height: 32px; */
   padding: 5px 10px;
@@ -162,6 +162,8 @@ textarea {
   vertical-align: top;
   margin: 4px 4px;
   color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #1489ff, #30c3bc);
+  background-size: 400% 400%;
 }
 
 .tags {
@@ -962,4 +964,34 @@ button {
   color: #fff;
   background-color: #409eff;
   border-color: #409eff;
+}
+
+.widget-column {
+  position: relative;
+  border-top: 1px solid #edf0f5;
+  border-bottom: 1px solid #edf0f5;
+  padding: 15px;
+  margin-top: 40px
+}
+
+
+.widget-column .widget-column__head {
+  font-size: 13px;
+  color: #aaa;
+  display: inline-block;
+  background: #fff;
+  position: absolute;
+  line-height: 1em;
+  top: -.5em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 10em;
+  text-align: center
+}
+
+.widget-column .widget-column__title {
+  font-size: 16px;
+  color: #33353c;
+  margin: 0 0 10px;
 }
