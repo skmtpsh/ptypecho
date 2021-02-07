@@ -1084,6 +1084,7 @@ button {
 }
 
 .header__btn {
+  display: none;
   position: absolute;
   right: 0px;
   top: 0;
@@ -1093,4 +1094,7 @@ button {
   text-align: center;
   color: #fff;
   font-size: 20px;
+}
+@media(max-width: 991pxx){
+  .header__btn  { display: block; }
 }
