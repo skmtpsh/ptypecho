@@ -333,6 +333,7 @@ textarea {
   margin: 0 0px 0;
   padding: 20px 0px 0;
   display: flex;
+  list-style: none;
 }
 
 .post-meta li {
