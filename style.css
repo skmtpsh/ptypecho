@@ -885,8 +885,8 @@ custom
 .comment-head time { font-size: 12px; color: #c4c4c6; margin-top: 3px; }
 .comment-cont {
   font-size: 13px;
-  margin: 0 0 10px;
-  background: #f4f6fb;
+  margin: 0 0 0px;
+  background: #f9f9f9;
   padding: 8px 6px;
   border-radius: 4px;
   line-height: 1.6;
