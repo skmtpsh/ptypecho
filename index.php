@@ -48,8 +48,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							?>
 						</div>
 						<ul class="post-meta">
-							<li>
-									<?php $this->author->gravatar('20'); ?>
+							<li class="class="author">
+									<?php $this->author->gravatar('28'); ?>
 									<a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
 									<time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
 							</li>
