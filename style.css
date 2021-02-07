@@ -282,8 +282,13 @@ textarea {
 }
 
 .post-title {
-  margin: .83em 0;
-  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 20px auto 30px;
+  height: auto;
+  font-size: 28px;
+  word-break: break-all;
+  white-space: normal;
 }
 
 .post-title a {
@@ -793,7 +798,6 @@ custom
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #f7f7f7;
   padding: 10px 0;
 }
 .author {

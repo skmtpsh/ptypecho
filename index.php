@@ -31,13 +31,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	</div>
 	<?php while($this->next()): ?>
 				<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-						<div class="post-head" itemprop="author" itemscope itemtype="http://schema.org/Person">
-							<div class="post-head-img"><?php $this->author->gravatar(); ?></div>
-							<div class="post-head-tit">
-								<p><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></p>
-								<time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
-							</div>
-						</div>
 						<h2 class="post-title" itemprop="name headline">
 							<!-- <span class="tags"></span> -->
 							<el-tag type="danger" effect="dark" size="small">精华</el-tag>
@@ -55,6 +48,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							?>
 						</div>
 						<ul class="post-meta">
+							<li>
+									<?php $this->author->gravatar('20'); ?>
+									<a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
+									<time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
+							</li>
 							<li><i class="el-icon-document-copy"></i> <?php $this->category(','); ?></li>
 							<li><i class="el-icon-reading"></i> <?php $this->viewsCount(); ?> </li>
 							<li itemprop="interactionCount">
