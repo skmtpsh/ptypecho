@@ -20,6 +20,7 @@
 			<li><i class="el-icon-document-copy"></i> (<?php $this->viewsCount(); ?>)</li>
         </ul>
     </article>
+    <div class="Copyrightnew">文章由官网发布，如若转载，请注明出处：<?php $this->permalink() ?></div>
     <div class="widget-column"><span class="widget-column__head">·&nbsp; 已收录至专栏 &nbsp;·</span></div>
     <article class="post-near pd-20">
         <p>上一篇：<?php $this->thePrev('%s','没有了'); ?></p>

@@ -33,7 +33,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 						<h2 class="post-title index" itemprop="name headline">
 							<!-- <span class="tags"></span> -->
-							<el-tag type="danger" effect="dark" size="small">精华</el-tag>
+							<?php arcGrade($this);?>
 							<a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->sticky(); $this->title() ?></a>
 						</h2>
             <div class="post-content" itemprop="articleBody">

@@ -26,6 +26,31 @@ function spam_protection_pre($comment, $post, $result){
     return $comment;
 }
 
+/*文章访问量等级*/
+function arcGrade($archive){
+    $db = Typecho_Db::get();
+    $cid = $archive->cid;
+    // if (!array_key_exists('viewsCount', $db->fetchRow($db->select()->from('table.contents')))) {
+    //     $db->query('ALTER TABLE `'.$db->getPrefix().'contents` ADD `viewsCount` INT(10) DEFAULT 0;');
+    // }
+    $exist = $db->fetchRow($db->select('viewsCount')->from('table.contents')->where('cid = ?', $cid))['views'];
+    if($exist<100){
+       echo '<i class="badge arc_v1">初出</i>';
+    }elseif ($exist<300 && $exist>=100) {
+        echo '<i class="badge arc_v2">新秀</i>';
+    }elseif ($exist<600 && $exist>=300) {
+        echo '<i class="badge arc_v3">推荐</i>';
+    }elseif ($exist<900 && $exist>=600) {
+        echo '<i class="badge arc_v4">热文</i>';
+    }elseif ($exist<1500 && $exist>=1200) {
+        echo '<i class="badge arc_v5">头条</i>';
+    }elseif ($exist<2100 && $exist>=1800) {
+        echo '<i class="badge arc_v6">火爆</i>';
+    }elseif ($exist>=2100) {
+        echo '<i class="badge arc_v7">神贴</i>';
+    }
+}
+
 function themeConfig($form) {
     $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点 LOGO 地址'), _t('在这里填入一个图片 URL 地址, 以在网站标题前加上一个 LOGO'));
     $form->addInput($logoUrl);
