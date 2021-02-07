@@ -14,7 +14,7 @@
         </div>
     </section>
     <section class="widget">
-        <el-tabs v-model="activeName" type="card" @tab-click="handleClick">
+        <el-tabs v-model="activeName" @tab-click="handleClick">
             <el-tab-pane name="hot">
                 <span slot="label"><i class="el-icon-date"></i> 热门文章</span>
                 <ul class="widget-list">
