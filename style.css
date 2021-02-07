@@ -341,6 +341,13 @@ textarea {
   margin: 0 0px 0 0;
   padding-left: 12px;
   display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #909499;
+}
+
+.post-meta li i {
+  margin-left: 10px;
 }
 
 .post-meta li:first-child {
@@ -824,7 +831,6 @@ custom
   margin: 0 6px;
 }
 .time {
-  font-size: 13px;
 }
 .tags-list {
   padding: 10px 0;
