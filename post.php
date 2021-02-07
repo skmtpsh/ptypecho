@@ -28,14 +28,15 @@
     </article>
     <article class="related pd-20">
         <?php $relatedPosts = $this->widget('Widget_Contents_Related', 'limit=5'); ?>
-        <?php if($relatedPosts->have()){; ?>
+        <?php if($relatedPosts->have()): ?>
             <h4 class="related-title">相关文章</h4>
             <ul class="related-list">
-                <?php while($relatedPosts->next()){ ?>
+                <?php while($relatedPosts->next()):  ?>
                 <li><a href="<?php $relatedPosts->permalink(); ?>" title="<?php $relatedPosts->title(); ?>"><?php $relatedPosts->title(); ?></a></li>
                 <?php endwhile; ?>
             </ul>
-        <?php }; ?>
+        <?php endif; ?>
+
     </article>
     <?php $this->need('comments.php'); ?>
 
