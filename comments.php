@@ -31,10 +31,11 @@
             </span>
             <div class="cont">
                 <div class="comment-author">
-                    <!-- <?php $comments->gravatar('32', ''); ?> -->
+                    <!--comments->gravatar('32', '') -->
                     <cite class="fn"><?php $comments->author(); ?></cite>
                 </div>
                 <div class="comment-meta">
+                    <!-- date('Y-m-d H:i') -->
                     <a href="<?php $comments->permalink(); ?>"><?php $comments->dateWord(); ?></a>
                     <span class="comment-reply"><?php $comments->reply(); ?></span>
                 </div>
@@ -69,9 +70,9 @@
             <?php $comments->cancelReply(); ?>
         </div>
     	<h3 id="response"><?php _e('添加新评论'); ?></h3>
-    	<form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
+    	<form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form" class="comment-form">
             <?php if($this->user->hasLogin()): ?>
-    		<p><?php _e('登录身份: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
+    		<p><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
             <?php else: ?>
     		<p>
     			<input type="text" name="author" id="author" class="text" placeholder="请输入称呼" value="<?php $this->remember('author'); ?>" required />
