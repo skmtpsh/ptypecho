@@ -78,13 +78,19 @@
                 <p><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
                 <?php else: ?>
                 <div class="col-mb-12 col-4">
-                    <input type="text" name="author" id="author" class="text" placeholder="请输入称呼" value="<?php $this->remember('author'); ?>" required />
+                    <p>
+                        <input type="text" name="author" id="author" class="text" placeholder="请输入称呼" value="<?php $this->remember('author'); ?>" required />
+                    </p>
                 </div>
                 <div class="col-mb-12 col-4">
-    			    <input type="email" name="mail" id="mail" class="text" placeholder="请输入QQ邮箱" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
+                    <p>
+    			        <input type="email" name="mail" id="mail" class="text" placeholder="请输入QQ邮箱" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
+                    </p>
                 </div>
                 <div class="col-mb-12 col-4">
-    			    <input type="url" name="url" id="url" class="text" placeholder="请输入网址 <?php _e('http://'); ?>" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
+                    <p>
+    			        <input type="url" name="url" id="url" class="text" placeholder="请输入网址 <?php _e('http://'); ?>" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
+                    </p>
                 </div>
                 <div class="col-mb-12 col-12">
                     <p>
