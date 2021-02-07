@@ -800,7 +800,7 @@ custom
 }
 .tabs a.current {
   position: relative;
-  color: #1369bf
+  color: #1369bf;
   font-weight: 700;
 }
 .tabs a.current::after {

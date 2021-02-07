@@ -14,7 +14,7 @@
         </div>
     </section>
     <section class="widget">
-        <el-tabs v-model="activeName" @tab-click="handleClick">
+        <el-tabs v-model="activeName" type="card" @tab-click="handleClick">
             <el-tab-pane label="热门" name="hot">
                 <ul class="widget-list">
                     <?php MueduPostViews_Plugin::outputHotPosts() ?>
