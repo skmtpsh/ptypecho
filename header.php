@@ -52,7 +52,7 @@
         	    <p class="description"><?php $this->options->description() ?></p>
             <?php endif; ?>
             </div>
-            <div class="col-mb-4">
+            <div class="col-mb-4 kit-hidden-tb">
                 <nav id="nav-menu" class="clearfix" role="navigation">
                     <a<?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
                     <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
@@ -70,6 +70,9 @@
             </div>
             <div class="site-other tr col-2 kit-hidden-tb">
                 <a href="#" class="loginBtn">登录</a>
+            </div>
+            <div class="header__btn">
+                <i class="el-icon-more-outline"></i>
             </div>
         </div><!-- end .row -->
     </div>

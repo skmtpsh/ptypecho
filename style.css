@@ -943,7 +943,7 @@ custom
   padding: 6px 10px;
   border: 1px solid #ff6c00;
   font-size: 14px;
-  color: #f7f7f7;
+  color: #fff;
   background: #ff6c00;
 }
 
@@ -1081,4 +1081,14 @@ button {
 .arc_v7 {
 	background: #000;
 	color: #fff !important;
+}
+
+.header__btn {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -22px;
+	width: 22px;
+	height: 40px;
 }
