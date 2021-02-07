@@ -27,13 +27,15 @@
         <p>下一篇：<?php $this->theNext('%s','没有了'); ?></p>
     </article>
     <article class="related pd-20">
-        <h4 class="related-title">相关文章</h4>
-        <?php $this->related(5)->to($relatedPosts); ?>
-        <ul class="related-list">
-            <?php while ($relatedPosts->next()): ?>
-            <li><a href="<?php $relatedPosts->permalink(); ?>" title="<?php $relatedPosts->title(); ?>"><?php $relatedPosts->title(); ?></a></li>
-            <?php endwhile; ?>
-        </ul>
+        <?php $relatedPosts = $this->widget('Widget_Contents_Related', 'limit=5'); ?>
+        <?php if($relatedPosts->have()){; ?>
+            <h4 class="related-title">相关文章</h4>
+            <ul class="related-list">
+                <?php while($relatedPosts->next()){ ?>
+                <li><a href="<?php $relatedPosts->permalink(); ?>" title="<?php $relatedPosts->title(); ?>"><?php $relatedPosts->title(); ?></a></li>
+                <?php endwhile; ?>
+            </ul>
+        <?php }; ?>
     </article>
     <?php $this->need('comments.php'); ?>
 

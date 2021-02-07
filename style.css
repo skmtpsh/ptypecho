@@ -198,8 +198,7 @@ textarea {
 
 #logo {
   display: block;
-  /* color: #333;
-  font-size: 2.5em; */
+  text-align: left;
 }
 
 #logo img {
@@ -939,7 +938,7 @@ custom
   color: #ababab;
 }
 
-.loginBtn {
+a.loginBtn {
   padding: 6px 10px;
   border: 1px solid #ff6c00;
   font-size: 14px;
