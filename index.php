@@ -38,10 +38,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 						</h2>
             <div class="post-content" itemprop="articleBody">
 							<?php
-								if (preg_match('/<!--more-->/',$this->content)||mb_strlen($this->content, 'utf-8') < 270) {
+								if (preg_match('/<!--more-->/',$this->content)||mb_strlen($this->content, 'utf-8') < 180) {
 									$this->content('阅读全文...');
 								} else {
-									$c=mb_substr($this->content, 0, 270, 'utf-8');
+									$c=mb_substr($this->content, 0, 180, 'utf-8');
 									echo $c.'...';
 									echo '</br><p class="more"><a href="',$this->permalink(),'" title="',$this->title(),'">阅读剩余部分...</a></p>';
 								}
