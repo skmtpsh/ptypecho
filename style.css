@@ -1084,14 +1084,13 @@ button {
 }
 
 .header__btn {
-  display: flex;
   position: absolute;
-  right: 10px;
+  right: 0px;
   top: 0;
   width: 60px;
   height: 60px;
-  align-items: center;
-  justify-content: center;
+  line-height: 60px;
+  text-align: center;
   color: #fff;
-  font-style: 20px;
+  font-size: 20px;
 }
