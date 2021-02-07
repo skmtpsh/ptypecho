@@ -800,10 +800,7 @@ custom
   align-items: center;
   /* padding: 10px 0; */
 }
-.post-shead .cate {
-  color: #fff;
-}
-.post-shead .cate a {
+.cate, .cate a {
   color: #fff;
 }
 .author {

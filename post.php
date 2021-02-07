@@ -9,7 +9,7 @@
                 <?php $this->author->gravatar(); ?>
                 <div><?php $this->author(); ?> <p class="f12">非著名文艺青年 发布于<time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p></div>
             </a>
-            <el-tag type="danger" effect="dark" size="small" class="cate"><i class="el-icon-menu"></i> <?php $this->category(','); ?></el-tag>
+            <el-tag effect="dark" size="small" class="cate"><i class="el-icon-menu"></i> <?php $this->category(','); ?></el-tag>
         </div>
         <h1 class="post-title" itemprop="name headline"><?php $this->title(); ?></h1>
         <div class="post-content" itemprop="articleBody">
