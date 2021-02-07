@@ -350,7 +350,13 @@ textarea {
   margin-right: 10px;
   font-size: 16px;
 }
-.post-meta li a, .post-content a {
+.post-meta li .time {
+  margin-left: 10px;
+}
+.post-meta li a {
+  color: #909499;
+}
+.post-meta li a:hover, .post-content a {
   color: #06c;
 }
 .post-meta li:first-child {
