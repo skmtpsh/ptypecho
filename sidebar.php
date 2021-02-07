@@ -14,13 +14,13 @@
         </div>
     </section>
     <section class="widget">
-        <el-tabs v-model="activeName" type="card" @tab-click="handleClick">
-            <el-tab-pane label="热门" name="hot">
+        <el-tabs v-model="activeName" type="border-card" @tab-click="handleClick">
+            <el-tab-pane label="热门文章" name="hot">
                 <ul class="widget-list">
                     <?php MueduPostViews_Plugin::outputHotPosts() ?>
                 </ul>
             </el-tab-pane>
-            <el-tab-pane label="最新" name="news">
+            <el-tab-pane label="最新文章" name="news">
                 <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
                     <ul class="widget-list">
                         <!-- <?php $this->widget('Widget_Contents_Post_Recent')->parse('<li><a href="{permalink}">{title}</a></li>'); ?> -->
