@@ -69,7 +69,7 @@
         <div class="cancel-comment-reply">
             <?php $comments->cancelReply(); ?>
         </div>
-    	<h3 id="response"><?php _e('添加新评论'); ?></h3>
+    	<h4 id="response"><?php _e('发表评论'); ?></h4>
     	<form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form" class="comment-form">
             <?php if($this->user->hasLogin()): ?>
     		<p><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
