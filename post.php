@@ -27,11 +27,11 @@
         <p>下一篇：<?php $this->theNext('%s','没有了'); ?></p>
     </article>
     <article class="related pd-20">
-        <?php $this->widget('Widget_Contents_Related'); ?>
+        <?php $this->related(5)->to($relatedPosts); ?>
         <?php if($relatedPosts->have()): ?>
             <h4 class="related-title">相关文章</h4>
-            <ul class="related-list">
-                <?php while($relatedPosts->next()): ?>
+            <ul>
+                <?php while ($relatedPosts->next()): ?>
                 <li><a href="<?php $relatedPosts->permalink(); ?>" title="<?php $relatedPosts->title(); ?>"><?php $relatedPosts->title(); ?></a></li>
                 <?php endwhile; ?>
             </ul>
