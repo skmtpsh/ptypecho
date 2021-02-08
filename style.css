@@ -654,6 +654,10 @@ h3.widget-title {
   margin: 0;
 }
 
+#footer p span {
+  margin: 0 6px;
+}
+
 .error-page {
   margin-top: 100px;
   margin-bottom: 100px;
