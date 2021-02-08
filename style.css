@@ -300,6 +300,7 @@ textarea {
 
 .post-title a {
   color: #33353c;
+  flex: 1;
 }
 
 .post-head {

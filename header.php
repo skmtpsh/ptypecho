@@ -70,7 +70,8 @@
             </div>
             <div class="site-other tr col-2 kit-hidden-tb">
                 <?php if($this->user->hasLogin()): ?>
-                    <a href="<?php $this->options->adminUrl(); ?>" class="loginBtn"><?php _e('后台'); ?> (<?php $this->user->screenName(); ?>)</a>
+                    <!-- $this->user->screenName(); -->
+                    <a href="<?php $this->options->adminUrl(); ?>" class="loginBtn"><?php _e('后台'); ?></a>
                     <a href="<?php $this->options->logoutUrl(); ?>" class="loginBtn"><?php _e('退出'); ?></a>
                 <?php else: ?>
                     <a href="<?php $this->options->adminUrl('login.php'); ?>" class="loginBtn">登录</a>
