@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <!DOCTYPE HTML>
-<html class="no-js">
+<html class="no-js" style="background-image: url(<?php $this->options->themeUrl('img/bg.jpg'); ?>); background-position: center;">
 <head>
     <meta charset="<?php $this->options->charset(); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +33,7 @@
   <!-- import JavaScript -->
   <!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
 </head>
-<body style="background-image: url(<?php $this->options->themeUrl('img/bg.jpg'); ?>); background-position: center;">
+<body>
 <!--[if lt IE 8]>
     <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.</div>
 <![endif]-->
