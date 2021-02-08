@@ -13,7 +13,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  ?>
 
 <div class="col-mb-12 col-9" id="main" role="main">
-	<div class="index-add" style="background: url(<?php $this->options->themeUrl('img/banner2.jpg'); ?>)"></div>
+ 		<!-- $this->options->themeUrl('img/banner2.jpg') -->
+	<!-- <div class="index-add" style="background: url()"></div> -->
 	<div class="tabs">
 			<a href="<?php $this->options->siteUrl(); ?>" class="current">主页</a>
 			<?php $this->widget('Widget_Metas_Category_List')->to($category); ?>

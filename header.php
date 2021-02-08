@@ -78,7 +78,7 @@
     </div>
 </header><!-- end #header -->
 <div class="home-add" style="background: url(<?php $this->options->themeUrl('img/banner.jpg'); ?>)"></div>
-<div id="body">
+<div id="body" style="background: url(<?php $this->options->themeUrl('img/bg.jpg'); ?>)">
     <div class="container">
         <div class="row">
 
