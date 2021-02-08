@@ -649,6 +649,9 @@ h3.widget-title {
   font-size: 13px;
   background-color: #f8fbfd;
 }
+#footer p {
+  margin: 0;
+}
 
 .error-page {
   margin-top: 100px;
