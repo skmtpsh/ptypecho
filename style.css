@@ -408,6 +408,10 @@ textarea {
   background-position: center center;
 }
 
+#bodycenter {
+  background-color: #fff;
+}
+
 .more {
   text-align: left;
 }
