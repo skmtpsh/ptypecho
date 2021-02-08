@@ -401,6 +401,13 @@ textarea {
   height: 120px;
 }
 
+.index-add {
+  margin-bottom: 24px;
+  padding-top: 3px;
+  height: 180px;
+  background-position: center center;
+}
+
 .more {
   text-align: left;
 }
