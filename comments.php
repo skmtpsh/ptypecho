@@ -75,7 +75,9 @@
 
             <div class="row">
                 <?php if($this->user->hasLogin()): ?>
-                <p><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
+                <div class="col-mb-12 col-12">
+                    <p><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
+                </div>
                 <?php else: ?>
                 <div class="col-mb-12 col-4">
                     <p>
