@@ -27,7 +27,7 @@
         <p>下一篇：<?php $this->theNext('%s','没有了'); ?></p>
     </article>
     <article class="related pd-20">
-        <?php $relatedPosts = $this->widget('Widget_Contents_Related', 'limit=5'); ?>
+        <?php $this->widget('Widget_Contents_Related')->to($relatedPosts) ?>
         <?php if($relatedPosts->have()): ?>
             <h4 class="related-title">相关文章</h4>
             <ul class="related-list">
