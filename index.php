@@ -33,6 +33,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	</div>
 	<?php while($this->next()): ?>
 				<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+						<div class="post-head">
+							<?php $this->author->gravatar('48'); ?>
+							<a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
+							<time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
+						</div>
 						<h2 class="post-title index" itemprop="name headline">
 							<!-- <span class="tags"></span> -->
 							<?php arcGrade($this);?>
@@ -51,9 +56,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 						</div>
 						<ul class="post-meta">
 							<li class="author">
-									<?php $this->author->gravatar('28'); ?>
-									<a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
-									<time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
+
 							</li>
 							<li><i class="el-icon-document-copy"></i> <?php $this->category(','); ?></li>
 							<li><i class="el-icon-view"></i> <?php $this->viewsCount(); ?> </li>

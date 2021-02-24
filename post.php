@@ -27,7 +27,6 @@
             <li><i class="el-icon-rank"></i></li>
         </ul>
     </div>
-    <el-backtop target="#bodycenter"></el-backtop>
     <div class="copyright">
         <p>免责声明：以上内容源自网络，版权归原作者所有，如有侵犯您的原创版权请告知，我们将尽快删除相关内容。</p>
         <p>文章由官网发布，如若转载，请注明出处：<?php $this->permalink() ?></p>
