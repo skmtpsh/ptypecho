@@ -1117,10 +1117,10 @@ button {
 @media(max-width: 991px){
   .header__btn  { display: block; }
 }
-.Copyrightnew {
+.copyright {
   background: #e8eef3;
   padding: 8px 20px;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
   font-size: 14px;
   color: #999;
   margin: 20px 0;

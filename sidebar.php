@@ -6,7 +6,7 @@
                 <a href="#" rel="noreferrer noopener" target="_blank">
                     <i class="el-icon-collection"></i>
                     <strong>小学古诗词</strong>
-                    <span>万2.5低佣<i class="el-icon-arrow-right"></i></span>
+                    <span>万2.5低佣<i class="el-icon-arrow-right"></i></span>
                 </a>
             </li>
         </ul>
