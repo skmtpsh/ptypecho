@@ -1132,5 +1132,30 @@ button {
   margin: 0;
 }
 .modle-list li {
-  border-bottom: 1px solid #f2f2f2;
+  position: relative;
+  border-bottom: 1px solid #edf0f5;
+  padding: 10px 0;
+}
+.modle-list li a {
+  display: table;
+  padding: 12px 0;
+  width: 100%;
+  color: #33353c
+}
+.modle-list li a>i {
+  display: table-cell;
+  vertical-align: middle
+}
+.modle-list li a strong {
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.modle-list li a span {
+  font-size: 12px;
+  color: #666c72;
+  text-align: right;
+}
+.modle-list li a span i {
+  margin-left: 5px;
 }
