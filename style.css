@@ -1167,7 +1167,6 @@ button {
   left: 50%;
   margin-left: -370px;
   top: 50%;
-  margin-top: 150px;
   height: 40px;
   width: 40px;
   -webkit-transition: all 0.6s ease;
@@ -1196,3 +1195,6 @@ button {
   color: #fa8919;
   background: #fff;
 }
+.related {}
+.related ul { list-style: none; padding: 0; }
+.related ul li { font-size: 14px; margin: 6px 0; }
