@@ -1128,8 +1128,9 @@ button {
 .modle-list {
   list-style: none;
   overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 .modle-list li {
-  float: left;
-  width: 50%;
+  border-bottom: 1px solid #f2f2f2;
 }
