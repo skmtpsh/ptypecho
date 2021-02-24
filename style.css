@@ -1163,9 +1163,9 @@ button {
   margin-left: 5px;
 }
 .tools {
-  position: absolute;
+  position: fixed;
   left: 50%;
-  margin-left: 330px;
+  margin-left: -370px;
   top: 50%;
   margin-top: 150px;
   height: 40px;
@@ -1181,13 +1181,18 @@ button {
 .tools ul li {
   height: 38px;
   width: 38px;
+  margin-bottom: 20px;
   font-size: 18px;
   border-radius: 50%;
   background: #f6f7f9;
   line-height: 38px;
   text-align: center;
   color: #999;
-  position: absolute;
   cursor: pointer;
   border: 1px solid #f6f7f9;
+}
+.tools ul li:hover {
+  border: 1px solid #fa8919;
+  color: #fa8919;
+  background: #fff;
 }
