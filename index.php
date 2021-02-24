@@ -34,9 +34,13 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	<?php while($this->next()): ?>
 				<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 						<div class="post-head">
-							<?php $this->author->gravatar('48'); ?>
-							<a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
-							<time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
+							<div class="author">
+								<?php $this->author->gravatar('48'); ?>
+								<p>
+									<a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
+									<time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
+								</p>
+							</div>
 						</div>
 						<h2 class="post-title index" itemprop="name headline">
 							<!-- <span class="tags"></span> -->

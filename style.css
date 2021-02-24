@@ -285,7 +285,7 @@ textarea {
 .post-title {
   font-weight: 700;
   line-height: 1.4;
-  margin: 20px auto 30px;
+  margin: 10px auto 30px;
   height: auto;
   font-size: 28px;
   word-break: break-all;
@@ -300,11 +300,11 @@ textarea {
 
 .post-title a {
   color: #33353c;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .post-head {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   display: flex;
   flex-direction: row;
   /* justify-content: center; */
