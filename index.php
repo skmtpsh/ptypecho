@@ -36,10 +36,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 						<div class="post-head">
 							<div class="author">
 								<?php $this->author->gravatar('48'); ?>
-								<p>
+								<div>
 									<a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
-									<time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
-								</p>
+									<p><time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p>
+								</div>
 							</div>
 						</div>
 						<h2 class="post-title index" itemprop="name headline">
