@@ -982,12 +982,12 @@ pre code::-webkit-scrollbar {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgb(68 68 68);
+	background: #6b6a6a;
 	border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:active {
-	background-color: #333
+	background-color: #6b6a6a
 }
 button {
   display: inline-block;
@@ -1161,4 +1161,33 @@ button {
 }
 .modle-list li a span i {
   margin-left: 5px;
+}
+.tools {
+  position: absolute;
+  left: 50%;
+  margin-left: 330px;
+  top: 50%;
+  margin-top: 150px;
+  height: 40px;
+  width: 40px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.tools ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tools ul li {
+  height: 38px;
+  width: 38px;
+  font-size: 18px;
+  border-radius: 50%;
+  background: #f6f7f9;
+  line-height: 38px;
+  text-align: center;
+  color: #999;
+  position: absolute;
+  cursor: pointer;
+  border: 1px solid #f6f7f9;
 }
