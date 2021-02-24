@@ -12,7 +12,7 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
-    <link rel="shortcut icon" href="<?php $this->options->siteUrl(); ?>/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?php $this->options->siteUrl(); ?>favicon.ico" type="image/x-icon" />
     <!-- 使用url函数转换相关路径 -->
     <!-- <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('index.css'); ?>">
@@ -26,8 +26,8 @@
 
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.0/index.min.js"></script>
+    <script src="<?php $this->options->siteUrl(); ?>vue.js"></script>
+    <script src="<?php $this->options->siteUrl(); ?>index.min.js"></script>
   <!-- import Vue before Element -->
   <!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
   <!-- import JavaScript -->

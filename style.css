@@ -1125,3 +1125,11 @@ button {
   color: #999;
   margin: 20px 0;
 }
+.modle-list {
+  list-style: none;
+  overflow: hidden;
+}
+.modle-list li {
+  float: left;
+  width: 50%;
+}
