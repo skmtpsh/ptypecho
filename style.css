@@ -671,10 +671,11 @@ h3.widget-title {
 
 .post-content,
 .comment-content {
-  line-height: 1.8;
+  line-height: 2em;
   word-wrap: break-word;
-  font-size: 14px;
+  font-size: 15px;
   color: #33353c;
+  letter-spacing: 0.06em;
   /* overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
