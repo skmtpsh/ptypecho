@@ -78,7 +78,7 @@
                 <?php endif; ?>
 
             </div>
-            <div class="header__btn">
+            <div class="kit-show">
                 <i class="el-icon-more-outline"></i>
             </div>
         </div><!-- end .row -->

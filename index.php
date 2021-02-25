@@ -58,15 +58,13 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							?>
 						</div>
 						<ul class="post-meta">
-							<li class="author">
-
-							</li>
-							<li><i class="el-icon-document-copy"></i> <?php $this->category(','); ?></li>
-							<li><i class="el-icon-view"></i> <?php $this->viewsCount(); ?> </li>
+							<li><i class="el-icon-share"></i> <?php _e('转发'); ?></li>
+							<li><i class="el-icon-document-copy"></i> <?php _e('分类'); ?>(<?php $this->category(','); ?>)</li>
+							<li><i class="el-icon-view"></i> <?php _e('阅读'); ?>(<?php $this->viewsCount(); ?>) </li>
 							<li itemprop="interactionCount">
 								<i class="el-icon-chat-line-square"></i>
 								<a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments">
-									<?php $this->commentsNum('', '1', '%d'); ?>
+									<?php _e('阅读'); ?>(<?php $this->commentsNum('', '1', '%d'); ?>)
 								</a>
 							</li>
 						</ul>

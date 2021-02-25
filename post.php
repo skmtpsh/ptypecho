@@ -4,19 +4,13 @@
 <div class="col-mb-12 col-8 col-offset-2" id="main" role="main">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-        <div class="post-shead" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author">
-                <?php $this->author->gravatar(); ?>
-                <div><?php $this->author(); ?> <p class="f12">非著名文艺青年 发布于<time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p></div>
-            </a>
-            <el-tag effect="dark" size="small" class="cate"><i class="el-icon-menu"></i> <?php $this->category(','); ?></el-tag>
-        </div>
         <h1 class="post-title" itemprop="name headline"><?php $this->title(); ?></h1>
-        <div class="post-content" itemprop="articleBody">
+        <div class="post-content post-detail" itemprop="articleBody">
             <?php $this->content(); ?>
         </div>
         <p itemprop="keywords" class="tagsbox"><?php $this->tags(' ', true, 'none'); ?></p>
         <ul class="post-meta">
+            <li class="kit-show"><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
 			<li><i class="el-icon-view"></i> <?php $this->viewsCount(); ?></li>
         </ul>
     </article>
@@ -26,6 +20,13 @@
             <li><i class="el-icon-share"></i></li>
             <li><i class="el-icon-rank"></i></li>
         </ul>
+    </div>
+    <div class="post-shead kit-hidden-tb" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author">
+            <?php $this->author->gravatar(); ?>
+            <div><?php $this->author(); ?> <p class="f12">非著名文艺青年 发布于<time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p></div>
+        </a>
+        <el-tag effect="dark" size="small" class="cate"><i class="el-icon-menu"></i> <?php $this->category(','); ?></el-tag>
     </div>
     <div class="copyright">
         <p>免责声明：以上内容源自网络，版权归原作者所有，如有侵犯您的原创版权请告知，我们将尽快删除相关内容。</p>

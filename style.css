@@ -297,7 +297,7 @@ textarea {
 }
 
 .post-title.index {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .post-title a {
@@ -662,15 +662,20 @@ h3.widget-title {
 
 .post-content,
 .comment-content {
-  line-height: 1.6;
+  line-height: 1.8;
   word-wrap: break-word;
   font-size: 14px;
   color: #33353c;
-  line-height: 1.6em;
   /* overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;   */
+}
+
+.post-detail {
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  line-height: 2em;
 }
 
 .post-content h2,
@@ -1122,7 +1127,7 @@ button {
   font-size: 20px;
 }
 @media(max-width: 991px){
-  .header__btn  { display: block; }
+  .kit-show { display: block; }
 }
 .copyright {
   background: #e8eef3;
