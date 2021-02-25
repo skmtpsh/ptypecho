@@ -2,7 +2,7 @@
 <?php $this->need('header.php'); ?>
 
 <div class="col-mb-12 col-8 col-offset-2" id="main" role="main">
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="post detail" itemscope itemtype="http://schema.org/BlogPosting">
 
         <h1 class="post-title" itemprop="name headline"><?php $this->title(); ?></h1>
         <div class="post-content post-detail" itemprop="articleBody">
@@ -21,16 +21,16 @@
             <li><i class="el-icon-rank"></i></li>
         </ul>
     </div>
+    <div class="copyright">
+        <p>免责声明：以上内容源自网络，版权归原作者所有，如有侵犯您的原创版权请告知，我们将尽快删除相关内容。</p>
+        <p>文章由官网发布，如若转载，请注明出处：<?php $this->permalink() ?></p>
+    </div>
     <div class="post-shead kit-hidden-tb" itemprop="author" itemscope itemtype="http://schema.org/Person">
         <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author">
             <?php $this->author->gravatar(); ?>
             <div><?php $this->author(); ?> <p class="f12">非著名文艺青年 发布于<time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p></div>
         </a>
         <el-tag effect="dark" size="small" class="cate"><i class="el-icon-menu"></i> <?php $this->category(','); ?></el-tag>
-    </div>
-    <div class="copyright">
-        <p>免责声明：以上内容源自网络，版权归原作者所有，如有侵犯您的原创版权请告知，我们将尽快删除相关内容。</p>
-        <p>文章由官网发布，如若转载，请注明出处：<?php $this->permalink() ?></p>
     </div>
     <!-- <div class="widget-column"><span class="widget-column__head">·&nbsp; 已收录至专栏 &nbsp;·</span></div> -->
     <article class="post-near pd-20">

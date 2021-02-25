@@ -282,6 +282,10 @@ textarea {
 	border-radius: 4px; */
 }
 
+.post.detail {
+  padding-left: 15px;
+}
+
 .post-title {
   margin: 0;
   font-size: 18px;
