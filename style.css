@@ -1218,12 +1218,6 @@ button {
 @media(max-width: 991px){
   .header__btn { display: block; }
   .kit-show { display: block; }
-  .tools {
-    position: static;
-    left: 0;
-    width: 100%;
-    margin-left: 0px;
-  }
 }
 .related {}
 .related ul { list-style: none; padding: 0; }

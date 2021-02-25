@@ -10,8 +10,14 @@
         </div>
         <p itemprop="keywords" class="tagsbox"><?php $this->tags(' ', true, 'none'); ?></p>
         <ul class="post-meta">
-            <li class="kit-show"><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
-			<li><i class="el-icon-view"></i> <?php $this->viewsCount(); ?></li>
+            <li class="kit-show">
+                <i class="el-icon-chat-line-square"></i> 转发
+            </li>
+            <li class="kit-show">
+                <i class="el-icon-chat-line-square"></i> 转发
+                <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><i class="el-icon-date"></i> 日期(<?php $this->date(); ?>)</time>
+            </li>
+			<li><i class="el-icon-view"></i> 阅读(<?php $this->viewsCount(); ?>)</li>
         </ul>
     </article>
     <div class="tools kit-hidden-tb">
