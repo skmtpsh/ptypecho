@@ -8,6 +8,12 @@
         <div class="post-content post-detail" itemprop="articleBody">
             <?php $this->content(); ?>
         </div>
+        <div class="post-shead" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author">
+                <?php $this->author->gravatar(); ?>
+                <div><?php $this->author(); ?> <p class="f12">非著名文艺青年 发布于<time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p></div>
+            </a>
+        </div>
         <p itemprop="keywords" class="tagsbox"><?php $this->tags(' ', true, 'none'); ?></p>
         <ul class="post-meta">
             <li class="kit-show">
@@ -26,12 +32,6 @@
             <li><i class="el-icon-share"></i></li>
             <li><i class="el-icon-rank"></i></li>
         </ul>
-    </div>
-    <div class="post-shead" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author">
-            <?php $this->author->gravatar(); ?>
-            <div><?php $this->author(); ?> <p class="f12">非著名文艺青年 发布于<time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p></div>
-        </a>
     </div>
     <div class="copyright">
         <p>免责声明：以上内容源自网络，版权归原作者所有，如有侵犯您的原创版权请告知，我们将尽快删除相关内容。</p>
