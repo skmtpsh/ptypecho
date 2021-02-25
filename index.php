@@ -64,7 +64,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							<li itemprop="interactionCount">
 								<i class="el-icon-chat-line-square"></i>
 								<a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments">
-									<?php _e('阅读'); ?>(<?php $this->commentsNum('', '1', '%d'); ?>)
+									<?php _e('评论'); ?>(<?php $this->commentsNum(0, '1', '%d'); ?>)
 								</a>
 							</li>
 						</ul>
