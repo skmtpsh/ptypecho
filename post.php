@@ -4,7 +4,7 @@
 <div class="col-mb-12 col-8 col-offset-2" id="main" role="main">
     <article class="post detail" itemscope itemtype="http://schema.org/BlogPosting">
 
-        <h1 class="post-title" itemprop="name headline"><?php $this->title(); ?></h1>
+        <h1 class="post-title detail" itemprop="name headline"><?php $this->title(); ?></h1>
         <div class="post-content post-detail" itemprop="articleBody">
             <?php $this->content(); ?>
         </div>
@@ -14,7 +14,7 @@
 			<li><i class="el-icon-view"></i> <?php $this->viewsCount(); ?></li>
         </ul>
     </article>
-    <div class="tools">
+    <div class="tools kit-hidden-tb">
         <ul>
             <li><i class="el-icon-chat-line-square"></i></li>
             <li><i class="el-icon-share"></i></li>

@@ -304,6 +304,11 @@ textarea {
   font-size: 18px;
 }
 
+.post-title.detail {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
 .post-title a {
   color: #33353c;
   /* flex: 1; */
@@ -1131,9 +1136,6 @@ button {
   color: #fff;
   font-size: 20px;
 }
-@media(max-width: 991px){
-  .kit-show { display: block; }
-}
 .copyright {
   background: #e8eef3;
   padding: 8px 20px;
@@ -1211,6 +1213,17 @@ button {
   border: 1px solid #fa8919;
   color: #fa8919;
   background: #fff;
+}
+.kit-show { display: none; }
+@media(max-width: 991px){
+  .header__btn { display: block; }
+  .kit-show { display: block; }
+  .tools {
+    position: static;
+    left: 0;
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 .related {}
 .related ul { list-style: none; padding: 0; }
