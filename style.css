@@ -296,8 +296,8 @@ textarea {
   height: auto;
   word-break: break-all;
   white-space: normal;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
 }
 
 .post-title.index {
@@ -1080,6 +1080,7 @@ button {
 	position: relative;
   top: -1px;
   font-style: normal;
+  display: inline-block;
 }
 
 .arc_v1 {
