@@ -269,7 +269,7 @@ textarea {
 
 .post {
   position: relative;
-  padding: 15px 0 15px 60px;
+  padding: 15px 0;
   border-bottom: 1px solid #edf0f5;
   /* margin-bottom: 10px;
   padding: 20px;
@@ -283,12 +283,13 @@ textarea {
 }
 
 .post-title {
+  margin: 0;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
   /* margin: 10px auto 30px; */
   margin: 0 auto;
   height: auto;
-  font-size: 28px;
   word-break: break-all;
   white-space: normal;
   display: flex;
@@ -308,7 +309,6 @@ textarea {
   /* margin-bottom: 20px; */
   display: flex;
   flex-direction: row;
-  margin-left: -60px;
   position: relative;
   /* justify-content: center; */
   /* align-items: flex-start; */
@@ -337,7 +337,7 @@ textarea {
   padding: 20px 0px 10px;
   display: flex;
   list-style: none;
-  border-bottom: 1px solid #f2f2f2;
+  /* border-bottom: 1px solid #f2f2f2; */
 }
 
 .post-meta li {
@@ -368,13 +368,6 @@ textarea {
   padding-left: 0;
   border: none;
 }
-
-.post-content {
-  line-height: 1.5;
-  font-size: 15px;
-  color: #666c72;
-}
-
 .post .tags {
   clear: both;
 }
@@ -670,8 +663,8 @@ h3.widget-title {
 .comment-content {
   line-height: 1.6;
   word-wrap: break-word;
-  font-size: 16px;
-  color: #2f2f2f;
+  font-size: 14px;
+  color: #33353c;
   line-height: 1.6em;
   /* overflow: hidden;
   display: -webkit-box;
@@ -866,6 +859,11 @@ custom
   border-radius: 50%;
   margin: 0 6px;
 }
+.author .user_name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
 .author p {
   margin: 0;
 }
@@ -1066,7 +1064,7 @@ button {
 .badge {
 	border-radius: 2px;
 	font-weight: 400;
-	padding: 4px 6px;
+	padding: 2px 6px;
 	font-size: 12px;
 	margin: 0 .40rem 0 0;
 	position: relative;

@@ -37,7 +37,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							<div class="author">
 								<?php $this->author->gravatar('48'); ?>
 								<div>
-									<a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
+									<a class="user_name" itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
 									<p><time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p>
 								</div>
 							</div>
@@ -53,8 +53,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 									$this->content('阅读全文');
 								} else {
 									$c=mb_substr($this->content, 0, 180, 'utf-8');
-									echo $c.'...';
-									echo '</br><p class="more"><a href="',$this->permalink(),'" title="',$this->title(),'">阅读全文</a></p>';
+									echo $c.'<i class="el-icon-link"></i><a href="',$this->permalink(),'" title="',$this->title(),'">阅读全文</a>';
 								}
 							?>
 						</div>
