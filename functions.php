@@ -56,18 +56,18 @@ function arcGrade($archive){
     // if (!array_key_exists('viewsCount', $db->fetchRow($db->select()->from('table.contents')))) {
     //     $db->query('ALTER TABLE `'.$db->getPrefix().'contents` ADD `viewsCount` INT(10) DEFAULT 0;');
     // }
-    $exist = $db->fetchRow($db->select('viewsCount')->from('table.contents')->where('cid = ?', $cid))['views'];
+    $exist = $db->fetchRow($db->select('viewsCount')->from('table.contents')->where('cid = ?', $cid))['viewsCount'];
     if($exist<100){
        echo '<i class="badge arc_v1">初探</i>';
-    }elseif ($exist<300 && $exist>=100) {
+    }elseif ($exist<200 && $exist>=100) {
         echo '<i class="badge arc_v2">新秀</i>';
-    }elseif ($exist<600 && $exist>=300) {
+    }elseif ($exist<600 && $exist>=200) {
         echo '<i class="badge arc_v3">推荐</i>';
-    }elseif ($exist<900 && $exist>=600) {
+    }elseif ($exist<900 && $exist>=300) {
         echo '<i class="badge arc_v4">热文</i>';
-    }elseif ($exist<1500 && $exist>=1200) {
+    }elseif ($exist<1500 && $exist>=900) {
         echo '<i class="badge arc_v5">头条</i>';
-    }elseif ($exist<2100 && $exist>=1800) {
+    }elseif ($exist<2100 && $exist>=1500) {
         echo '<i class="badge arc_v6">火爆</i>';
     }elseif ($exist>=2100) {
         echo '<i class="badge arc_v7">神贴</i>';
