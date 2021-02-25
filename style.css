@@ -353,7 +353,7 @@ textarea {
 .post-meta li {
   /* flex: 1; */
   margin: 0 0px 0 0;
-  padding-left: 12px;
+  padding-left: 36px;
   display: flex;
   align-items: center;
   font-size: 12px;
