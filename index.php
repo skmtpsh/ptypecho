@@ -35,7 +35,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 						<div class="post-head">
 							<div class="author">
-								<?php $this->author->gravatar('48'); ?>
+								<!-- php $this->author->gravatar('48');  -->
+								<img class="avator_cir" src="<?php $this->options->themeUrl('img/ava.jpg'); ?>">
 								<div>
 									<a class="user_name" itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
 									<p><time class="time" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p>
