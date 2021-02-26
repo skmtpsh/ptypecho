@@ -12,7 +12,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php');
  ?>
 
-<div class="col-mb-12 col-9" id="main" role="main">
+<div class="col-mb-12 col-9 col-offset-1" id="main" role="main">
  		<!-- $this->options->themeUrl('img/banner2.jpg') -->
 	<!-- <div class="index-add" style="background: url()"></div> -->
 	<div class="tabs">

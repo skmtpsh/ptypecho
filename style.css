@@ -890,7 +890,7 @@ custom
 }
 .time {
   font-size: 13px;
-  color: #666c72;
+  /* color: #666c72; */
 }
 .tags-list {
   padding: 10px 0;
