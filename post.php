@@ -10,7 +10,8 @@
         </div>
         <div class="post-shead" itemprop="author" itemscope itemtype="http://schema.org/Person">
             <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author" class="author">
-                <?php $this->author->gravatar(); ?>
+                <!-- php $this->author->gravatar(); -->
+                <img class="avator_cir" src="<?php $this->options->themeUrl('img/ava.jpg'); ?>">
                 <div><?php $this->author(); ?> <p class="f12">非著名文艺青年 发布于<time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p></div>
             </a>
         </div>
