@@ -39,7 +39,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 								<img class="avator_cir" src="<?php $this->options->themeUrl('img/ava.jpg'); ?>">
 								<div>
 									<a class="user_name" itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
-									<p>非著名文艺青年 发布于<time class="time" datetime="<?php $this->date('Y-m-d H:i:s'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></p>
+									<p class="f12">非著名文艺青年.发布于 <time class="time" datetime="<?php $this->date('Y-m-d H:i:s'); ?>" itemprop="datePublished"> <?php $this->date('Y-m-d H:i:s'); ?></time></p>
 								</div>
 							</div>
 						</div>
