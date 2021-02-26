@@ -33,7 +33,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	</div>
 	<?php while($this->next()): ?>
 				<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-						<div class="post-head">
+						<div class="post-head kit-hidden-tb">
 							<div class="author">
 								<!-- php $this->author->gravatar('48');  -->
 								<img class="avator_cir" src="<?php $this->options->themeUrl('img/ava.jpg'); ?>">
@@ -60,7 +60,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 						</div>
 						<ul class="post-meta">
 							<li><i class="el-icon-share"></i> <?php _e('转发'); ?></li>
-							<li><i class="el-icon-document-copy"></i> <?php _e('分类'); ?>(<?php $this->category(','); ?>)</li>
+							<li class="kit-hidden-tb"><i class="el-icon-document-copy"></i> <?php _e('分类'); ?>(<?php $this->category(','); ?>)</li>
 							<li><i class="el-icon-view"></i> <?php _e('阅读'); ?>(<?php $this->viewsCount(); ?>) </li>
 							<li itemprop="interactionCount">
 								<i class="el-icon-chat-line-square"></i>

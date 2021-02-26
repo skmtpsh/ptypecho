@@ -748,14 +748,18 @@ img.alignright {
     display: inline-block;
     margin: 0 -2px;
   }
+
 }
 
 @media(max-width:768px) {
+  .post {
+    padding-left: 15px;
+  }
 
   #header,
   .post-title,
   .post-meta {
-    text-align: center;
+    text-align: left;
   }
 }
 
