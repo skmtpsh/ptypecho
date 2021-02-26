@@ -750,11 +750,12 @@ img.alignright {
   }
 
 }
-
-@media(max-width:768px) {
+@media(max-width:991px) {
   .post {
     padding-left: 15px;
   }
+}
+@media(max-width:768px) {
 
   #header,
   .post-title,
