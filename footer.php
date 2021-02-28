@@ -14,6 +14,14 @@
     </p>
 </footer><!-- end #footer -->
 
+<el-drawer
+  title="我是标题"
+  :visible.sync="drawer"
+  :direction="direction"
+  :before-close="handleClose">
+  <span>我来啦!</span>
+</el-drawer>
+
 <?php $this->footer(); ?>
 </div>
 
@@ -22,7 +30,9 @@ var app = new Vue({
     el: '#app',
     data: function() {
         return {
-            activeName: 'hot'
+            activeName: 'hot',
+            drawer: false,
+            direction: 'rtl'
         }
     },
     methods: {
