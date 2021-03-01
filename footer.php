@@ -36,8 +36,11 @@ var app = new Vue({
         }
     },
     methods: {
-        handleClick: function(tab, event) {
+        handleClick(tab, event) {
             console.log(tab, event)
+        },
+        handleClose(done) {
+            done();
         }
     }
 })
