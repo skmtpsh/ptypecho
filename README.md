@@ -2,7 +2,7 @@
 
 ### 描述
 
-小白制作的php typecho模板
+php typecho模板
  - [官网]： (www.pangshuhai.com)
  - 文档： www.pangshuhai.com
 
