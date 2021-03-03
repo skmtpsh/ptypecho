@@ -92,7 +92,7 @@ function themeConfig($form) {
 function getGravatar($email, $s = 96, $d = 'mp', $r = 'g', $img = false, $atts = array()) {
     preg_match_all('/((\d)*)@qq.com/', $email, $vai);
     if (empty($vai['1']['0'])) {
-        $url = 'https://www.gravatar.com/avatar/';
+        $url = 'https://cdn.v2ex.com/gravatar/';
         $url .= md5(strtolower(trim($email)));
         $url .= "?s=$s&d=$d&r=$r";
         if ($img) {
