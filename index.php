@@ -14,6 +14,20 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 <div class="col-mb-12 col-10 col-offset-1" id="main" role="main">
  		<!-- $this->options->themeUrl('img/banner2.jpg') -->
 	<!-- <div class="index-add" style="background: url()"></div> -->
+	<h3># 线上服务</h3>
+	<ul class="modle-list">
+		<li>
+				<a href="gushi.pangshuhai.com" rel="noreferrer noopener" target="_blank">
+						<i class="el-icon-collection"></i>
+						<strong>小学古诗词</strong>
+						<span>111首 <i class="el-icon-arrow-right"></i></span>
+				</a>
+		</li>
+	</ul>
+	<h3># 热门文章</h3>
+	<ul class="widget-list">
+			<?php MueduPostViews_Plugin::outputHotPosts() ?>
+	</ul>
 	<div class="tabs">
 			<a href="<?php $this->options->siteUrl(); ?>" class="current">主页</a>
 			<?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
@@ -75,6 +89,30 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	<?php endwhile; ?>
 
     <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
+		<div class="recentBox">
+			<h3>最新评论</h3>
+			<ul class="widget-list">
+				<?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
+				<?php while($comments->next()): ?>
+				<li>
+						<div class="comment-ping">
+								<div class="comment-head">
+										<div class="comment-tx">
+												<?php $email=$comments->mail; $imgUrl = getGravatar($email);echo '<img src="'.$imgUrl.'" width="32px" height="32px" style=" marin-right: 5px; border-radius: 50%;" >'; ?>
+												<div class="comment-tx-t">
+														<strong>
+																<a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>
+														</strong>
+														<time><?php $comments->dateWord(); ?></time>
+												</div>
+										</div>
+								</div>
+								<p class="comment-cont"><?php $comments->excerpt(35, '...'); ?></p>
+						</div>
+				</li>
+				<?php endwhile; ?>
+			</ul>
+		</div>
 </div><!-- end #main-->
 
 <?php $this->need('sidebar.php'); ?>
