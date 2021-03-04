@@ -74,7 +74,8 @@
                     <a href="<?php $this->options->adminUrl(); ?>" class="loginBtn"><?php _e('后台'); ?></a>
                     <a href="<?php $this->options->logoutUrl(); ?>" class="loginBtn"><?php _e('退出'); ?></a>
                 <?php else: ?>
-                    <a href="<?php $this->options->adminUrl('login.php'); ?>" class="loginBtn">登录</a>
+                    <a @click="handleLogin" class="loginBtn">登录</a>
+                    <!-- <a href="<php $this->options->adminUrl('login.php'); >" class="loginBtn">登录</a> -->
                 <?php endif; ?>
 
             </div>

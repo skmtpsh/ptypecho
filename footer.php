@@ -15,13 +15,24 @@
 </footer><!-- end #footer -->
 
 <el-drawer
-  title="我是标题"
+  title=""
   :visible.sync="drawer"
   :direction="direction"
   :before-close="handleClose">
   <span>我来啦!</span>
 </el-drawer>
-
+<el-dialog
+  title="用户登录"
+  :visible.sync="dialogLoginVisible"
+  width="30%"
+  :before-close="handleLoginClose">
+<form action="<?php $this->options->loginAction()?>" method="post" name="login" rold="form">
+    <input type="hidden" name="referer" value="<?php $this->options->siteUrl(); ?>">
+    <input type="text" name="name" autocomplete="username" placeholder="请输入用户名" required/>
+    <input type="password" name="password" autocomplete="current-password" placeholder="请输入密码" required/>
+    <button type="submit">登录</button>
+</form>
+</el-dialog>
 <?php $this->footer(); ?>
 </div>
 
@@ -32,12 +43,19 @@ var app = new Vue({
         return {
             activeName: 'all',
             drawer: false,
-            direction: 'rtl'
+            direction: 'rtl',
+            dialogLoginVisible: false
         }
     },
     methods: {
+        handleLogin() {
+            this.dialogLoginVisible = true
+        },
         handleClick(tab, event) {
             console.log(tab, event)
+        },
+        handleLoginClose() {
+            done()
         },
         handleClose(done) {
             done();
