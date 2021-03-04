@@ -24,7 +24,7 @@
 <el-dialog
   title="用户登录"
   :visible.sync="dialogLoginVisible"
-  width="30%"
+  width="50%"
   :before-close="handleLoginClose">
 <!-- <form action="<php $this->options->loginAction()>" method="post" name="login" id="login" rold="form">
     <input type="hidden" name="referer" value="<php $this->options->siteUrl(); >">
@@ -32,7 +32,7 @@
     <input type="password" name="password" autocomplete="current-password" placeholder="请输入密码" required/>
     <button type="submit">登录</button>
 </form> -->
-<el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px">
+<el-form :model="ruleForm" :rules="rules" label-width="80px">
   <el-form-item label="用户名" prop="name">
     <el-input v-model="ruleForm.name"></el-input>
   </el-form-item>
@@ -85,7 +85,7 @@ var app = new Vue({
                 type: "POST",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
                 url: "<?php $this->options->loginAction() ?>" ,//url
-                data: JSON.stringify(data),
+                data: `name=${this.name}&password=${this.password}&name=${this.referer}`,
                 success: (result) => {
                     console.log(result);//打印服务端返回的数据(调试用)
                     if (result.resultCode == 200) {
