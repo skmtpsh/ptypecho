@@ -76,16 +76,19 @@ var app = new Vue({
             this.dialogLoginVisible = true
         },
         submitForm() {
-            var data = {
-                "name": this.ruleForm.name,
-                "password": this.ruleForm.password,
-                "referer": this.ruleForm.referer
-            }
+
+
+            // var data = {
+            //     "name": this.ruleForm.name,
+            //     "password": this.ruleForm.password,
+            //     "referer": this.ruleForm.referer
+            // }
+            var data = `name=${this.ruleForm.name}&password=${this.ruleForm.password}&name=${this.ruleForm.referer}`
             $.ajax({
                 type: "POST",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
                 url: "<?php $this->options->loginAction() ?>" ,//url
-                data: `name=${this.name}&password=${this.password}&name=${this.referer}`,
+                data,
                 success: (result) => {
                     console.log(result);//打印服务端返回的数据(调试用)
                     if (result.resultCode == 200) {
