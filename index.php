@@ -66,6 +66,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 			</el-tab-pane>
 			<el-tab-pane name="service">
 				<span slot="label"> 服务 </span>
+				<h3># 在线服务</h3>
         <ul class="modle-list">
 					<li>
 							<a href="http://gushi.pangshuhai.com" rel="noreferrer noopener" target="_blank">
@@ -92,6 +93,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 			</el-tab-pane>
 			<el-tab-pane name="news">
 				<span slot="label"> 评论 </span>
+				<h3># 最近评论</h3>
 				<ul class="widget-list">
 					<?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
 					<?php while($comments->next()): ?>
