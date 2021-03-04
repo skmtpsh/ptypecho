@@ -15,15 +15,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  		<!-- $this->options->themeUrl('img/banner2.jpg') -->
 	<!-- <div class="index-add" style="background: url()"></div> -->
 	<!-- <h3># 在线服务</h3> -->
-	<ul class="modle-list">
-		<li>
-			<a class="module-ico" href="http://gushi.pangshuhai.com" rel="noreferrer noopener" target="_blank">
-				<i class="el-icon-collection"></i>
-				<!-- <span>111首 <i class="el-icon-arrow-right"></i></span> -->
-			</a>
-			<p></p>
-		</li>
-	</ul>
 	<el-tabs v-model="activeName" @tab-click="handleClick">
 			<el-tab-pane name="all">
 				<span slot="label"> 全部 </span>
@@ -72,6 +63,18 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 					<?php endwhile; ?>
 
     		<?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
+			</el-tab-pane>
+			<el-tab-pane name="hot">
+				<span slot="label"> 服务 </span>
+        <ul class="modle-list">
+					<li>
+							<a href="#" rel="noreferrer noopener" target="_blank">
+								<i class="el-icon-collection"></i>
+								<strong>部编版小学古诗词</strong>
+								<span>111首 <i class="el-icon-arrow-right"></i></span>
+							</a>
+					</li>
+        </ul>
 			</el-tab-pane>
 			<el-tab-pane name="hot">
 				<span slot="label"> 热门 </span>
