@@ -686,6 +686,7 @@ h3.widget-title {
   font-size: 16px;
   letter-spacing: 0.06em;
   line-height: 2em;
+  min-height: 150px;
 }
 
 .post-content h2,
@@ -1165,13 +1166,14 @@ button {
 }
 .modle-list li a {
   display: table;
-  padding: 12px 0;
+  /* padding: 12px 0; */
   width: 100%;
   color: #33353c
 }
 .modle-list li a>i {
   display: table-cell;
-  vertical-align: middle
+  vertical-align: middle;
+  width: 20px;
 }
 .modle-list li a strong {
   padding-left: 10px;

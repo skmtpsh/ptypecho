@@ -14,6 +14,16 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 <div class="col-mb-12 col-10 col-offset-1" id="main" role="main">
  		<!-- $this->options->themeUrl('img/banner2.jpg') -->
 	<!-- <div class="index-add" style="background: url()"></div> -->
+	<h3># 在线服务</h3>
+	<ul class="modle-list">
+		<li>
+			<a href="gushi.pangshuhai.com" rel="noreferrer noopener" target="_blank">
+				<i class="el-icon-collection"></i>
+				<strong>部编版小学古诗词</strong>
+				<span>111首 <i class="el-icon-arrow-right"></i></span>
+			</a>
+		</li>
+	</ul>
 	<el-tabs v-model="activeName" @tab-click="handleClick">
 			<el-tab-pane name="all">
 				<span slot="label"> 全部 </span>
