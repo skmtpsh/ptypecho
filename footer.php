@@ -26,12 +26,23 @@
   :visible.sync="dialogLoginVisible"
   width="30%"
   :before-close="handleLoginClose">
-<form action="<?php $this->options->loginAction()?>" method="post" name="login" rold="form">
-    <input type="hidden" name="referer" value="<?php $this->options->siteUrl(); ?>">
+<!-- <form action="<php $this->options->loginAction()>" method="post" name="login" id="login" rold="form">
+    <input type="hidden" name="referer" value="<php $this->options->siteUrl(); >">
     <input type="text" name="name" autocomplete="username" placeholder="请输入用户名" required/>
     <input type="password" name="password" autocomplete="current-password" placeholder="请输入密码" required/>
     <button type="submit">登录</button>
-</form>
+</form> -->
+<el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px">
+  <el-form-item label="用户名" prop="name">
+    <el-input v-model="ruleForm.name"></el-input>
+  </el-form-item>
+  <el-form-item label="密码" prop="password">
+    <el-input type="password" v-model="ruleForm.password" autocomplete="off"></el-input>
+  </el-form-item>
+  <el-form-item>
+    <el-button type="primary" @click="submitForm('ruleForm')">立即登录</el-button>
+  </el-form-item>
+</el-form>
 </el-dialog>
 <?php $this->footer(); ?>
 </div>
@@ -44,18 +55,44 @@ var app = new Vue({
             activeName: 'all',
             drawer: false,
             direction: 'rtl',
-            dialogLoginVisible: false
+            dialogLoginVisible: false,
+            ruleForm: {
+                name: '',
+                password: '',
+                referer: '<?php $this->options->siteUrl(); ?>'
+            }
         }
     },
     methods: {
         handleLogin() {
             this.dialogLoginVisible = true
         },
+        submitForm() {
+            var data = {
+                "name": this.ruleForm.name,
+                "password": this.ruleForm.password,
+                "referer": this.ruleForm.referer
+            }
+            $.ajax({
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "<?php $this->options->loginAction() ?>" ,//url
+                data: JSON.stringify(data),
+                success: (result) => {
+                    console.log(result);//打印服务端返回的数据(调试用)
+                    if (result.resultCode == 200) {
+                        alert("SUCCESS");
+                    }
+                },
+                error: () => {
+                    alert("异常！");
+                }
+            });
+        },
         handleClick(tab, event) {
             console.log(tab, event)
         },
         handleLoginClose() {
-            done()
         },
         handleClose(done) {
             done();
