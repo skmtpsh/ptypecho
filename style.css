@@ -1164,7 +1164,7 @@ button {
   position: relative;
   font-size: 15px;
   /* flex: 1; */
-  /* border-bottom: 1px solid #edf0f5; */
+  border-bottom: 1px solid #edf0f5;
 }
 /* .modle-list li a.module-ico {
   width: 100px;
@@ -1201,6 +1201,8 @@ button {
   display: table-cell;
 }
 .modle-list li a span em {
+  border-radius: 4px;
+  font-style: normal;
   padding: 3px 5px;
   background-color: #f2f2ff;
 }
