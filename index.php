@@ -17,11 +17,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	<h3># 在线服务</h3>
 	<ul class="modle-list">
 		<li>
-			<a href="gushi.pangshuhai.com" rel="noreferrer noopener" target="_blank">
+			<a class="module-ico" href="gushi.pangshuhai.com" rel="noreferrer noopener" target="_blank">
 				<i class="el-icon-collection"></i>
-				<strong>部编版小学古诗词</strong>
-				<span>111首 <i class="el-icon-arrow-right"></i></span>
+				<!-- <span>111首 <i class="el-icon-arrow-right"></i></span> -->
 			</a>
+			<p></p>
 		</li>
 	</ul>
 	<el-tabs v-model="activeName" @tab-click="handleClick">
