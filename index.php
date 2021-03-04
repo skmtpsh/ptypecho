@@ -71,14 +71,14 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 							<a href="http://gushi.pangshuhai.com" rel="noreferrer noopener" target="_blank">
 								<i class="el-icon-collection"></i>
 								<strong>部编版小学古诗词</strong>
-								<span>111首 <i class="el-icon-arrow-right"></i></span>
+								<span><em>111首</em> <i class="el-icon-arrow-right"></i></span>
 							</a>
 					</li>
 					<li>
 							<a href="http://yuedu.pangshuhai.com" rel="noreferrer noopener" target="_blank">
 								<i class="el-icon-collection"></i>
 								<strong>在线阅读书籍</strong>
-								<span>去读读 <i class="el-icon-arrow-right"></i></span>
+								<span><em>去读读</em> <i class="el-icon-arrow-right"></i></span>
 							</a>
 					</li>
         </ul>
