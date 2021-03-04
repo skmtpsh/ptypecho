@@ -1175,6 +1175,9 @@ button {
   align-items: center;
   justify-content: center;
 }
+.modle-list li a>i {
+  font-size: 40px;
+}
 /* .modle-list li a {
   display: table;
   padding: 12px 0;

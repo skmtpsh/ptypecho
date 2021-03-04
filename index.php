@@ -14,10 +14,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 <div class="col-mb-12 col-10 col-offset-1" id="main" role="main">
  		<!-- $this->options->themeUrl('img/banner2.jpg') -->
 	<!-- <div class="index-add" style="background: url()"></div> -->
-	<h3># 在线服务</h3>
+	<!-- <h3># 在线服务</h3> -->
 	<ul class="modle-list">
 		<li>
-			<a class="module-ico" href="gushi.pangshuhai.com" rel="noreferrer noopener" target="_blank">
+			<a class="module-ico" href="http://gushi.pangshuhai.com" rel="noreferrer noopener" target="_blank">
 				<i class="el-icon-collection"></i>
 				<!-- <span>111首 <i class="el-icon-arrow-right"></i></span> -->
 			</a>
