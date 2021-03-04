@@ -1,3 +1,21 @@
+<div class="tabs">
+			<a href="<?php $this->options->siteUrl(); ?>" class="current">全部</a>
+			<?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
+				<?php while ($category->next()): ?>
+					<a
+						<?php if ($this->is('post')): ?>
+								<?php if ($this->category == $category->slug): ?> class="current"<?php endif; ?>
+						<?php else: ?>
+							<?php if ($this->is('category', $category->slug)): ?> class="current"<?php endif; ?>
+						<?php endif; ?>
+						href="<?php $category->permalink(); ?>" title="<?php $category->name(); ?>"
+					>
+						<?php $category->name(); ?>
+					</a>
+			<?php endwhile; ?>
+	</div>
+
+
 <div class="col-mb-12 col-3 kit-hidden-tb" id="secondary" role="complementary">
     <el-card shadow="never" style="border: 0 none;" :body-style="{ padding: '0px' }">
         <ul class="modle-list">

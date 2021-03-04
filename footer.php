@@ -30,7 +30,7 @@ var app = new Vue({
     el: '#app',
     data: function() {
         return {
-            activeName: 'hot',
+            activeName: 'all',
             drawer: false,
             direction: 'rtl'
         }

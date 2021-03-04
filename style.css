@@ -941,9 +941,8 @@ custom
 }
 
 .widget-list li .top {
-  /* font-weight: bold; */
+  font-weight: bold;
   margin-right: 4px;
-  font-size: 14px;
   line-height: 1;
   vertical-align: text-bottom;
 }
@@ -951,10 +950,10 @@ custom
   color: #ee0909;
 }
 .widget-list li:nth-of-type(2) .top {
-  color: #d40707;
+  color: #d80ea5;
 }
 .widget-list li:nth-of-type(3) .top {
-  color: #8A1F11;
+  color: #9c071b;
 }
 
 .count {
