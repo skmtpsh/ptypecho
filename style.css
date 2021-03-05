@@ -1276,3 +1276,15 @@ button {
 .customDialog .el-dialog__title {
   color: #fff !important;
 }
+.calendar {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 50px;
+  height: 100px;
+  border: 1px solid #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

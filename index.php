@@ -20,6 +20,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<span slot="label"> 全部 </span>
 					<?php while($this->next()): ?>
 						<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+							<div class="calendar">
+								<span>09</span>
+								<p>2021-10</p>
+							</div>
 							<div class="post-head kit-hidden-tb">
 								<div class="author">
 									<!-- php $this->author->gravatar('48');  -->
