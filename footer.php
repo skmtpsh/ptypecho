@@ -24,7 +24,7 @@
 <el-dialog
   title="用户登录"
   :visible.sync="dialogLoginVisible"
-  width="50%"
+  width="40%"
   :before-close="handleLoginClose">
 <!-- <form action="<php $this->options->loginAction()>" method="post" name="login" id="login" rold="form">
     <input type="hidden" name="referer" value="<php $this->options->siteUrl(); >">
@@ -32,7 +32,7 @@
     <input type="password" name="password" autocomplete="current-password" placeholder="请输入密码" required/>
     <button type="submit">登录</button>
 </form> -->
-<el-form :model="ruleForm" :rules="rules" label-width="80px">
+<el-form :model="ruleForm" :rules="rules" label-width="80px" label-position="top">
   <el-form-item label="用户名" prop="name">
     <el-input v-model="ruleForm.name"></el-input>
   </el-form-item>
@@ -90,18 +90,21 @@ var app = new Vue({
                 url: "<?php $this->options->loginAction() ?>" ,//url
                 data,
                 success: (result) => {
-                    console.log(result);//打印服务端返回的数据(调试用)
 
                 },
                 error: () => {
 
+                },
+                complete: () => {
+                    window.location.reload()
                 }
             });
         },
         handleClick(tab, event) {
             console.log(tab, event)
         },
-        handleLoginClose() {
+        handleLoginClose(done) {
+            done()
         },
         handleClose(done) {
             done();
