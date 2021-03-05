@@ -1279,7 +1279,7 @@ button {
 .calendar {
   position: absolute;
   left: 0;
-  top: 60px;
+  top: 80px;
   width: 52px;
   height: 60px;
   display: flex;
@@ -1292,6 +1292,7 @@ button {
   font-size: 15px;
 }
 .calendar p {
+  font-size: 12px;
   padding: 0;
   margin: 10px 0 0px;
 }

@@ -22,7 +22,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 						<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 							<div class="calendar">
 								<div><?php $this->date('d'); ?></div>
-								<p><?php $this->date('Y-m'); ?></p>
+								<p><?php $this->date('Y/m'); ?></p>
 							</div>
 							<div class="post-head kit-hidden-tb">
 								<div class="author">
