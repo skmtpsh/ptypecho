@@ -37,10 +37,10 @@
 <div class="dialogCont" style="background: #fff; padding: 20px;">
     <el-form :model="ruleForm" :rules="rules" label-width="80px" ref="ruleForm" label-position="top">
     <el-form-item label="用户名" prop="name">
-        <el-input v-model="ruleForm.name"></el-input>
+        <el-input v-model="ruleForm.name" placeholder="请输入用户名"></el-input>
     </el-form-item>
     <el-form-item label="密码" prop="password">
-        <el-input type="password" v-model="ruleForm.password" autocomplete="off"></el-input>
+        <el-input type="password" v-model="ruleForm.password" placeholder="请输入密码" autocomplete="off"></el-input>
     </el-form-item>
 
     <el-button type="primary" @click="submitForm('ruleForm')">立即登录</el-button>
