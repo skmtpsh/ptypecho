@@ -42,9 +42,9 @@
     <el-form-item label="密码" prop="password">
         <el-input type="password" v-model="ruleForm.password" autocomplete="off"></el-input>
     </el-form-item>
-    <el-form-item>
-        <el-button type="primary" @click="submitForm('ruleForm')">立即登录</el-button>
-    </el-form-item>
+
+    <el-button type="primary" @click="submitForm('ruleForm')">立即登录</el-button>
+
     </el-form>
 </div>
 </el-dialog>
