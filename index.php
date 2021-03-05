@@ -20,7 +20,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<span slot="label"> 全部 </span>
 					<?php while($this->next()): ?>
 						<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-							<div class="calendar">
+							<div class="calendar kit-hidden-tb">
 								<div><?php $this->date('d'); ?></div>
 								<p><?php $this->date('Y/m'); ?></p>
 							</div>
