@@ -1273,3 +1273,6 @@ button {
   padding: 18px 24px !important;
   background-color: #f6f7fb;
 }
+.customDialog .el-dialog__title {
+  color: #fff;
+}
