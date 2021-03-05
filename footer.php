@@ -25,7 +25,9 @@
   title="用户登录"
   :visible.sync="dialogLoginVisible"
   width="40%"
-  :before-close="handleLoginClose">
+  :before-close="handleLoginClose"
+  custom-class="customDialog"
+>
 <!-- <form action="<php $this->options->loginAction()>" method="post" name="login" id="login" rold="form">
     <input type="hidden" name="referer" value="<php $this->options->siteUrl(); >">
     <input type="text" name="name" autocomplete="username" placeholder="请输入用户名" required/>
@@ -76,29 +78,27 @@ var app = new Vue({
             this.dialogLoginVisible = true
         },
         submitForm() {
+            this.$refs[formName].validate((valid) => {
+            if (valid) {
+                var data = `name=${this.ruleForm.name}&password=${this.ruleForm.password}&referer=${this.ruleForm.referer}`
+                $.ajax({
+                    type: "POST",//方法类型
+                    dataType: "json",//预期服务器返回的数据类型
+                    url: "<?php $this->options->loginAction() ?>" ,//url
+                    data,
+                    success: (result) => {
 
+                    },
+                    error: () => {
 
-            // var data = {
-            //     "name": this.ruleForm.name,
-            //     "password": this.ruleForm.password,
-            //     "referer": this.ruleForm.referer
-            // }
-            var data = `name=${this.ruleForm.name}&password=${this.ruleForm.password}&referer=${this.ruleForm.referer}`
-            $.ajax({
-                type: "POST",//方法类型
-                dataType: "json",//预期服务器返回的数据类型
-                url: "<?php $this->options->loginAction() ?>" ,//url
-                data,
-                success: (result) => {
+                    },
+                    complete: () => {
+                        window.location.reload()
+                    }
+                });
+            } else {
 
-                },
-                error: () => {
-
-                },
-                complete: () => {
-                    window.location.reload()
-                }
-            });
+            }
         },
         handleClick(tab, event) {
             console.log(tab, event)

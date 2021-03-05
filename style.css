@@ -1262,3 +1262,14 @@ button {
 .el-tabs__item {
   font-size: 16px !important;
 }
+.el-form-item__label {
+  line-height: 20px !important;
+}
+.customDialog .el-dialog__header {
+  background-color: #1369bf !important;
+  color: #FFF !important;
+}
+.customDialog .el-dialog__body {
+  padding: 18px 24px !important;
+  background-color: #f6f7fb;
+}
