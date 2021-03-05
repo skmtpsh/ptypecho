@@ -79,26 +79,27 @@ var app = new Vue({
         },
         submitForm() {
             this.$refs[formName].validate((valid) => {
-            if (valid) {
-                var data = `name=${this.ruleForm.name}&password=${this.ruleForm.password}&referer=${this.ruleForm.referer}`
-                $.ajax({
-                    type: "POST",//方法类型
-                    dataType: "json",//预期服务器返回的数据类型
-                    url: "<?php $this->options->loginAction() ?>" ,//url
-                    data,
-                    success: (result) => {
+                if (valid) {
+                    var data = `name=${this.ruleForm.name}&password=${this.ruleForm.password}&referer=${this.ruleForm.referer}`
+                    $.ajax({
+                        type: "POST",//方法类型
+                        dataType: "json",//预期服务器返回的数据类型
+                        url: "<?php $this->options->loginAction() ?>" ,//url
+                        data,
+                        success: (result) => {
 
-                    },
-                    error: () => {
+                        },
+                        error: () => {
 
-                    },
-                    complete: () => {
-                        window.location.reload()
-                    }
-                });
-            } else {
+                        },
+                        complete: () => {
+                            window.location.reload()
+                        }
+                    });
+                } else {
 
-            }
+                }
+            })
         },
         handleClick(tab, event) {
             console.log(tab, event)
