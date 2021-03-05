@@ -1264,12 +1264,13 @@ button {
 }
 .el-form-item__label {
   line-height: 20px !important;
+  font-size: 15px;
 }
 .customDialog .el-dialog__header {
   background-color: #1369bf !important;
 }
 .customDialog .el-dialog__body {
-  padding: 18px 24px !important;
+  padding: 12px !important;
   background-color: #f6f7fb;
 }
 .customDialog .el-dialog__title {

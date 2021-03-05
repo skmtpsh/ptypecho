@@ -35,7 +35,7 @@
     <button type="submit">登录</button>
 </form> -->
 <div class="dialogCont" style="background: #fff; padding: 20px;">
-    <el-form :model="ruleForm" :rules="rules" label-width="80px" label-position="top">
+    <el-form :model="ruleForm" :rules="rules" label-width="80px" ref="ruleForm" label-position="top">
     <el-form-item label="用户名" prop="name">
         <el-input v-model="ruleForm.name"></el-input>
     </el-form-item>
@@ -80,7 +80,7 @@ var app = new Vue({
             this.dialogLoginVisible = true
         },
         submitForm() {
-            this.$refs[formName].validate((valid) => {
+            this.$refs['ruleForm'].validate((valid) => {
                 if (valid) {
                     var data = `name=${this.ruleForm.name}&password=${this.ruleForm.password}&referer=${this.ruleForm.referer}`
                     $.ajax({
