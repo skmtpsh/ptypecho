@@ -154,8 +154,11 @@ var app = new Vue({
         handleClick(tab, event) {
             console.log(tab, event)
         },
+        handleBaikeClose(done) {
+            done();
+        },
         handleLoginClose(done) {
-            done()
+            done();
         },
         handleClose(done) {
             done();
