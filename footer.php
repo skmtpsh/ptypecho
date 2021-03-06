@@ -104,7 +104,7 @@ var app = new Vue({
             drawer: false,
             direction: 'rtl',
             dialogLoginVisible: false,
-
+            activeNames: ['1'],
             ruleForm: {
                 name: '',
                 password: '',
