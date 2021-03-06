@@ -18,7 +18,7 @@
         <p itemprop="keywords" class="tagsbox"><?php $this->tags(' ', true, 'none'); ?></p>
         <ul class="post-meta">
             <li class="kit-show">
-                <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><i class="el-icon-date"></i> 发布于(<?php $this->date(); ?>) </time>
+                <!-- <time datetime="<php $this->date('c'); >" itemprop="datePublished"><i class="el-icon-date"></i> 发布于(<php $this->date(); >) </time> -->
             </li>
 			<li><i class="el-icon-view"></i> 阅读(<?php $this->viewsCount(); ?>)</li>
             <li><i class="el-icon-menu"></i> 分类(<?php $this->category(','); ?>)</li>
@@ -26,6 +26,7 @@
     </article>
     <div class="tools kit-hidden-tb">
         <ul>
+            <li @click="handleBaike"><i class="el-icon-collection"></i></li>
             <li><i class="el-icon-chat-line-square"></i></li>
             <li><i class="el-icon-share"></i></li>
             <li><i class="el-icon-rank"></i></li>

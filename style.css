@@ -147,8 +147,8 @@ textarea {
   font-weight: bold;
 }
 .tagsbox {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 }
 .tagsbox a {
   background-color: #1369bf;

@@ -95,6 +95,19 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 				<ul class="widget-list">
 					<?php MueduPostViews_Plugin::outputHotPosts() ?>
 				</ul>
+				<?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
+                <?php while ($category->next()): ?>
+                    <a
+                        <?php if ($this->is('post')): ?>
+                                <?php if ($this->category == $category->slug): ?> class="current"<?php endif; ?>
+                        <?php else: ?>
+                            <?php if ($this->is('category', $category->slug)): ?> class="current"<?php endif; ?>
+                        <?php endif; ?>
+                        href="<?php $category->permalink(); ?>" title="<?php $category->name(); ?>"
+                    >
+                        <?php $category->name(); ?>
+                    </a>
+            <?php endwhile; ?>
 			</el-tab-pane>
 			<el-tab-pane name="news">
 				<span slot="label"> 评论 </span>
