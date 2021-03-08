@@ -20,9 +20,26 @@
   :before-close="handleBaikeClose"
   size="80%"
 >
+<div class="drawerBox">
     <el-collapse v-model="activeNames">
         <el-collapse-item title="明朝皇帝" name="1">
-            <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
+            <div>
+                <!-- <el-timeline :reverse="reverse">
+                    <el-timeline-item
+                    v-for="(huangdi, index) in mingchao"
+                    :key="index"
+                    :timestamp="activity.date">
+                    {{huangdi.name}}
+                    </el-timeline-item>
+                </el-timeline> -->
+             </div>
+
+             明太祖朱元璋-- 明惠帝朱允炆 -- 明成祖朱棣 -- 明仁宗朱高炽 -- 明宣宗朱瞻基 --  明英宗朱祁镇
+
+明代宗朱祁钰 -- 明宪宗朱见深 -- 明孝宗朱佑樘 -- 明武宗朱厚照 -- 明世宗朱厚熜 -- 明穆宗朱载垕
+
+明神宗朱翊钧 -- 明光宗朱常洛 -- 明熹宗朱由校 -- 明思宗朱由检
+            </div>
         </el-collapse-item>
         <el-collapse-item title="元朝皇帝" name="2">
             <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
