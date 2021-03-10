@@ -718,6 +718,9 @@ h3.widget-title {
 .post-content.index img {
   max-width: 30%;
 }
+.post-content.index br {
+  display: none;
+}
 
 .aligncenter,
 div.aligncenter {
