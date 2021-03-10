@@ -72,23 +72,25 @@
   :before-close="handleClose"
   size="80%"
 >
+<div class="drawerBox">
 <h3># 在线服务</h3>
-<ul class="modle-list">
-    <li>
-        <a href="http://gushi.pangshuhai.com" rel="noreferrer noopener" target="_blank">
-            <i class="el-icon-collection"></i>
-            <strong>部编版小学古诗词</strong>
-            <span><em>111首</em> <i class="el-icon-arrow-right"></i></span>
-        </a>
-        </li>
+    <ul class="modle-list">
         <li>
-        <a href="http://yuedu.pangshuhai.com" rel="noreferrer noopener" target="_blank">
-            <i class="el-icon-collection"></i>
-            <strong>在线阅读书籍</strong>
-            <span><em>去读读</em> <i class="el-icon-arrow-right"></i></span>
-        </a>
-    </li>
-</ul>
+            <a href="http://gushi.pangshuhai.com" rel="noreferrer noopener" target="_blank">
+                <i class="el-icon-collection"></i>
+                <strong>部编版小学古诗词</strong>
+                <span><em>111首</em> <i class="el-icon-arrow-right"></i></span>
+            </a>
+            </li>
+            <li>
+            <a href="http://yuedu.pangshuhai.com" rel="noreferrer noopener" target="_blank">
+                <i class="el-icon-collection"></i>
+                <strong>在线阅读书籍</strong>
+                <span><em>去读读</em> <i class="el-icon-arrow-right"></i></span>
+            </a>
+        </li>
+    </ul>
+</div>
 </el-drawer>
 <el-dialog
   title="用户登录"

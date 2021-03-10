@@ -40,7 +40,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 								<?php arcGrade($this);?>
 								<a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->sticky(); $this->title() ?></a>
 							</h2>
-							<div class="post-content" itemprop="articleBody">
+							<div class="post-content index" itemprop="articleBody">
 								<?php
 									if (preg_match('/<!--more-->/',$this->content)||mb_strlen($this->content, 'utf-8') < 180) {
 										$this->content('<i class="el-icon-link"></i> 阅读全文');

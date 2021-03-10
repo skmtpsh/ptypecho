@@ -715,6 +715,9 @@ h3.widget-title {
   border: 1px solid #E9E9E9;
   border-width: 2px 0 0 0;
 }
+.post-content.index img {
+  max-width: 30%;
+}
 
 .aligncenter,
 div.aligncenter {
