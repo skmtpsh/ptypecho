@@ -18,18 +18,36 @@
         this.name = name
       }
     }
-    function factory(name, age) {
-      let obj = new World(name, age)
-      console.log(obj)
+    class People {
+      constructor(views) {
+        this.views = views;
+      }
+    }
+    function factory(type) {
+      let objf = null;
+      if (type === 'world') {
+        obj = new World('胖子', 32)
+        console.log(obj)
+      } else if (type === 'people') {
+        obj = new People('对世界的看法')
+        console.log(obj)
+      }
       return obj
     }
+
+
   </script>
 </head>
 <body>
 <h2>1.工厂模式</h2>
 <ul>
-  <li></li>
-  <li><p><button onclick="factory('胖子', 32)">点击</button></p></li>
+  <li>是用工厂方法代替new操作的一种模式</li>
+  <li><p><button onclick="factory('people')">点击</button></p></li>
+</ul>
+<h2>2.建造者模式</h2>
+<ul>
+  <li>是用工厂方法代替new操作的一种模式</li>
+  <li><p><button onclick="factory('people')">点击</button></p></li>
 </ul>
 </body>
 </html>
