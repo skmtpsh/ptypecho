@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ES6语法写设计模式</title>
+  <script>
+    class World {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      getName() {
+        return this.name;
+      }
+      setName(name) {
+        this.name = name
+      }
+    }
+    function factory(name, age) {
+      let obj = new World(name, age)
+      console.log(obj)
+      return obj
+    }
+  </script>
+</head>
+<body>
+<h2>1.工厂模式</h2>
+<ul>
+  <li></li>
+  <li><p><button onclick="factory('胖子', 32)">点击</button></p></li>
+</ul>
+</body>
+</html>

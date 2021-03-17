@@ -1294,8 +1294,9 @@ button {
   align-items: center;
 }
 .calendar div {
-  font-weight: bold;
-  font-size: 15px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: fantasy;
 }
 .calendar p {
   font-size: 12px;
