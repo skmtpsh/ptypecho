@@ -63,6 +63,52 @@
         <el-collapse-item title="隋朝皇帝" name="2">
             <div>隋文帝杨坚  --  隋炀帝杨广 --  隋恭帝杨侑 --  隋秦王杨浩 -- 隋世宗杨昭 --  隋越王杨侗</div>
         </el-collapse-item>
+        <el-collapse-item title="西汉历史（公元前202年-公元8年 ）" name="xihan">
+            <div>
+西汉，是中国历史上的大一统王朝，共历十二帝，享国二百一十年，即公元前202年至公元8年，又称为前汉。
+<br />秦末时期,天下揭竿而起，经过楚汉之争，刘邦击败项羽，公元前202年刘邦在山东定陶称帝，定都长安。西汉诸多制度上承袭秦制，汉初实行轻徭薄赋、休养生息的国策，社会经济迅速恢复。 [7]
+<br />刘邦开创汉朝，已是不世之功。黄仁宇曾经总结过：中国皇朝存续，只在“第三代接班人”。来看汉朝：刘邦死后，吕后掌政，中间惠帝在位仅7年，换言之，亲政16年的吕后，可视为第二任皇帝。第三任皇帝，汉朝迎来了中国历史上少有的好皇帝，加上第四任，开创了「文景之治」。总之，汉朝的国粹，至少西汉的国粹，是奠立在「刘邦+吕后」两人身上，可进入长治久安，则是文景两位皇帝之功
+<br />汉武帝继位后，推行推恩令、独尊儒术、加强中央集权。对外开拓朝鲜、南据越南、西逾葱岭、北达阴山，奠定汉朝基本疆域；派张骞出使西域、沟通中原与西域各国的联系。西汉自武帝之后，皆以外戚辅政。汉昭帝继位后，霍光辅政。汉宣帝时期，设置西域都护府，正式将西域纳入版图。汉元帝即位后，皇权旁落、外戚与宦官势力兴起，西汉开始走向衰败，又历经汉成帝、汉哀帝、汉平帝。公元8年王莽废除孺子婴太子之位，建立新朝，西汉灭亡。
+            </div>
+            <el-timeline>
+                <el-timeline-item timestamp="前256年-前195年" placement="top">
+                    <el-card>
+                        <h4>汉高祖刘邦</h4>
+                        <p>汉朝开国皇帝刘邦的嫡长子，母亲吕雉，在位7年。</p>
+                    </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="前211年—前188年" placement="top">
+                    <el-card>
+                        <h4>汉惠帝刘盈</h4>
+                        <p>汉朝开国皇帝刘邦的嫡长子，母亲吕雉，在位7年。</p>
+                    </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="前211年—前188年" placement="top">
+                    <el-card>
+                        <h4>汉惠帝刘盈</h4>
+                        <p>汉朝开国皇帝刘邦的嫡长子，母亲吕雉，在位7年。</p>
+                    </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="前190年—前184年 " placement="top">
+                <el-card>
+                    <h4>汉少帝刘恭</h4>
+                    <p>王小虎 提交于 2018/4/3 20:46</p>
+                </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="2018/4/2" placement="top">
+                <el-card>
+                    <h4>更新 Github 模板</h4>
+                    <p>王小虎 提交于 2018/4/2 20:46</p>
+                </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="公元5年―公元25年" placement="top">
+                <el-card>
+                    <h4>汉孺子刘婴</h4>
+                    <p>王小虎 提交于 2018/4/2 20:46</p>
+                </el-card>
+                </el-timeline-item>
+            </el-timeline>
+        </el-collapse-item>
     </el-collapse>
 </el-drawer>
 <el-drawer
