@@ -5,6 +5,7 @@
     <meta charset="<?php $this->options->charset(); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
+    <meta name="baidu-site-verification" content="code-YYTqyzeX0L" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
